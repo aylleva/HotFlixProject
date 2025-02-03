@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Infrastructure.deps.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Infrastructure.runtimeconfig.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Infrastructure.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Infrastructure.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.AssemblyInfo.cs
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\refint\HotFlix.Infrastructure.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.genruntimeconfig.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\ref\HotFlix.Infrastructure.dll

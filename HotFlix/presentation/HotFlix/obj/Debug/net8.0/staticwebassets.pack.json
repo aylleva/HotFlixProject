@@ -1,0 +1,217 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\default-skin.css",
+      "PackagePath": "staticwebassets\\assets\\css\\default-skin.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.styl",
+      "PackagePath": "staticwebassets\\assets\\css\\main.styl"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\photoswipe.css",
+      "PackagePath": "staticwebassets\\assets\\css\\photoswipe.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plyr.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slimselect.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\slimselect.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\splide.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\splide.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\icon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\assets\\icon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\angle-down.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\angle-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\actor__bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\actor__bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\details__bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\details__bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\home__bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\home__bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\section__bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\section__bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\interstellar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\project-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\3docean-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\3docean-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\activeden-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\activeden-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\audiojungle-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\audiojungle-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\codecanyon-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\codecanyon-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\photodune-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\photodune-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\themeforest-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\partners\\themeforest-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\user.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe-ui-default.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\photoswipe-ui-default.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\photoswipe.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\plyr.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plyr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\slimselect.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slimselect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\splide.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\splide.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
+      "PackagePath": "staticwebassets\\assets\\webfont\\fonts\\tabler-icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.ttf",
+      "PackagePath": "staticwebassets\\assets\\webfont\\fonts\\tabler-icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\webfont\\fonts\\tabler-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\webfont\\fonts\\tabler-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\assets\\webfont\\tabler-icons.min.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HotFlix.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HotFlix.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HotFlix.props",
+      "PackagePath": "build\\HotFlix.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HotFlix.props",
+      "PackagePath": "buildMultiTargeting\\HotFlix.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HotFlix.props",
+      "PackagePath": "buildTransitive\\HotFlix.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

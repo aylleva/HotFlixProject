@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\bin\Debug\net8.0\HotFlix.Domain.deps.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\bin\Debug\net8.0\HotFlix.Domain.runtimeconfig.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\bin\Debug\net8.0\HotFlix.Domain.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\bin\Debug\net8.0\HotFlix.Domain.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.AssemblyInfo.cs
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\refint\HotFlix.Domain.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\HotFlix.Domain.genruntimeconfig.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Domain\obj\Debug\net8.0\ref\HotFlix.Domain.dll

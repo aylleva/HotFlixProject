@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Application.deps.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Application.runtimeconfig.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Application.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Application.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Domain.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\bin\Debug\net8.0\HotFlix.Domain.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.AssemblyInfo.cs
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix..A6DBE213.Up2Date
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\refint\HotFlix.Application.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.genruntimeconfig.cache
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\ref\HotFlix.Application.dll

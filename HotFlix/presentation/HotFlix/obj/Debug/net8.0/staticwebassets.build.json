@@ -1,0 +1,4966 @@
+{
+  "Version": 1,
+  "Hash": "F2pHwCKBt5X0EFOE3Vg92DTi2MRPSBAmXXe+hHxEel4=",
+  "Source": "HotFlix",
+  "BasePath": "_content/HotFlix",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HotFlix\\wwwroot",
+      "Source": "HotFlix",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1nn37wxl06",
+      "Integrity": "ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h9w02eufey",
+      "Integrity": "q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\default-skin.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/default-skin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1rka5udwhc",
+      "Integrity": "c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\default-skin.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/main#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dt9ospo8qi",
+      "Integrity": "T5gJP3gGd1KxxZgeNXMHtHo1pctw0QS7YjY0rGhFrvk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.styl",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/main#[.{fingerprint}]?.styl",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lseuwckyk6",
+      "Integrity": "m8kIBqmZr5Cs0SEh7pLhr0oorw+bNKs/9exA1CQX3zc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\main.styl"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\photoswipe.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/photoswipe#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ooontt4olu",
+      "Integrity": "SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\photoswipe.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\plyr.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/plyr#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p2c17zxqsv",
+      "Integrity": "YVY0cgMlN3Yk6z5+sLnD90gFlKARWzjDwWSnReb0ATI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\plyr.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/slimselect#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hwi3etgmom",
+      "Integrity": "j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\slimselect.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css.map",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/slimselect.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l1rqm1ze10",
+      "Integrity": "l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\slimselect.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\splide.min.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/css/splide.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "824zf9r843",
+      "Integrity": "sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\splide.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\icon\\favicon-32x32.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/icon/favicon-32x32#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1dwj663ss6",
+      "Integrity": "awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icon\\favicon-32x32.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\angle-down.svg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/angle-down#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9tlmm5w6tr",
+      "Integrity": "E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\angle-down.svg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\actor__bg.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/actor__bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\actor__bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\details__bg.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/details__bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\details__bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\home__bg.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/home__bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\home__bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\section__bg.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/section__bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\section__bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-1.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/slide__bg-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\slide__bg-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-2.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/slide__bg-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\slide__bg-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-3.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/slide__bg-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\slide__bg-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/covers/interstellar#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h0unlzs38c",
+      "Integrity": "T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\covers\\interstellar.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-2.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-3.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-4.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-5.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-6.jpg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/gallery/project-6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4hanh9rwbd",
+      "Integrity": "yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery\\project-6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\logo.svg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u1wpvh91zg",
+      "Integrity": "fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\logo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\3docean-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/3docean-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qr4h0vouk4",
+      "Integrity": "Zg4//hUn0QpAJ7EGrzRzn8Ep4LCOVAnMWUfm312fbWg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\3docean-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\activeden-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/activeden-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "09c7nx8nnt",
+      "Integrity": "xBRNdQZoKysSesOXD2qDYt9VMBIInBi+y27xBs5kR0o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\activeden-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\audiojungle-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/audiojungle-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7he6lekev",
+      "Integrity": "WJeiE8YjsIyic6Yxt4DZWjW8e9GEg4BYAEvyaqgjO50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\audiojungle-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\codecanyon-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/codecanyon-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uovn9b6udm",
+      "Integrity": "0mpo/57FhxWuK/Gd1pbix2uTF6mt69Yn5sS6M9Pk4uk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\codecanyon-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\photodune-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/photodune-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tcqmu36do4",
+      "Integrity": "E2fD7Q/TrkTDUplx6odRz0cn5jqjrXZ1hMl5aoLAswU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\photodune-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\themeforest-light-background.png",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/partners/themeforest-light-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "62k4ii6hdz",
+      "Integrity": "ckdKidkPl1yfezqAh49YizfzuHqe2GP8gF+1umFBzM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\partners\\themeforest-light-background.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\user.svg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/user#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwejz68mog",
+      "Integrity": "1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user.svg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q4dyqoj6rx",
+      "Integrity": "Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "go5vef9xw4",
+      "Integrity": "gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\main.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n07g8vj9b2",
+      "Integrity": "eSSscM8kXKuEmmkIq8t242mR+8hcy484PGXCGiJULHQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/photoswipe.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4trr4dhvb5",
+      "Integrity": "iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\photoswipe.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe-ui-default.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/photoswipe-ui-default.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q9kb59xjh7",
+      "Integrity": "XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\photoswipe-ui-default.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\plyr.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/plyr.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2no0noriri",
+      "Integrity": "voP3sbDhk+YDZKsGO8dpMGk9qzne1cf3f1CRgjwRnrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\plyr.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\slimselect.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/slimselect.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i8na1zelki",
+      "Integrity": "3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\slimselect.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\smooth-scrollbar.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/smooth-scrollbar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5h5430riiq",
+      "Integrity": "uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\splide.min.js",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/js/splide.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rp5un6rmdj",
+      "Integrity": "b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\splide.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/webfont/fonts/tabler-icons#[.{fingerprint}]?.eot",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6k3ekiuf3",
+      "Integrity": "6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.ttf",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/webfont/fonts/tabler-icons#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4brerv2kwh",
+      "Integrity": "wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\webfont\\fonts\\tabler-icons.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/webfont/fonts/tabler-icons#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rdf8b3dire",
+      "Integrity": "3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff2",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/webfont/fonts/tabler-icons#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0353vuqoah",
+      "Integrity": "hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\tabler-icons.min.css",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/webfont/tabler-icons.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qo295kgtd4",
+      "Integrity": "2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\webfont\\tabler-icons.min.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/css/bootstrap.min.1nn37wxl06.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1nn37wxl06"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/bootstrap.min.css.h9w02eufey.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9w02eufey"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/default-skin.1rka5udwhc.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\default-skin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1rka5udwhc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/default-skin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/default-skin.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\default-skin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/main.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T5gJP3gGd1KxxZgeNXMHtHo1pctw0QS7YjY0rGhFrvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 16:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T5gJP3gGd1KxxZgeNXMHtHo1pctw0QS7YjY0rGhFrvk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/main.dt9ospo8qi.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T5gJP3gGd1KxxZgeNXMHtHo1pctw0QS7YjY0rGhFrvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 16:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt9ospo8qi"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T5gJP3gGd1KxxZgeNXMHtHo1pctw0QS7YjY0rGhFrvk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/main.lseuwckyk6.styl",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.styl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m8kIBqmZr5Cs0SEh7pLhr0oorw+bNKs/9exA1CQX3zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 16:41:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lseuwckyk6"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/main.styl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m8kIBqmZr5Cs0SEh7pLhr0oorw+bNKs/9exA1CQX3zc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/main.styl",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\main.styl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m8kIBqmZr5Cs0SEh7pLhr0oorw+bNKs/9exA1CQX3zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 16:41:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m8kIBqmZr5Cs0SEh7pLhr0oorw+bNKs/9exA1CQX3zc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/photoswipe.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\photoswipe.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/photoswipe.ooontt4olu.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\photoswipe.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ooontt4olu"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/photoswipe.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/plyr.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\plyr.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YVY0cgMlN3Yk6z5+sLnD90gFlKARWzjDwWSnReb0ATI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YVY0cgMlN3Yk6z5+sLnD90gFlKARWzjDwWSnReb0ATI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/plyr.p2c17zxqsv.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\plyr.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YVY0cgMlN3Yk6z5+sLnD90gFlKARWzjDwWSnReb0ATI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p2c17zxqsv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/plyr.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YVY0cgMlN3Yk6z5+sLnD90gFlKARWzjDwWSnReb0ATI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/slimselect.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/slimselect.css.l1rqm1ze10.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1rqm1ze10"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/slimselect.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/slimselect.css.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/slimselect.hwi3etgmom.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\slimselect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwi3etgmom"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/slimselect.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/splide.min.824zf9r843.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\splide.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Feb 2022 19:17:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "824zf9r843"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/splide.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/splide.min.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\splide.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Feb 2022 19:17:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon/favicon-32x32.1dwj663ss6.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\icon\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1dwj663ss6"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/icon/favicon-32x32.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/icon/favicon-32x32.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\icon\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/angle-down.9tlmm5w6tr.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\angle-down.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Oct 2023 15:26:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9tlmm5w6tr"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/angle-down.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/angle-down.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\angle-down.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Oct 2023 15:26:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/actor__bg.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\actor__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/actor__bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/actor__bg.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\actor__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/details__bg.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\details__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:32:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/details__bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/details__bg.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\details__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:32:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/home__bg.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\home__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/home__bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/home__bg.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\home__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/section__bg.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\section__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:32:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/section__bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/section__bg.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\section__bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:32:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-1.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/slide__bg-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-1.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:30:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-2.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:31:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/slide__bg-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-2.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:31:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-3.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:31:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/slide__bg-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/slide__bg-3.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:31:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/covers/interstellar.h0unlzs38c.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "336255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 16:52:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h0unlzs38c"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/covers/interstellar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/covers/interstellar.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "336255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 16:52:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-1.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-1.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-2.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-2.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-3.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-3.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-4.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-4.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-5.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-5.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-6.4hanh9rwbd.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/gallery/project-6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/gallery/project-6.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:33:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/logo.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/logo.u1wpvh91zg.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u1wpvh91zg"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/3docean-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\3docean-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zg4//hUn0QpAJ7EGrzRzn8Ep4LCOVAnMWUfm312fbWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zg4//hUn0QpAJ7EGrzRzn8Ep4LCOVAnMWUfm312fbWg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/3docean-light-background.qr4h0vouk4.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\3docean-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zg4//hUn0QpAJ7EGrzRzn8Ep4LCOVAnMWUfm312fbWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qr4h0vouk4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/3docean-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zg4//hUn0QpAJ7EGrzRzn8Ep4LCOVAnMWUfm312fbWg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/activeden-light-background.09c7nx8nnt.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\activeden-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8017"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBRNdQZoKysSesOXD2qDYt9VMBIInBi+y27xBs5kR0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "09c7nx8nnt"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/activeden-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBRNdQZoKysSesOXD2qDYt9VMBIInBi+y27xBs5kR0o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/activeden-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\activeden-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8017"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBRNdQZoKysSesOXD2qDYt9VMBIInBi+y27xBs5kR0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBRNdQZoKysSesOXD2qDYt9VMBIInBi+y27xBs5kR0o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/audiojungle-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\audiojungle-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJeiE8YjsIyic6Yxt4DZWjW8e9GEg4BYAEvyaqgjO50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJeiE8YjsIyic6Yxt4DZWjW8e9GEg4BYAEvyaqgjO50="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/audiojungle-light-background.s7he6lekev.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\audiojungle-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJeiE8YjsIyic6Yxt4DZWjW8e9GEg4BYAEvyaqgjO50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7he6lekev"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/audiojungle-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJeiE8YjsIyic6Yxt4DZWjW8e9GEg4BYAEvyaqgjO50="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/codecanyon-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\codecanyon-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0mpo/57FhxWuK/Gd1pbix2uTF6mt69Yn5sS6M9Pk4uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0mpo/57FhxWuK/Gd1pbix2uTF6mt69Yn5sS6M9Pk4uk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/codecanyon-light-background.uovn9b6udm.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\codecanyon-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0mpo/57FhxWuK/Gd1pbix2uTF6mt69Yn5sS6M9Pk4uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uovn9b6udm"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/codecanyon-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0mpo/57FhxWuK/Gd1pbix2uTF6mt69Yn5sS6M9Pk4uk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/photodune-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\photodune-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9268"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E2fD7Q/TrkTDUplx6odRz0cn5jqjrXZ1hMl5aoLAswU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E2fD7Q/TrkTDUplx6odRz0cn5jqjrXZ1hMl5aoLAswU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/photodune-light-background.tcqmu36do4.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\photodune-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9268"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E2fD7Q/TrkTDUplx6odRz0cn5jqjrXZ1hMl5aoLAswU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tcqmu36do4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/photodune-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E2fD7Q/TrkTDUplx6odRz0cn5jqjrXZ1hMl5aoLAswU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/themeforest-light-background.62k4ii6hdz.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\themeforest-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckdKidkPl1yfezqAh49YizfzuHqe2GP8gF+1umFBzM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "62k4ii6hdz"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/partners/themeforest-light-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckdKidkPl1yfezqAh49YizfzuHqe2GP8gF+1umFBzM0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/partners/themeforest-light-background.png",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\partners\\themeforest-light-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckdKidkPl1yfezqAh49YizfzuHqe2GP8gF+1umFBzM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckdKidkPl1yfezqAh49YizfzuHqe2GP8gF+1umFBzM0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user.cwejz68mog.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwejz68mog"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user.svg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.js.go5vef9xw4.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "go5vef9xw4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/bootstrap.bundle.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.q4dyqoj6rx.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q4dyqoj6rx"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/bootstrap.bundle.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/main.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eSSscM8kXKuEmmkIq8t242mR+8hcy484PGXCGiJULHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Feb 2024 14:48:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eSSscM8kXKuEmmkIq8t242mR+8hcy484PGXCGiJULHQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/main.n07g8vj9b2.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eSSscM8kXKuEmmkIq8t242mR+8hcy484PGXCGiJULHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Feb 2024 14:48:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n07g8vj9b2"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eSSscM8kXKuEmmkIq8t242mR+8hcy484PGXCGiJULHQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/photoswipe.min.4trr4dhvb5.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4trr4dhvb5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/photoswipe.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/photoswipe.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/photoswipe-ui-default.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe-ui-default.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/photoswipe-ui-default.min.q9kb59xjh7.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\photoswipe-ui-default.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q9kb59xjh7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/photoswipe-ui-default.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/plyr.min.2no0noriri.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\plyr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"voP3sbDhk+YDZKsGO8dpMGk9qzne1cf3f1CRgjwRnrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2no0noriri"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/plyr.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-voP3sbDhk+YDZKsGO8dpMGk9qzne1cf3f1CRgjwRnrk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/plyr.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\plyr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"voP3sbDhk+YDZKsGO8dpMGk9qzne1cf3f1CRgjwRnrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-voP3sbDhk+YDZKsGO8dpMGk9qzne1cf3f1CRgjwRnrk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/slimselect.min.i8na1zelki.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\slimselect.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8na1zelki"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/slimselect.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/slimselect.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\slimselect.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/smooth-scrollbar.5h5430riiq.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\smooth-scrollbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 08:25:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5h5430riiq"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/smooth-scrollbar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/smooth-scrollbar.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\smooth-scrollbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 08:25:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/splide.min.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\splide.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Feb 2022 19:14:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/splide.min.rp5un6rmdj.js",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\splide.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Feb 2022 19:14:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rp5un6rmdj"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/splide.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.0353vuqoah.woff2",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0353vuqoah"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/webfont/fonts/tabler-icons.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.4brerv2kwh.ttf",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4brerv2kwh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/webfont/fonts/tabler-icons.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.eot",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.g6k3ekiuf3.eot",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6k3ekiuf3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/webfont/fonts/tabler-icons.eot"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.rdf8b3dire.woff",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rdf8b3dire"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/webfont/fonts/tabler-icons.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.ttf",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.woff",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/fonts/tabler-icons.woff2",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/tabler-icons.min.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\tabler-icons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/webfont/tabler-icons.min.qo295kgtd4.css",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\tabler-icons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qo295kgtd4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/webfont/tabler-icons.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="
+        }
+      ]
+    }
+  ]
+}
