@@ -1,0 +1,94 @@
+﻿@using HotFlix.Application.ViewModels
+@{
+	Layout = null;
+}
+@model LoginVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/assets/css/splide.min.css">
+	<link rel="stylesheet" href="~/assets/css/slimselect.css">
+	<link rel="stylesheet" href="~/assets/css/plyr.css">
+	<link rel="stylesheet" href="~/assets/css/photoswipe.css">
+	<link rel="stylesheet" href="~/assets/css/default-skin.css">
+	<link rel="stylesheet" href="~/assets/css/main.css">
+
+	<!-- Icon font -->
+	<link rel="stylesheet" href="~/assets/webfont/tabler-icons.min.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="~/assets/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="~/assets/icon/favicon-32x32.png">
+
+	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>HotFlix – Online Movies, TV Shows & Cinema HTML Template</title>
+</head>
+
+<body>
+	<div class="sign section--bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="sign__content">
+						<!-- authorization form -->
+						<form method="post" class="sign__form">
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+							<a href="index.html" class="sign__logo">
+								<img src="~/assets/img/logo.svg" alt="">
+							</a>
+
+							<div class="sign__group">
+								<input asp-for="UsernameOrEmail" class="sign__input" placeholder="Username Or Email">
+								<label asp-for="UsernameOrEmail"></label>
+								<span class="text-danger" asp-validation-for="UsernameOrEmail"></span>
+							</div>
+
+							<div class="sign__group">
+								<input asp-for="Password" class="sign__input" placeholder="Password">
+								<label asp-for="Password"></label>
+								<span class="text-danger" asp-validation-for="Password"></span>
+							</div>
+							<div class="sign__group sign__group--checkbox">
+								<input id="remember" name="remember" type="checkbox" checked="checked">
+								<label for="remember">Remember Me</label>
+							</div>
+
+							<button class="sign__btn" type="submit">Sign in</button>
+
+							<span class="sign__delimiter">or</span>
+
+							<div class="sign__social">
+								<a class="fb" href="#">Sign in with<i class="ti ti-brand-facebook"></i></a>
+								<a class="gl" value="" asp-controller="account" asp-action="loginwithgoogle">Sign in with<i class="ti ti-brand-google"></i></a>
+							</div>
+
+							<span class="sign__text">Don't have an account? <a asp-controller="account" asp-action="register">Sign up!</a></span>
+							<span class="sign__text"><a href="forgot.html">Forgot password?</a></span>
+
+							<span class="sign__text">Go Home <a asp-controller="home" asp-action="index">Home</a></span>
+						</form>
+						<!-- end authorization form -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="~/assets/js/bootstrap.bundle.min.js"></script>
+	<script src="~/assets/js/splide.min.js"></script>
+	<script src="~/assets/js/slimselect.min.js"></script>
+	<script src="~/assets/js/smooth-scrollbar.js"></script>
+	<script src="~/assets/js/plyr.min.js"></script>
+	<script src="~/assets/js/photoswipe.min.js"></script>
+	<script src="~/assets/js/photoswipe-ui-default.min.js"></script>
+	<script src="~/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -42,12 +44,13 @@
 						<ul class="header__nav">
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" role="button"  aria-expanded="false" asp-controller="home" asp-action="index">Home <i class="ti ti-chevron-down"></i></a>
+								<a class="header__nav-link" role="button"  aria-expanded="false" asp-controller="home" asp-action="index">@localizer["Home"]</a>
 							</li>
+						
 							<!-- end dropdown -->
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link"  role="button"  aria-expanded="false" asp-controller="catalog" asp-action="index">Catalog <i class="ti ti-chevron-down"></i></a>
+								<a class="header__nav-link" role="button" aria-expanded="false" asp-controller="catalog" asp-action="index">@localizer["Catalog"]</a>
 
 								@* <ul class="dropdown-menu header__dropdown-menu">
 									<li><a href="catalog.html">Catalog style 1</a></li>
@@ -68,25 +71,13 @@
 
 								<ul class="dropdown-menu header__dropdown-menu">
 									<li><a asp-controller="about" asp-action="index">About Us</a></li>
-									<li><a asp-controller="profile" asp-action="index">Profile</a></li>
 									<li><a asp-controller="contact" asp-action="index">Contacts</a></li>
 									<li><a asp-controller="helpcenter" asp-action="index">Help center</a></li>
 									<li><a asp-controller="privacy" asp-action="index">Privacy policy</a></li>
 								</ul>
 							</li>
 							<!-- end dropdown -->
-							<!-- dropdown -->
-							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-link--more" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti ti-dots"></i></a>
-
-								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="signin.html">Sign in</a></li>
-									<li><a href="signup.html">Sign up</a></li>
-									<li><a href="forgot.html">Forgot password</a></li>
-									<li><a href="404.html">404 Page</a></li>
-								</ul>
-							</li>
-							<!-- end dropdown -->
+							
 						</ul>
 						<!-- end header nav -->
 						<!-- header auth -->
@@ -110,27 +101,39 @@
 								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN <i class="ti ti-chevron-down"></i></a>
 
 								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="#">English</a></li>
-									<li><a href="#">Spanish</a></li>
-									<li><a href="#">French</a></li>
+									<li><a asp-controller="home" asp-action="changelanguage" asp-route-lang="en">English</a></li>
+									<li><a asp-controller="home" asp-action="changelanguage" asp-route-lang="tr">Turkish</a></li>
+									
 								</ul>
 							</div>
 							<!-- end dropdown -->
 							<!-- dropdown -->
-							<div class="header__profile">
-								<a class="header__sign-in header__sign-in--user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<i class="ti ti-user"></i>
-									<span>Nickname</span>
-								</a>
+							@if(User.Identity.IsAuthenticated){
+								<div class="header__profile">
+									<a class="header__sign-in header__sign-in--user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="ti ti-user"></i>
+										<span>@User.Identity.Name</span>
+									</a>
 
-								<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
-									<li><a href="profile.html"><i class="ti ti-ghost"></i>Profile</a></li>
-									<li><a href="profile.html"><i class="ti ti-stereo-glasses"></i>Subscription</a></li>
-									<li><a href="profile.html"><i class="ti ti-bookmark"></i>Favorites</a></li>
-									<li><a href="profile.html"><i class="ti ti-settings"></i>Settings</a></li>
-									<li><a href="#"><i class="ti ti-logout"></i>Logout</a></li>
+									<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
+										<li><a asp-controller="profile" asp-action="index"><i class="ti ti-ghost"></i>Profile</a></li>
+										<li><a asp-controller="account" asp-action="logout"><i class="ti ti-logout"></i>Logout</a></li>
+									</ul>
+								</div>
+							}
+							else{
+								<ul>
+									<li class="header__nav-item">
+										<a class="header__nav-link header__nav-link--more" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account<i class="ti ti-chevron-down"></i></a>
+
+										<ul class="dropdown-menu header__dropdown-menu">
+											<li><a asp-controller="account" asp-action="login">Sign in</a></li>
+											<li><a asp-controller="account" asp-action="register">Sign up</a></li>
+										</ul>
+									</li>
 								</ul>
-							</div>
+
+							}
 							<!-- end dropdown -->
 						</div>
 						<!-- end header auth -->

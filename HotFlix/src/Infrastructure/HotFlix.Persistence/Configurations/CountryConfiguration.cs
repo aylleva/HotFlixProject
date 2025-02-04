@@ -14,6 +14,7 @@ namespace HotFlix.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Country> builder)
         {
             builder.Property(x => x.Name).IsRequired().HasColumnType("nvarchar(200)");
+            builder.HasIndex(x => x.Name).IsUnique();
         }
     }
 }

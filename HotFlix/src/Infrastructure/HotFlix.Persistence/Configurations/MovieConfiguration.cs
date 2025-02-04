@@ -14,7 +14,6 @@ namespace HotFlix.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Movie> builder)
         {
             builder.Property(x => x.Name).IsRequired().HasColumnType("nvarchar(200)");
-            builder.Property(x => x.Description).IsRequired().HasColumnType("nvarchar(1000)");
             builder.Property(x => x.RunningTime).IsRequired().HasColumnType("nvarchar(30)");
         }
     }

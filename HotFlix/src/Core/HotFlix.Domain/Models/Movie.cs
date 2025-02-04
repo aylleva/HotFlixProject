@@ -10,6 +10,8 @@ namespace HotFlix.Domain.Models
         public string RunningTime{  get; set; }
         public string Image {  get; set; }
         public string TrailerUrl { get; set; }
+        
+        public string VideoUrl {  get; set; }
 
         //relational
         public ICollection<MovieTags> MovieTags { get; set; }
@@ -18,8 +20,7 @@ namespace HotFlix.Domain.Models
         public ICollection<MovieActors> MovieActors { get; set; }
         public Country Country { get; set; }
         public ICollection<Comment> Comments { get; set; }
-        public ICollection<MovieVideos> Videos { get; set; }
-       
+        public ICollection<Season>? Seasons { get; set; }
 
     }
 }

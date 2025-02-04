@@ -49,36 +49,40 @@
       "PackagePath": "staticwebassets\\assets\\img\\angle-down.svg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\actor__bg.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\actor__bg.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\details__bg.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\details__bg.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\home__bg.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\home__bg.jpg"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\section__bg.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\section__bg.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-1.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\alice in borderland.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\alice in borderland.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-2.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-2.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\batman.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\batman.jpeg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\slide__bg-3.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\slide__bg-3.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\inception.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\inception.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\covers\\interstellar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\martian.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\martian.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\oppenhaimer.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\oppenhaimer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\squidgame.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\squidgame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\texascrime.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\texascrime.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",

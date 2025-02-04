@@ -17,3 +17,4 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Persiste
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Persistence\obj\Debug\net8.0\HotFlix.Persistence.pdb
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Persistence\obj\Debug\net8.0\HotFlix.Persistence.genruntimeconfig.cache
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Persistence\obj\Debug\net8.0\ref\HotFlix.Persistence.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Persistence\obj\Debug\net8.0\HotFlix.Persistence.sourcelink.json

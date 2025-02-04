@@ -1,0 +1,36 @@
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HotFlix.Infrastructure.ServiceRegistration
+{
+    public static class ServiceRegistration
+    {
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services,IConfiguration configuration)
+        {
+            services.AddAuthentication(option =>
+            {
+                option.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                option.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+                option.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                
+            }).AddCookie()
+            .AddGoogle(GoogleDefaults.AuthenticationScheme, option =>
+            {
+                option.ClientId = configuration.GetSection("GoogleKeys:ClientId").Value;
+                option.ClientSecret = configuration.GetSection("GoogleKeys:ClientSecret").Value;
+              
+            });
+    
+            return services;    
+        }
+
+    }
+}

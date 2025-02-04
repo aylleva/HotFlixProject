@@ -15,3 +15,4 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\De
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.pdb
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.genruntimeconfig.cache
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\ref\HotFlix.Application.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Core\HotFlix.Application\obj\Debug\net8.0\HotFlix.Application.sourcelink.json

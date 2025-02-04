@@ -10,14 +10,15 @@ wwwroot\assets\css\slimselect.css.map
 wwwroot\assets\css\splide.min.css
 wwwroot\assets\icon\favicon-32x32.png
 wwwroot\assets\img\angle-down.svg
-wwwroot\assets\img\bg\actor__bg.jpg
-wwwroot\assets\img\bg\details__bg.jpg
-wwwroot\assets\img\bg\home__bg.jpg
 wwwroot\assets\img\bg\section__bg.jpg
-wwwroot\assets\img\bg\slide__bg-1.jpg
-wwwroot\assets\img\bg\slide__bg-2.jpg
-wwwroot\assets\img\bg\slide__bg-3.jpg
+wwwroot\assets\img\covers\alice in borderland.jpg
+wwwroot\assets\img\covers\batman.jpeg
+wwwroot\assets\img\covers\inception.jpeg
 wwwroot\assets\img\covers\interstellar.jpg
+wwwroot\assets\img\covers\martian.jpeg
+wwwroot\assets\img\covers\oppenhaimer.jpg
+wwwroot\assets\img\covers\squidgame.jpg
+wwwroot\assets\img\covers\texascrime.jpeg
 wwwroot\assets\img\gallery\project-1.jpg
 wwwroot\assets\img\gallery\project-2.jpg
 wwwroot\assets\img\gallery\project-3.jpg

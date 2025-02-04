@@ -3,6 +3,9 @@ using HotFlix.Persistence.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using HotFlix.Domain.Models;
+using HotFlix.Application.Abstraction.Services;
+using HotFlix.Persistence.Implementations.Services;
 
 
 namespace HotFlix.Persistence.ServiceRegistration
@@ -14,6 +17,22 @@ namespace HotFlix.Persistence.ServiceRegistration
             services.AddDbContext<AppDbContext>(opt =>
             opt.UseSqlServer(configuration.GetConnectionString("Default"))
             );
+
+           services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireNonAlphanumeric = false;
+
+
+                opt.User.RequireUniqueEmail = true;
+
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+                opt.Lockout.AllowedForNewUsers = true;
+            }
+          ).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            services.AddScoped<AppDbContextInitializer>();
             
             return services;
         }

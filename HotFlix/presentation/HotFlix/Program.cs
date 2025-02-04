@@ -1,8 +1,14 @@
+using HotFlix.Application.Abstraction.Services;
 using HotFlix.Domain.Models;
+using HotFlix.Infrastructure.ServiceRegistration;
 using HotFlix.Persistence.DAL;
+using HotFlix.Persistence.Implementations.Services;
 using HotFlix.Persistence.ServiceRegistration;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Razor;
 using System;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 namespace HotFlix
 {
@@ -11,27 +17,43 @@ namespace HotFlix
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
-            builder.Services.AddPersistenceServices(builder.Configuration);
-
-            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            builder.Services.AddLocalization(opt =>
             {
-                opt.Password.RequiredLength = 8;
-                opt.Password.RequireNonAlphanumeric = false;
+                opt.ResourcesPath = "Resources";
+            });
+            builder.Services.Configure<RequestLocalizationOptions>(opt =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("en-US"),
+                    new CultureInfo("tr-TR")
+                };
+                opt.DefaultRequestCulture = new RequestCulture("en-US");
+                opt.SupportedCultures = supportedCultures;
+            });
+           
 
+            builder.Services.AddPersistenceServices(builder.Configuration)
+                .AddInfrastructureServices(builder.Configuration);
 
-                opt.User.RequireUniqueEmail = true;
-
-                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-                opt.Lockout.MaxFailedAccessAttempts = 3;
-                opt.Lockout.AllowedForNewUsers = true;
-            }
-          ).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
             var app = builder.Build();
+            app.UseRequestLocalization();
+
+            using(var scope = app.Services.CreateScope())
+            {
+                var initialize=scope.ServiceProvider.GetRequiredService<AppDbContextInitializer>();
+                initialize.InitializeDatabase().Wait();
+                initialize.CreateRoles().Wait();
+                initialize.CreateAdmin().Wait();
+            }
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+           
 
             app.UseStaticFiles();
 
