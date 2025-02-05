@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Abstraction\Repositories\" />
-    <Folder Include="Automapper\" />
     <Folder Include="ServiceRegistration\" />
   </ItemGroup>
 

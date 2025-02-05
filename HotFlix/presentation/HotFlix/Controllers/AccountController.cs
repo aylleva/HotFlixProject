@@ -5,6 +5,7 @@ using HotFlix.Domain.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,7 @@ namespace HotFlix.Controllers
 {
     public class AccountController : Controller
     {
-     
+
         private readonly UserManager<AppUser> _usermeneger;
         private readonly SignInManager<AppUser> _signinuser;
 
@@ -54,19 +55,21 @@ namespace HotFlix.Controllers
             }
 
             await _usermeneger.AddToRoleAsync(user, UserRoles.Member.ToString());
-            await _signinuser.SignInAsync(user,false);
-            return RedirectToAction(nameof(HomeController.Index), "Home", new {Area=" "});
+            await _signinuser.SignInAsync(user, false);
+            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
         }
 
-        public  IActionResult Login()
+        public IActionResult Login()
         {
             return View();
+
         }
         [HttpPost]
-        public async Task<IActionResult> Login(LoginVM uservm,string? returnUrl)
+        public async Task<IActionResult> Login(LoginVM uservm, string? returnUrl)
         {
             if (!ModelState.IsValid)
             {
+                uservm.ExternalLogins=await _signinuser.GetExternalAuthenticationSchemesAsync();
                 return View();
             }
 
@@ -95,92 +98,37 @@ namespace HotFlix.Controllers
             }
             return Redirect(returnUrl);
         }
-          public async Task LoginWithGoogle()
-        {
-            await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme,
-                new AuthenticationProperties
-                {
-                    RedirectUri = Url.Action("GoogleResponse")
-                });
 
-        }
-        public async Task<IActionResult> GoogleResponse()
-        {
-            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-            var claims = result.Principal.Identities.FirstOrDefault().Claims.Select(claim => new
-            {
-                claim.Issuer,
-                claim.OriginalIssuer,
-                claim.Value,
-                claim.Type
-            });
-            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-        }
-
-
-        public async Task<IActionResult> Logout()
-        {
-            await _signinuser.SignOutAsync();
-            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-        }
-        //public async Task<IActionResult> LoginWithGoogle(string provider, string returnUrl = "")
-        //   {
-        //       var redirectUrl = Url.Action("ExternalLogin", "Account", new { ReturnUrl = returnUrl });
-
-        //       var properties = _signinuser.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
-
-        //       return new ChallengeResult(provider, properties);
-        //   }
-
-        //public async Task<IActionResult> ExternalLogin(string returnUrl = "", string remoteerror = "")
+        //[Route("google-login")]
+        //public IActionResult LoginWithGoogle()
         //{
-        //    LoginVM loginVM = new LoginVM()
+        //    var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleResponse") };
+        //    return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        //}
+
+        //[Route("google-response")]
+        //public async Task<IActionResult> GoogleResponse()
+        //{
+        //   var result=await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+        //    var claims = result.Principal.Identities.FirstOrDefault().Claims.Select(claim => new
         //    {
-        //        Schemes = await _signinuser.GetExternalAuthenticationSchemesAsync()
-        //    };
+        //        claim.Issuer,
+        //        claim.OriginalIssuer,
+        //        claim.Value,
+        //        claim.Type
+        //    });
+        //    //return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
+        //    return Json(claims);
+        //}
 
-        //    if (!string.IsNullOrEmpty(remoteerror))
-        //    {
-        //        ModelState.AddModelError(string.Empty, $"{remoteerror}");
-        //        return View("Login", loginVM);
-        //    }
+        //public async Task<IActionResult> Logout()
+        //{
+        //    await _signinuser.SignOutAsync();
+        //    return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
+        //}
 
-        //    var info = await _signinuser.GetExternalLoginInfoAsync();
-        //    if (info == null)
-        //    {
-        //        ModelState.AddModelError(string.Empty, $"{remoteerror}");
-        //        return View("Login", loginVM);
-        //    }
-
-        //    var result = await _signinuser.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey,
-        //        false, true);
-        //    if (!result.Succeeded)
-        //    {
-        //        var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-        //        if (!string.IsNullOrEmpty(email))
-        //        {
-        //            var user = await _usermeneger.FindByEmailAsync(email);
-
-        //            if (user is null)
-        //            {
-        //                var newuser = new AppUser()
-        //                {
-        //                    Name = email,
-        //                    Surname = email,
-        //                    Email = email,
-        //                    UserName = email
-        //                };
-        //                await _usermeneger.CreateAsync(user);
-        //                await _usermeneger.AddToRoleAsync(user, UserRoles.Member.ToString());
-        //            }
-        //            await _signinuser.SignInAsync(user, false);
-
-        //            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-        //        }
-
-        //    }
-        //    ModelState.AddModelError(string.Empty, "Ups!Something is wrong!");
-        //    return View("Login", loginVM);
     }
-    }
+
+
+}

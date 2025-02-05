@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC64EE6-ABA5-4871-A9B9-594C9A97306D}|presentation\\HotFlix\\HotFlix.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\presentation\\hotflix\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEC64EE6-ABA5-4871-A9B9-594C9A97306D}|presentation\\HotFlix\\HotFlix.csproj|solutionrelative:presentation\\hotflix\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\src\\infrastructure\\hotflix.persistence\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|solutionrelative:src\\infrastructure\\hotflix.persistence\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\src\\infrastructure\\hotflix.persistence\\implementations\\services\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|solutionrelative:src\\infrastructure\\hotflix.persistence\\implementations\\services\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\src\\infrastructure\\hotflix.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35759644-0FE7-4F61-A534-841D19F0339A}|src\\Infrastructure\\HotFlix.Persistence\\HotFlix.Persistence.csproj|solutionrelative:src\\infrastructure\\hotflix.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3504BF0-19BB-4EE6-AEB8-59BC1CC1A756}|src\\Core\\HotFlix.Domain\\HotFlix.Domain.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\src\\core\\hotflix.domain\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3504BF0-19BB-4EE6-AEB8-59BC1CC1A756}|src\\Core\\HotFlix.Domain\\HotFlix.Domain.csproj|solutionrelative:src\\core\\hotflix.domain\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6CF31FD-BD05-4E28-BE0F-618548E308CF}|src\\Core\\HotFlix.Application\\HotFlix.Application.csproj|c:\\users\\user\\desktop\\hotflixproject\\hotflix\\src\\core\\hotflix.application\\abstraction\\services\\ilayoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6CF31FD-BD05-4E28-BE0F-618548E308CF}|src\\Core\\HotFlix.Application\\HotFlix.Application.csproj|solutionrelative:src\\core\\hotflix.application\\abstraction\\services\\ilayoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\ServiceRegistration\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\HotFlix.Persistence\\ServiceRegistration\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\ServiceRegistration\\ServiceRegistration.cs",
+              "RelativeToolTip": "src\\Infrastructure\\HotFlix.Persistence\\ServiceRegistration\\ServiceRegistration.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T17:04:33.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "presentation\\HotFlix\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "presentation\\HotFlix\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAswGkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T17:00:04.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\DAL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\HotFlix.Persistence\\DAL\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\DAL\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\HotFlix.Persistence\\DAL\\AppDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:57:16.965Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Core\\HotFlix.Domain\\Models\\Setting.cs",
+              "RelativeDocumentMoniker": "src\\Core\\HotFlix.Domain\\Models\\Setting.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Core\\HotFlix.Domain\\Models\\Setting.cs",
+              "RelativeToolTip": "src\\Core\\HotFlix.Domain\\Models\\Setting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:56:48.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LayoutService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\Implementations\\Services\\LayoutService.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\HotFlix.Persistence\\Implementations\\Services\\LayoutService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Infrastructure\\HotFlix.Persistence\\Implementations\\Services\\LayoutService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\HotFlix.Persistence\\Implementations\\Services\\LayoutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:54:24.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILayoutService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Core\\HotFlix.Application\\Abstraction\\Services\\ILayoutService.cs",
+              "RelativeDocumentMoniker": "src\\Core\\HotFlix.Application\\Abstraction\\Services\\ILayoutService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\src\\Core\\HotFlix.Application\\Abstraction\\Services\\ILayoutService.cs",
+              "RelativeToolTip": "src\\Core\\HotFlix.Application\\Abstraction\\Services\\ILayoutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:52:57.871Z",
+              "EditorCaption": ""
             }
           ]
         }

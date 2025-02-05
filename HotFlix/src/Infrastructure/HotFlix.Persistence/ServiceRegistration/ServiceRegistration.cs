@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using HotFlix.Domain.Models;
 using HotFlix.Application.Abstraction.Services;
 using HotFlix.Persistence.Implementations.Services;
+using System.Reflection;
 
 
 namespace HotFlix.Persistence.ServiceRegistration
@@ -15,10 +16,10 @@ namespace HotFlix.Persistence.ServiceRegistration
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services,IConfiguration configuration)
         {
             services.AddDbContext<AppDbContext>(opt =>
-            opt.UseSqlServer(configuration.GetConnectionString("Default"))
-            );
-
-           services.AddIdentity<AppUser, IdentityRole>(opt =>
+            opt.UseSqlServer(configuration.GetConnectionString("Default"),
+             m => m.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName)
+            ));
+            services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
                 opt.Password.RequiredLength = 8;
                 opt.Password.RequireNonAlphanumeric = false;
@@ -33,6 +34,7 @@ namespace HotFlix.Persistence.ServiceRegistration
           ).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
             services.AddScoped<AppDbContextInitializer>();
+            services.AddScoped<ILayoutService,LayoutService>();
             
             return services;
         }

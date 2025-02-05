@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace HotFlix
 {
@@ -34,11 +35,25 @@ namespace HotFlix
                 opt.DefaultRequestCulture = new RequestCulture("en-US");
                 opt.SupportedCultures = supportedCultures;
             });
-           
 
-            builder.Services.AddPersistenceServices(builder.Configuration)
-                .AddInfrastructureServices(builder.Configuration);
 
+            builder.Services.AddPersistenceServices(builder.Configuration);
+
+
+            builder.Services.AddAuthentication(
+                opt =>
+                {
+                    opt.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                }
+                ).AddCookie(opt =>
+                {
+                    opt.LoginPath = "/account/google-login";
+                }).AddGoogle(opt =>
+            {
+                opt.ClientId = builder.Configuration["GoogleKeys:ClientId"];
+                opt.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
+            }
+            );
             var app = builder.Build();
             app.UseRequestLocalization();
 

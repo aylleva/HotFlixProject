@@ -1,4 +1,11 @@
-﻿<!-- page title -->
+﻿@using HotFlix.Application.Abstraction.Services
+@using HotFlix.Application.ViewModels
+@model ContactVM
+@inject ILayoutService _layoutservice
+@{
+	Dictionary<string, string> settings = await _layoutservice.GetSettings();
+}
+<!-- page title -->
 <section class="section section--first">
 	<div class="container">
 		<div class="row">
@@ -27,43 +34,49 @@
 				<div class="row">
 					<!-- section title -->
 					<div class="col-12">
+						<p>@Html.Raw(TempData["SuccesMessage"])</p>
 						<h2 class="section__title">Contact Form</h2>
 					</div>
 					<!-- end section title -->
 
 					<div class="col-12">
-						<form action="#" class="sign__form sign__form--full">
+						<form method="post" class="sign__form sign__form--full">
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 							<div class="row">
 								<div class="col-12 col-xl-6">
 									<div class="sign__group">
-										<label class="sign__label" for="firstname">Name</label>
-										<input id="firstname" type="text" name="firstname" class="sign__input" placeholder="John">
+										<label class="sign__label" asp-for="Name">Name</label>
+										<input asp-for="Name" class="sign__input" placeholder="Name">
+										<span asp-validation-for="Name" class="text-danger"></span>
 									</div>
 								</div>
 
 								<div class="col-12 col-xl-6">
 									<div class="sign__group">
-										<label class="sign__label" for="email">Email</label>
-										<input id="email" type="text" name="email" class="sign__input" placeholder="email@email.com">
+										<label class="sign__label" asp-for="Email">Email</label>
+										<input asp-for="Email" class="sign__input" placeholder="Email">
+										<span asp-validation-for="Email" class="text-danger"></span>
 									</div>
 								</div>
 
 								<div class="col-12">
 									<div class="sign__group">
-										<label class="sign__label" for="subject">Subject</label>
-										<input id="subject" type="text" name="subject" class="sign__input" placeholder="Partnership">
+										<label class="sign__label" asp-for="PartnerShip">PartnerShip</label>
+										<input asp-for="PartnerShip" class="sign__input" placeholder="PartnerShip">
+										<span asp-validation-for="PartnerShip" class="text-danger"></span>
 									</div>
 								</div>
 
 								<div class="col-12">
 									<div class="sign__group">
-										<label class="sign__label" for="message">Message</label>
-										<textarea id="message" name="message" class="sign__textarea" placeholder="Type your message..."></textarea>
+										<label class="sign__label" asp-for="Message">Message</label>
+										<textarea asp-for="Message" class="sign__textarea" placeholder="Type your message..."></textarea>
+										<span asp-validation-for="Message" class="text-danger"></span>
 									</div>
 								</div>
 
 								<div class="col-12">
-									<button type="button" class="sign__btn sign__btn--small">Send</button>
+									<button type="submit" class="sign__btn sign__btn--small">Send</button>
 								</div>
 							</div>
 						</form>
@@ -80,17 +93,17 @@
 						<p class="section__text">We are always happy to help and provide more information about our services. You can contact us through email, phone, or by filling out the form on our website. Thank you for considering us!</p>
 
 						<ul class="contacts__list">
-							<li><a href="tel:+18002345678">+1 800 234 56 78</a></li>
-							<li><a href="mailto:support@hotflix.com">support@hotflix.template</a></li>
+							<li><a href="tel:+18002345678">@settings["Number"]</a></li>
+							<li><a href="mailto:support@hotflix.com">@settings["Email"]</a></li>
 						</ul>
 
 						<div class="contacts__social">
-							<a href="#"><i class="ti ti-brand-facebook"></i></a>
-							<a href="#"><i class="ti ti-brand-x"></i></a>
+							<a href="@settings["FBLink"]"><i class="ti ti-brand-facebook"></i></a>
+							<a href="@settings["TLink"]"><i class="ti ti-brand-x"></i></a>
 							<a href="https://www.instagram.com/volkov_des1gn/" target="_blank"><i class="ti ti-brand-instagram"></i></a>
-							<a href="#"><i class="ti ti-brand-discord"></i></a>
-							<a href="#"><i class="ti ti-brand-telegram"></i></a>
-							<a href="#"><i class="ti ti-brand-tiktok"></i></a>
+							<a href="@settings["DisLink"]"><i class="ti ti-brand-discord"></i></a>
+							<a href="@settings["TelLink"]"><i class="ti ti-brand-telegram"></i></a>
+							<a href="@settings["TTLink"]"><i class="ti ti-brand-tiktok"></i></a>
 						</div>
 					</div>
 					<!-- end contacts -->

@@ -26,6 +26,8 @@ namespace HotFlix.Persistence.DAL
         public DbSet<Video> Videos { get; set; }
         public DbSet<PremiumPlan> PremiumPlans { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Setting> Settings { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

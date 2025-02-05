@@ -1,7 +1,4 @@
 ﻿@using HotFlix.Application.ViewModels
-@{
-	Layout = null;
-}
 @model LoginVM
 <!DOCTYPE html>
 <html lang="en">
@@ -64,11 +61,10 @@
 
 							<span class="sign__delimiter">or</span>
 
-							<div class="sign__social">
-								<a class="fb" href="#">Sign in with<i class="ti ti-brand-facebook"></i></a>
-								<a class="gl" value="" asp-controller="account" asp-action="loginwithgoogle">Sign in with<i class="ti ti-brand-google"></i></a>
-							</div>
-
+							 <div class="sign__social"> *
+							<a class="fb" href="#">Sign in with<i class="ti ti-brand-facebook"></i></a>
+								<a class="gl" value="" asp-controller="account" asp-action="loginwithgoogle">Sign in with<i class="ti ti-brand-google"></i></a> 
+								</div> 
 							<span class="sign__text">Don't have an account? <a asp-controller="account" asp-action="register">Sign up!</a></span>
 							<span class="sign__text"><a href="forgot.html">Forgot password?</a></span>
 
