@@ -29,19 +29,19 @@ namespace HotFlix.Controllers
 
             if(tagId is not null || tagId > 0)
             {
-                query = query.Include(q => q.MovieTags.Where(mt => mt.TagId == tagId));
+                query =query.Include(q=>q.MovieTags.Where(mt=>mt.TagId==tagId));
             }
 
             switch (ratingkey)
             {
-                case (int)RatingSort.From3:
-                    query = query.OrderBy(q => q.Rating > 3);
+                case (int)RatingSort._3:
+                    query = query.Where(q => q.Rating > 3);
                     break;
-                case (int)RatingSort.From5:
-                    query=query.OrderBy(q => q.Rating > 5);
+                case (int)RatingSort._5:
+                    query=query.Where(q => q.Rating > 5);
                     break;
-                case (int)RatingSort.From7:
-                    query=query.OrderBy(query => query.Rating > 7);
+                case (int)RatingSort._7:
+                    query=query.Where(query => query.Rating > 7);
                     break;
             }
 
@@ -58,9 +58,10 @@ namespace HotFlix.Controllers
             if (page < 1) return BadRequest();
 
             int count = _context.Movies.Count();
-            double total = Math.Ceiling((double)count / 6);
+            double total = Math.Ceiling((double)count / 2);
 
-            if(page>total) return BadRequest();
+            query = query.Skip((page - 1) * 2).Take(2);
+            if (page>total) return BadRequest();
 
             CatalogVM catalogvm = new CatalogVM
             {
@@ -82,6 +83,9 @@ namespace HotFlix.Controllers
                     Id = t.Id,
                     Name = t.Name
                 }).ToListAsync(),
+                PremierMovies=await _context.Movies.Include(m=>m.MovieTags)
+                .ThenInclude(mt=>mt.Tag).OrderBy(m=>m.Premiere).ToListAsync(),
+
                 CurrectPage = page,
                 TotalPage = total,
                 RatingKey = ratingkey,

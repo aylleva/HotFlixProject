@@ -1,5 +1,8 @@
 ﻿@using HotFlix.Application.ViewModels
 @model LoginVM
+@{
+	Layout = null;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,19 +40,17 @@
 						<!-- authorization form -->
 						<form method="post" class="sign__form">
 							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-							<a href="index.html" class="sign__logo">
+							<a asp-controller="home" asp-action="index" class="sign__logo">
 								<img src="~/assets/img/logo.svg" alt="">
 							</a>
 
 							<div class="sign__group">
 								<input asp-for="UsernameOrEmail" class="sign__input" placeholder="Username Or Email">
-								<label asp-for="UsernameOrEmail"></label>
 								<span class="text-danger" asp-validation-for="UsernameOrEmail"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="Password" class="sign__input" placeholder="Password">
-								<label asp-for="Password"></label>
 								<span class="text-danger" asp-validation-for="Password"></span>
 							</div>
 							<div class="sign__group sign__group--checkbox">

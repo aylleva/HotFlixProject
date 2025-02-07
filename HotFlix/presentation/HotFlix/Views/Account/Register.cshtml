@@ -40,44 +40,38 @@
 						<!-- registration form -->
 						<form method="post" class="sign__form">
 							<div class="text-danger" asp-validation-summary="ModelOnly"></div>
-							@* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+							
 							<a asp-controller="home" asp-action="index" class="sign__logo">
 								<img src="~/assets/img/logo.svg" alt="">
 							</a>
 
 							<div class="sign__group">
 								<input asp-for="Name" class="sign__input" placeholder="Name">
-								<label asp-for="Name"></label>
 								<span asp-validation-for="Name" class="text-danger"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="Surname" class="sign__input" placeholder="Surname">
-								<label asp-for="Surname"></label>
 								<span asp-validation-for="Surname" class="text-danger"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="UserName" class="sign__input" placeholder="UserName">
-								<label asp-for="UserName"></label>
 								<span asp-validation-for="UserName" class="text-danger"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="Email" class="sign__input" placeholder="Email">
-								<label asp-for="Email"></label>
 								<span asp-validation-for="Email" class="text-danger"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="Password" class="sign__input" placeholder="Password">
-								<label asp-for="Password"></label>
 								<span asp-validation-for="Password" class="text-danger"></span>
 							</div>
 
 							<div class="sign__group">
 								<input asp-for="ConfirmPassword" class="sign__input" placeholder="ConfirmPassword">
-								<label asp-for="ConfirmPassword"></label>
 								<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 							</div>
 

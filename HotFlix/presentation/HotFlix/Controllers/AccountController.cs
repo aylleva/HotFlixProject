@@ -69,7 +69,6 @@ namespace HotFlix.Controllers
         {
             if (!ModelState.IsValid)
             {
-                uservm.ExternalLogins=await _signinuser.GetExternalAuthenticationSchemesAsync();
                 return View();
             }
 
@@ -99,6 +98,12 @@ namespace HotFlix.Controllers
             return Redirect(returnUrl);
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await _signinuser.SignOutAsync();
+            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
+        }
+
         //[Route("google-login")]
         //public IActionResult LoginWithGoogle()
         //{
@@ -122,11 +127,7 @@ namespace HotFlix.Controllers
         //    return Json(claims);
         //}
 
-        //public async Task<IActionResult> Logout()
-        //{
-        //    await _signinuser.SignOutAsync();
-        //    return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-        //}
+
 
     }
 

@@ -15,10 +15,6 @@ namespace HotFlix.Application.ViewModels
         [MinLength(8)]
         [DataType(DataType.Password)]
         public string Password { get; set; } 
-
-        public string ReturnUrl {  get; set; }
-
-        public IEnumerable<AuthenticationScheme> ExternalLogins { get; set; }  
         
     }
 }

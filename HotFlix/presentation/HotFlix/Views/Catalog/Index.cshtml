@@ -33,70 +33,66 @@
 					<!-- end menu btn -->
 					<!-- filter desk -->
 					<div class="filter__items">
-						<select class="filter__select" onchange="this.form.submit()" asp-for="CategoryId" id="filter__genre">
-							@foreach (var category in Model.Categories)
-							{
 
-								@if (Model.CategoryId == category.Id)
-								{
-									<option selected value="@category.Id">@category.Name</option>
-								}
-								else
-								{
-									<option value="@category.Id">@category.Name</option>
-								}
-							}
-						</select>
+						<form asp-action="index" asp-route-tagid="@Model.TagId" asp-route-timekey="@Model.TimeKey" asp-route-ratingkey="@Model.RatingKey">
+							<select class="filter__select" onchange="this.form.submit()" asp-for="CategoryId" id="filter__genre"
+									asp-items="new SelectList(Model.Categories,nameof(Category.Id),nameof(Category.Name))">
+								<option selected disabled value="">All Categories</option>
+							</select>
+						</form>
+						<br>
+						<br>
+						<form asp-action="index" asp-route-categoryid="@Model.CategoryId" asp-route-timekey="@Model.TimeKey" asp-route-ratingkey="@Model.RatingKey">
+							<select class="filter__select" onchange="this.form.submit()" asp-for="TagId" id="filter__quality"
+									asp-items="new SelectList(Model.Tags,nameof(Tag.Id),nameof(Tag.Name))">
+								<option selected disabled value="">All Genres</option>
+							</select>
+						</form>
 
-						<select class="filter__select" onchange="this.form.submit()" asp-for="TagId" id="filter__quality">
-							@foreach (var tag in Model.Tags)
-							{
-								@if (Model.TagId == tag.Id)
-								{
-									<option selected value="@tag.Id">@tag.Name</option>
-								}
-								else
-								{
-									<option value="@tag.Id">@tag.Name</option>
-								}
-							}
 
-						</select>
-						<select class="filter__select" onchange="this.form.submit()" name="ratingkey" id="filter__rate">
-							
-							@foreach (var sort in Enum.GetValues(typeof(RatingSort)))
-							{
-								if (Model.RatingKey == (int)sort)
-								{
-									<option selected value="@((int)sort)">Sort @sort.ToString()</option>
-								}
-								else
-								{
-									<option value="@((int)sort)">Sort @sort.ToString()</option>
-								}
-							}
-						</select>
+						<form asp-action="index" asp-route-categoryid="@Model.CategoryId" asp-route-tagid="@Model.TagId" asp-route-timekey="@Model.TimeKey">
+							<select class="filter__select" onchange="this.form.submit()" name="ratingkey" id="filter__rate">
 
-						<select class="filter__select" onchange="this.form.submit()" name="timekey" id="filter__sort">
-							
-							@foreach (var sort in Enum.GetValues(typeof(TimeSort)))
-							{
-								if (Model.TimeKey == (int)sort)
+								@foreach (var sort in Enum.GetValues(typeof(RatingSort)))
 								{
-									<option selected value="@((int)sort)">Sort @sort.ToString()</option>
+									if (Model.RatingKey == (int)sort)
+									{
+										<option selected value="@((int)sort)">From @sort.ToString()</option>
+									}
+									else
+									{
+										<option value="@((int)sort)">From @sort.ToString()</option>
+									}
 								}
-								else
+								<option selected disabled value="">Any Ratings</option>
+							</select>
+						</form>
+						<br>
+						<br>
+						<form asp-action="index" asp-route-categoryid="@Model.CategoryId" asp-route-tagid="@Model.TagId" asp-route-ratingkey="@Model.RatingKey">
+							<select class="filter__select" onchange="this.form.submit()" name="timekey" id="filter__sort">
+								@foreach (var sort in Enum.GetValues(typeof(TimeSort)))
 								{
-									<option value="@((int)sort)">Sort @sort.ToString()</option>
+									if (Model.TimeKey == (int)sort)
+									{
+										<option selected value="@((int)sort)">Sort @sort.ToString()</option>
+									}
+									else
+									{
+										<option value="@((int)sort)">Sort @sort.ToString()</option>
+									}
 								}
-							}
-						</select>
+								<option selected disabled value="">Relevance</option>
+							</select>
+						</form>
 
 
 					</div>
 					<!-- end filter desk -->
 					<!-- filter btn -->
-					<button class="filter__btn" type="button">Apply</button>
+					<button class="filter__btn" asp-action="index" asp-route-categoryId="@Model.CategoryId" asp-route-tagId="@Model.TagId"
+					asp-route-ratingkey="@Model.RatingKey" asp-route-timekey="@Model.TimeKey"
+					type="submit">Apply</button>
 					<!-- end filter btn -->
 					<!-- amount -->
 					<span class="filter__amount">Showing 18 of 1713</span>
@@ -165,17 +161,16 @@
 				<!-- end paginator mobile -->
 				<!-- paginator desktop -->
 				<ul class="paginator">
-					<li class="paginator__item paginator__item--prev">
-						<a href="#"><i class="ti ti-chevron-left"></i></a>
+					<li class="paginator__item paginator__item--prev @(Model.CurrectPage<1?"disabled":"")">
+						<a asp-route-page="@(Model.CurrectPage-1)"><i class="ti ti-chevron-left"></i></a>
 					</li>
-					<li class="paginator__item"><a href="#">1</a></li>
-					<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
-					<li class="paginator__item"><a href="#">3</a></li>
-					<li class="paginator__item"><a href="#">4</a></li>
-					<li class="paginator__item"><span>...</span></li>
-					<li class="paginator__item"><a href="#">87</a></li>
-					<li class="paginator__item paginator__item--next">
-						<a href="#"><i class="ti ti-chevron-right"></i></a>
+					@for(var i=0;i<Model.TotalPage;i++){
+						<li class="paginator__item @(Model.CurrectPage==i+1?" active disabled":"")" >
+							<a asp-route-page="@(i+1)">@(i+1)</a>
+						</li>
+					}
+					<li class="paginator__item paginator__item--next  @(Model.CurrectPage==Model.TotalPage?"disabled":"")">
+						<a asp-route-page="@(Model.CurrectPage+1)"><i class="ti ti-chevron-right"></i></a>
 					</li>
 				</ul>
 				<!-- end paginator desktop -->
@@ -208,36 +203,7 @@
 							<i class="ti ti-chevron-right"></i>
 						</button>
 					</div>
-					<div class="splide__track">
-						<ul class="splide__list">
-							@foreach (var movie in Model.Movies.OrderBy(m=>m.Premiere))
-							{
-								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="~/assets/img/covers/@movie.Image" alt="">
-											<a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--green">@movie.Rating</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>
-										@* 	<span class="item__category">
-												@foreach (var tag in Model.FirstOrDefault(m => m.Id == movie.Id).MovieTags)
-												{
-													<a href="#">@tag.Tag.Name</a>
-												}
-											</span> *@
-										</div>
-
-									</div>
-								</li>
-							}
-
-						</ul>
-					</div>
+					@Html.Partial("MoviePartialView",Model.PremierMovies)
 				</div>
 			</div>
 			<!-- end carousel -->
@@ -245,3 +211,34 @@
 	</div>
 </section>
 <!-- end section -->
+<script>
+	document.querySelector(".filter__select").addEventListener('click',function()
+	{
+		categoryId=document.getElementById('filter__genre').value;
+		tagId=document.getElementById('filter__quality').value;
+		ratingkey=document.getElementById('filter__rate').value;
+		timekey=document.getElementById('filter__sort').value;
+
+		url=`/Catalog/Index?categoryId=${categoryId}&tagId=${tagId}&ratingKey=${ratingKey}&timeKey=${timeKey}`;
+			
+	   window.location.href=url;
+	});
+
+
+</script>
+ @* fetch(url, {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+			.then(response => {
+				if (!response.ok) throw new Error('Network response was not ok');
+				return response.text();
+			})
+			.then(html => {
+
+				document.getElementById('results').innerHTML = html;
+			})
+			.catch(error => console.error('Error fetching data:', error));
+ *@

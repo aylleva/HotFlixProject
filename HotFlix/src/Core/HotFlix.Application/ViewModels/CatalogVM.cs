@@ -1,5 +1,7 @@
 ﻿
 
+using HotFlix.Domain.Models;
+
 namespace HotFlix.Application.ViewModels
 {
     public class CatalogVM
@@ -13,5 +15,6 @@ namespace HotFlix.Application.ViewModels
         public double TotalPage {  get; set; }
         public int? CategoryId {  get; set; }
         public int? TagId {  get; set; }
+        public ICollection<Movie> PremierMovies { get; set; }
     }
 }

@@ -8,8 +8,8 @@ namespace HotFlix.Domain.Enums
 {
     public enum RatingSort
     {
-        From3=1,
-        From5=2,
-        From7=3
+        _3=1,
+        _5=2,
+        _7=3
     }
 }
