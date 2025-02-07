@@ -23,7 +23,7 @@
 						</button>
 					</div>
 
-					@Html.Partial("ProductPartialView",Model.NewMovies)
+					@Html.Partial("MoviePartialView",Model.NewMovies)
 				</div>
 			</div>
 			<!-- end home carousel -->
@@ -47,15 +47,11 @@
 						</li>
 
 						<li class="nav-item" role="presentation">
-							<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Comedy</button>
+							<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Movies</button>
 						</li>
 
 						<li class="nav-item" role="presentation">
-							<button id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">Action</button>
-						</li>
-
-						<li class="nav-item" role="presentation">
-							<button id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">Mystery</button>
+							<button id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">TV Series</button>
 						</li>
 					</ul>
 					<!-- end content tabs nav -->
@@ -85,7 +81,7 @@
 								<div class="item__content">
 									<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>
 									<span class="item__category">
-										@foreach (var tag in Model.AllMovies.FirstOrDefault().MovieTags)
+										@foreach (var tag in Model.AllMovies.FirstOrDefault(m=>m.Id==movie.Id).MovieTags)
 										{
 											<a href="#">@tag.Tag.Name</a>
 										}
@@ -100,15 +96,11 @@
 			</div>
 
 			<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
-				@await Component.InvokeAsync("Product", SortType.Comedy)
+				@await Component.InvokeAsync("Movie", SortType.Movie)
 			</div>
 
 			<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
-				@await Component.InvokeAsync("Product", SortType.Action)
-			</div>
-
-			<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
-				@await Component.InvokeAsync("Product", SortType.Mystery)
+				@await Component.InvokeAsync("Movie", SortType.TVSeries)
 			</div>
 		</div>
 		<!-- end content tabs -->
@@ -146,7 +138,7 @@
 							<i class="ti ti-chevron-right"></i>
 						</button>
 					</div>
-					@Html.Partial("ProductPartialView", Model.ExpectedMovies)
+					@Html.Partial("MoviePartialView", Model.ExpectedMovies)
 				</div>
 			</div>
 			<!-- end carousel -->

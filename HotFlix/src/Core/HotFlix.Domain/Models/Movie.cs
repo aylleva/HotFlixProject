@@ -10,9 +10,10 @@ namespace HotFlix.Domain.Models
         public string RunningTime{  get; set; }
         public string Image {  get; set; }
         public string TrailerUrl { get; set; }
-        
         public string VideoUrl {  get; set; }
-
+        public int CategoryId {  get; set; }
+        public int CountryId {  get; set; }
+        public int DirectorId {  get; set; }
         //relational
         public ICollection<MovieTags> MovieTags { get; set; }
         public Category Category { get; set; }

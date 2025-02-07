@@ -17,7 +17,7 @@
 				<div class="item__content">
 					<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>
 					<span class="item__category">
-						@foreach (var tag in Model.FirstOrDefault().MovieTags)
+						@foreach (var tag in Model.FirstOrDefault(m=>m.Id==movie.Id).MovieTags)
 						{
 							<a href="#">@tag.Tag.Name</a>
 						}

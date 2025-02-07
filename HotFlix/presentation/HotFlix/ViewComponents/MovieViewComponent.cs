@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotFlix.ViewComponents
 {
-    public class ProductViewComponent:ViewComponent
+    public class MovieViewComponent:ViewComponent
     {
         private readonly AppDbContext _context;
 
-        public ProductViewComponent(AppDbContext context)
+        public MovieViewComponent(AppDbContext context)
         {
             _context = context;
         }
@@ -21,24 +21,19 @@ namespace HotFlix.ViewComponents
             List<Movie> movies=null;
             switch(sort)
             {
-                case SortType.Action:
-                    movies=await _context.Movies.Where(m=>m.Category.Name=="Action")
+                case SortType.Movie:
+                    movies=await _context.Movies.Where(m=>m.Category.Name=="Movies")
                         .Include(m=>m.MovieTags).ThenInclude(mt=>mt.Tag)
                         .Take(10)
                         .ToListAsync(); 
                     break;
-                case SortType.Mystery:
-                    movies = await _context.Movies.Where(m => m.Category.Name == "Mystery")
+                case SortType.TVSeries:
+                    movies = await _context.Movies.Where(m => m.Category.Name == "Tv Series")
                         .Include(m => m.MovieTags).ThenInclude(mt => mt.Tag)
                          .Take(10)
                         .ToListAsync();
                     break;
-                case SortType.Comedy:
-                    movies = await _context.Movies.Where(m => m.Category.Name == "Comedy")
-                        .Include(m => m.MovieTags).ThenInclude(mt => mt.Tag)
-                         .Take(10)
-                        .ToListAsync();
-                    break;
+              
                
             }
             return View(movies);

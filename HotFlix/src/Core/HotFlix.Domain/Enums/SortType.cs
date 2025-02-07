@@ -8,9 +8,8 @@ namespace HotFlix.Domain.Enums
 {
     public enum SortType
     {
-       Comedy,
-       Action,
-       Mystery
+      Movie,
+      TVSeries
 
     }
 }
