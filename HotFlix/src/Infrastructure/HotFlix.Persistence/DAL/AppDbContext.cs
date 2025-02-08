@@ -23,11 +23,11 @@ namespace HotFlix.Persistence.DAL
         public DbSet<MovieActors> MoviesActors { get; set; }
         public DbSet<MovieTags> MovieTags { get; set; }
         public DbSet<Season> Seasons { get; set; }
-        public DbSet<Video> Videos { get; set; }
         public DbSet<PremiumPlan> PremiumPlans { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<SeasonVideos> SeasonVideos { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

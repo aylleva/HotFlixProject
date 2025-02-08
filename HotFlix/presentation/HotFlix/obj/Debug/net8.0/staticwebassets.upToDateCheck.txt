@@ -70,6 +70,8 @@ wwwroot\assets\js\plyr.min.js
 wwwroot\assets\js\slimselect.min.js
 wwwroot\assets\js\smooth-scrollbar.js
 wwwroot\assets\js\splide.min.js
+wwwroot\assets\videos\Interstellar_2014_720_Trim.ia.mp4
+wwwroot\assets\videos\Interstellar_OfficialTrailer.mp4
 wwwroot\assets\webfont\fonts\tabler-icons.eot
 wwwroot\assets\webfont\fonts\tabler-icons.ttf
 wwwroot\assets\webfont\fonts\tabler-icons.woff

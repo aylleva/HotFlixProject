@@ -864,6 +864,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rp5un6rmdj"},{"Name":"integrity","Value":"sha256-b/fLMBwSqO9vy/phDPv6OufPpR\u002BVfUL\u002BOsTEkJMPg\u002BQ="},{"Name":"label","Value":"_content/HotFlix/assets/js/splide.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"27577"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022b/fLMBwSqO9vy/phDPv6OufPpR\u002BVfUL\u002BOsTEkJMPg\u002BQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Feb 2022 19:14:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/Interstellar_2014_720_Trim.ia.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\Interstellar_2014_720_Trim.ia.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"33795513"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 11:40:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/Interstellar_2014_720_Trim.ia.z93mz0bdbd.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\Interstellar_2014_720_Trim.ia.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z93mz0bdbd"},{"Name":"integrity","Value":"sha256-F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw="},{"Name":"label","Value":"_content/HotFlix/assets/videos/Interstellar_2014_720_Trim.ia.mp4"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33795513"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 11:40:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/Interstellar_OfficialTrailer.16iar2hhmu.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\Interstellar_OfficialTrailer.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"16iar2hhmu"},{"Name":"integrity","Value":"sha256-eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0="},{"Name":"label","Value":"_content/HotFlix/assets/videos/Interstellar_OfficialTrailer.mp4"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14021148"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 12:36:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/Interstellar_OfficialTrailer.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\Interstellar_OfficialTrailer.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"14021148"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 12:36:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HotFlix/assets/webfont/fonts/tabler-icons.0353vuqoah.woff2">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\webfont\fonts\tabler-icons.woff2'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

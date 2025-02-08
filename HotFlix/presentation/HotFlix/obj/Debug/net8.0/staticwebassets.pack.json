@@ -289,6 +289,14 @@
       "PackagePath": "staticwebassets\\assets\\js\\splide.min.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4",
+      "PackagePath": "staticwebassets\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_OfficialTrailer.mp4",
+      "PackagePath": "staticwebassets\\assets\\videos\\Interstellar_OfficialTrailer.mp4"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
       "PackagePath": "staticwebassets\\assets\\webfont\\fonts\\tabler-icons.eot"
     },

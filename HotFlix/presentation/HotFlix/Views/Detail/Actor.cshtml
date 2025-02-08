@@ -1,0 +1,208 @@
+﻿@using HotFlix.Domain.Models
+@model Actor
+<!-- details -->
+<section class="section section--details">
+	<!-- details background -->
+	<div class="section__details-bg" data-bg="~/assets/img/bg/actor__bg.jpg"></div>
+	<!-- end details background -->
+	<!-- details content -->
+	<div class="container">
+		<div class="row">
+			<!-- title -->
+			<div class="col-12">
+				<h1 class="section__title section__title--head">@Model.FullName</h1>
+			</div>
+			<!-- end title -->
+			<!-- content -->
+			<div class="col-12 col-lg-9 col-xl-6">
+				<div class="item item--details">
+					<div class="row">
+						<div class="col-12 col-sm-5 col-md-5">
+							<div class="item__cover">
+								<img src="~/assets/img/bg/@Model.Image" alt="">
+							</div>
+						</div>
+
+						<div class="col-12 col-md-7">
+							<div class="item__content">
+								<ul class="item__meta">
+									<li><span>Career:</span>Actor</li>
+									<li><span>Age:</span> @Model.Age</li>
+									<li><span>Total number of movies:</span> @Model.MovieCount</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end content -->
+		</div>
+	</div>
+	<!-- end details content -->
+</section>
+<!-- end details -->
+<!-- content -->
+<section class="content">
+	<div class="content__head content__head--mt">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- content title -->
+					<h2 class="content__title">Discover</h2>
+					<!-- end content title -->
+					<!-- content tabs nav -->
+					<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button id="1-tab" class="active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">Filmography</button>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Photos</button>
+						</li>
+					</ul>
+					<!-- end content tabs nav -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- content tabs -->
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab" tabindex="0">
+						<div class="row">
+						@foreach(var movie in Model.MovieActors){
+								<!-- item -->
+								<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+									<div class="item">
+										<div class="item__cover">
+											<img src="~/assets/img/covers/@movie.Movie.Image" alt="">
+											<a asp-controller="detail" asp-action="index" asp-route-id="@movie.Movie.Id" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">@movie.Movie.Rating</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Movie.Id">@movie.Movie.Name</a></h3>
+											<span class="item__category">
+												@foreach(var tag in Model.MovieActors.FirstOrDefault(m=>m.MovieId==movie.Movie.Id).Movie.MovieTags){
+													<a href="#">@tag.Tag.Name</a>
+												}
+											</span>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+						}
+						</div>
+
+						<div class="row">
+							<!-- paginator -->
+							<div class="col-12">
+								<!-- paginator mobile -->
+								<div class="paginator-mob">
+									<span class="paginator-mob__pages">18 of 1713</span>
+
+									<ul class="paginator-mob__nav">
+										<li>
+											<a href="#">
+												<i class="ti ti-chevron-left"></i>
+												<span>Prev</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Next</span>
+												<i class="ti ti-chevron-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- end paginator mobile -->
+								<!-- paginator desktop -->
+								<ul class="paginator">
+									<li class="paginator__item paginator__item--prev">
+										<a href="#"><i class="ti ti-chevron-left"></i></a>
+									</li>
+									<li class="paginator__item"><a href="#">1</a></li>
+									<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
+									<li class="paginator__item"><a href="#">3</a></li>
+									<li class="paginator__item"><a href="#">4</a></li>
+									<li class="paginator__item"><span>...</span></li>
+									<li class="paginator__item"><a href="#">87</a></li>
+									<li class="paginator__item paginator__item--next">
+										<a href="#"><i class="ti ti-chevron-right"></i></a>
+									</li>
+								</ul>
+								<!-- end paginator desktop -->
+							</div>
+							<!-- end paginator -->
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+						<!-- project gallery -->
+						<div class="gallery gallery--full" itemscope>
+							<div class="row">
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-1.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-1.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 1</figcaption>
+								</figure>
+								<!-- end gallery item -->
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-2.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-2.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 2</figcaption>
+								</figure>
+								<!-- end gallery item -->
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-3.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-3.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 3</figcaption>
+								</figure>
+								<!-- end gallery item -->
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-4.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-4.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 4</figcaption>
+								</figure>
+								<!-- end gallery item -->
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-5.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-5.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 5</figcaption>
+								</figure>
+								<!-- end gallery item -->
+								<!-- gallery item -->
+								<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+									<a href="~/assets/img/gallery/project-6.jpg" itemprop="contentUrl" data-size="1920x1280">
+										<img src="~/assets/img/gallery/project-6.jpg" itemprop="thumbnail" alt="Image description" />
+									</a>
+									<figcaption itemprop="caption description">Some image caption 6</figcaption>
+								</figure>
+								<!-- end gallery item -->
+							</div>
+						</div>
+						<!-- end project gallery -->
+					</div>
+				</div>
+				<!-- end content tabs -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end content -->

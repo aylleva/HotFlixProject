@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SL6+KNQL+N4Vg8r70CibPXDK/wFAtDrVPoADIJYPXGg=",
+  "Hash": "Yn3+4Fh+MCemhJ3Jr52zLNe0VWnrtqiCn702k2xm/uY=",
   "Source": "HotFlix",
   "BasePath": "_content/HotFlix",
   "Mode": "Default",
@@ -1527,6 +1527,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\splide.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/videos/Interstellar_2014_720_Trim.ia#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z93mz0bdbd",
+      "Integrity": "F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_OfficialTrailer.mp4",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/videos/Interstellar_OfficialTrailer#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "16iar2hhmu",
+      "Integrity": "eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\videos\\Interstellar_OfficialTrailer.mp4"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\webfont\\fonts\\tabler-icons.eot",
@@ -7536,6 +7578,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videos/Interstellar_2014_720_Trim.ia.mp4",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33795513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 11:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videos/Interstellar_2014_720_Trim.ia.z93mz0bdbd.mp4",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_2014_720_Trim.ia.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33795513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 11:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z93mz0bdbd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/videos/Interstellar_2014_720_Trim.ia.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F61O8M2NUsE02a3QbyZppp4iLcG6eD4DiMKJXnEQBcw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videos/Interstellar_OfficialTrailer.16iar2hhmu.mp4",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_OfficialTrailer.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14021148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 12:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "16iar2hhmu"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/videos/Interstellar_OfficialTrailer.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videos/Interstellar_OfficialTrailer.mp4",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\videos\\Interstellar_OfficialTrailer.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14021148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 12:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eQ2Bhu/X8whg7o7QnUETtGKpOy3Ekdjn7HYrko1FTb0="
         }
       ]
     },

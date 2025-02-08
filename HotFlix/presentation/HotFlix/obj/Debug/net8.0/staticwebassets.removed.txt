@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\wwwroot\assets\img\bg\anne.jpeg
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\wwwroot\assets\img\bg\foy.jpeg
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\wwwroot\assets\img\bg\jessica.jpeg
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\wwwroot\assets\img\bg\matthew.jpeg

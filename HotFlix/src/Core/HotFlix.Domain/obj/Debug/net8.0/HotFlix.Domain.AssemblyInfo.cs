@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotFlix.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54b416b023a462b8c0b66a86b03d01a19a854b2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0696b1fd2bf82121d6228ffb4e944ba39619933c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotFlix.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotFlix.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
