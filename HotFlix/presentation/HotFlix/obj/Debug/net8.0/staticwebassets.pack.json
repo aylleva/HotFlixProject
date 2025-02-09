@@ -49,8 +49,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\angle-down.svg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\anne.jpeg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\Jessica_Chastain.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Matthew_McConaughey.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\Matthew_McConaughey.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\anne.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\byunk.jpeg",
@@ -77,20 +85,12 @@
       "PackagePath": "staticwebassets\\assets\\img\\bg\\florenca.jpeg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\foy.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\foy.jpeg"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\hoyeon.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\hoyeon.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\jacobtexas.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\jacobtexas.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\jessica.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\jessica.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\joseph.jpeg",
@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\bg\\leonardo.jpeg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\mackenzie.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\mackenzie.jpeg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\marion.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\marion.jpeg"
     },
@@ -123,10 +127,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\matt.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\matt.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\matthew.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\bg\\matthew.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\morgan.jpeg",

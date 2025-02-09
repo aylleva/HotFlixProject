@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yn3+4Fh+MCemhJ3Jr52zLNe0VWnrtqiCn702k2xm/uY=",
+  "Hash": "+DRCav7QOhqKxFIVQ+/ZWruMbzNXDwRPI7KYLpJqdGY=",
   "Source": "HotFlix",
   "BasePath": "_content/HotFlix",
   "Mode": "Default",
@@ -269,12 +269,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\angle-down.svg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpeg",
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpg",
       "SourceId": "HotFlix",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
       "BasePath": "_content/HotFlix",
-      "RelativePath": "assets/img/bg/anne#[.{fingerprint}]?.jpeg",
+      "RelativePath": "assets/img/bg/anne#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -283,11 +283,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qrg5er0vyh",
-      "Integrity": "2kGGz5kijMPyBEg/UmgR92qEi63npN6fg6sXncUp/Jc=",
+      "Fingerprint": "6yk3ej62gh",
+      "Integrity": "Mpnxg+seM96+TmEt7XyXHwP8qv8gZuqL0jMgVAhgYFg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\anne.jpeg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\anne.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\byunk.jpeg",
@@ -416,27 +416,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\florenca.jpeg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\foy.jpeg",
-      "SourceId": "HotFlix",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
-      "BasePath": "_content/HotFlix",
-      "RelativePath": "assets/img/bg/foy#[.{fingerprint}]?.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "l3fsl4nvzn",
-      "Integrity": "cTB8S/Jp8BITIap4nsIi60n34WuwXQRMGq3UxUzlz0w=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\foy.jpeg"
-    },
-    {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\hoyeon.jpeg",
       "SourceId": "HotFlix",
       "SourceType": "Discovered",
@@ -479,12 +458,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\jacobtexas.jpeg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\jessica.jpeg",
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg",
       "SourceId": "HotFlix",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
       "BasePath": "_content/HotFlix",
-      "RelativePath": "assets/img/bg/jessica#[.{fingerprint}]?.jpeg",
+      "RelativePath": "assets/img/bg/Jessica_Chastain#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -493,11 +472,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n3w4g50ozi",
-      "Integrity": "g79zCK3CJ9l9B9IpolVFy7jKKplFjss/v1AT+tcSoo8=",
+      "Fingerprint": "e9laaeb1ji",
+      "Integrity": "Iry7i486oxxDPDs4PksWJfgWHdBlucascAfjo6BTFak=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\jessica.jpeg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\joseph.jpeg",
@@ -605,6 +584,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\leonardo.jpeg"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\mackenzie.jpeg",
+      "SourceId": "HotFlix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
+      "BasePath": "_content/HotFlix",
+      "RelativePath": "assets/img/bg/mackenzie#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7b4o6xapz",
+      "Integrity": "yJHugIHAmXQX86iSKEy4QKvFHNWA+QgbnGmUlTlwqnI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\mackenzie.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\marion.jpeg",
       "SourceId": "HotFlix",
       "SourceType": "Discovered",
@@ -668,12 +668,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\matt.jpeg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\matthew.jpeg",
+      "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Matthew_McConaughey.jpeg",
       "SourceId": "HotFlix",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\",
       "BasePath": "_content/HotFlix",
-      "RelativePath": "assets/img/bg/matthew#[.{fingerprint}]?.jpeg",
+      "RelativePath": "assets/img/bg/Matthew_McConaughey#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -682,11 +682,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "oyr6wm3ou2",
-      "Integrity": "EDusD2gllBZseUDprz5y3FufiIddlw+GbMQqVoEK4RQ=",
+      "Fingerprint": "mkteeunc1e",
+      "Integrity": "yvzAlmvPFJ3wihbONxJaHVKaZhn705vU2RTmjpyFa2I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\matthew.jpeg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bg\\Matthew_McConaughey.jpeg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\morgan.jpeg",
@@ -2662,8 +2662,8 @@
       ]
     },
     {
-      "Route": "assets/img/bg/anne.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpeg",
+      "Route": "assets/img/bg/anne.6yk3ej62gh.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2672,7 +2672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3005"
+          "Value": "28658"
         },
         {
           "Name": "Content-Type",
@@ -2680,48 +2680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2kGGz5kijMPyBEg/UmgR92qEi63npN6fg6sXncUp/Jc=\""
+          "Value": "\"Mpnxg+seM96+TmEt7XyXHwP8qv8gZuqL0jMgVAhgYFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:48:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-2kGGz5kijMPyBEg/UmgR92qEi63npN6fg6sXncUp/Jc="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/bg/anne.qrg5er0vyh.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3005"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2kGGz5kijMPyBEg/UmgR92qEi63npN6fg6sXncUp/Jc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:48:04 GMT"
+          "Value": "Sat, 08 Feb 2025 19:41:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2731,15 +2694,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qrg5er0vyh"
+          "Value": "6yk3ej62gh"
         },
         {
           "Name": "label",
-          "Value": "assets/img/bg/anne.jpeg"
+          "Value": "assets/img/bg/anne.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2kGGz5kijMPyBEg/UmgR92qEi63npN6fg6sXncUp/Jc="
+          "Value": "sha256-Mpnxg+seM96+TmEt7XyXHwP8qv8gZuqL0jMgVAhgYFg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/anne.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\anne.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mpnxg+seM96+TmEt7XyXHwP8qv8gZuqL0jMgVAhgYFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mpnxg+seM96+TmEt7XyXHwP8qv8gZuqL0jMgVAhgYFg="
         }
       ]
     },
@@ -2766,7 +2766,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:07:13 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2811,7 +2811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:07:13 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2848,7 +2848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:44:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2885,7 +2885,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:44:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2930,7 +2930,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:31 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2967,7 +2967,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:31 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3012,7 +3012,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:22 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3057,7 +3057,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:22 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3094,7 +3094,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:15 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3139,7 +3139,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:15 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3176,7 +3176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:09 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3221,7 +3221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:09 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3232,88 +3232,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-QphbJjgpXbU3ICPcyG8BSULczt2vRlZ4Vc7R2SDRj0M="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/bg/foy.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\foy.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cTB8S/Jp8BITIap4nsIi60n34WuwXQRMGq3UxUzlz0w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:48:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cTB8S/Jp8BITIap4nsIi60n34WuwXQRMGq3UxUzlz0w="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/bg/foy.l3fsl4nvzn.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\foy.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cTB8S/Jp8BITIap4nsIi60n34WuwXQRMGq3UxUzlz0w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:48:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l3fsl4nvzn"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/bg/foy.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cTB8S/Jp8BITIap4nsIi60n34WuwXQRMGq3UxUzlz0w="
         }
       ]
     },
@@ -3340,7 +3258,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:06:49 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3377,7 +3295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:06:49 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3422,7 +3340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:48 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3459,7 +3377,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:48 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3482,8 +3400,8 @@
       ]
     },
     {
-      "Route": "assets/img/bg/jessica.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\jessica.jpeg",
+      "Route": "assets/img/bg/Jessica_Chastain.e9laaeb1ji.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3492,7 +3410,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5652"
+          "Value": "119248"
         },
         {
           "Name": "Content-Type",
@@ -3500,48 +3418,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"g79zCK3CJ9l9B9IpolVFy7jKKplFjss/v1AT+tcSoo8=\""
+          "Value": "\"Iry7i486oxxDPDs4PksWJfgWHdBlucascAfjo6BTFak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:47:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-g79zCK3CJ9l9B9IpolVFy7jKKplFjss/v1AT+tcSoo8="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/bg/jessica.n3w4g50ozi.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\jessica.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5652"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g79zCK3CJ9l9B9IpolVFy7jKKplFjss/v1AT+tcSoo8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:47:58 GMT"
+          "Value": "Sat, 08 Feb 2025 19:38:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3551,15 +3432,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n3w4g50ozi"
+          "Value": "e9laaeb1ji"
         },
         {
           "Name": "label",
-          "Value": "assets/img/bg/jessica.jpeg"
+          "Value": "assets/img/bg/Jessica_Chastain.jpeg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-g79zCK3CJ9l9B9IpolVFy7jKKplFjss/v1AT+tcSoo8="
+          "Value": "sha256-Iry7i486oxxDPDs4PksWJfgWHdBlucascAfjo6BTFak="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/Jessica_Chastain.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Iry7i486oxxDPDs4PksWJfgWHdBlucascAfjo6BTFak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:38:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Iry7i486oxxDPDs4PksWJfgWHdBlucascAfjo6BTFak="
         }
       ]
     },
@@ -3586,7 +3504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:45 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3631,7 +3549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:45 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3668,7 +3586,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:45 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3705,7 +3623,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:45 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3750,7 +3668,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:17 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3795,7 +3713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:17 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3832,7 +3750,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:06:33 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3877,7 +3795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:06:33 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3914,7 +3832,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:13 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3959,7 +3877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:13 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3970,6 +3888,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-GO3ptpZTAoz73pN8onzw7p3lcc3D1mQ+mroYnbSVwLU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/mackenzie.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\mackenzie.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJHugIHAmXQX86iSKEy4QKvFHNWA+QgbnGmUlTlwqnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:43:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yJHugIHAmXQX86iSKEy4QKvFHNWA+QgbnGmUlTlwqnI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/bg/mackenzie.s7b4o6xapz.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\mackenzie.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJHugIHAmXQX86iSKEy4QKvFHNWA+QgbnGmUlTlwqnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:43:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7b4o6xapz"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/bg/mackenzie.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yJHugIHAmXQX86iSKEy4QKvFHNWA+QgbnGmUlTlwqnI="
         }
       ]
     },
@@ -3996,7 +3996,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:59 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4041,7 +4041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:37:59 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4078,7 +4078,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:28 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4123,7 +4123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:28 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4160,7 +4160,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:18 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4197,7 +4197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:18 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4220,8 +4220,8 @@
       ]
     },
     {
-      "Route": "assets/img/bg/matthew.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\matthew.jpeg",
+      "Route": "assets/img/bg/Matthew_McConaughey.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Matthew_McConaughey.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4230,7 +4230,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5332"
+          "Value": "246362"
         },
         {
           "Name": "Content-Type",
@@ -4238,11 +4238,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EDusD2gllBZseUDprz5y3FufiIddlw+GbMQqVoEK4RQ=\""
+          "Value": "\"yvzAlmvPFJ3wihbONxJaHVKaZhn705vU2RTmjpyFa2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:47:47 GMT"
+          "Value": "Sat, 08 Feb 2025 19:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4252,13 +4252,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EDusD2gllBZseUDprz5y3FufiIddlw+GbMQqVoEK4RQ="
+          "Value": "sha256-yvzAlmvPFJ3wihbONxJaHVKaZhn705vU2RTmjpyFa2I="
         }
       ]
     },
     {
-      "Route": "assets/img/bg/matthew.oyr6wm3ou2.jpeg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\matthew.jpeg",
+      "Route": "assets/img/bg/Matthew_McConaughey.mkteeunc1e.jpeg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Matthew_McConaughey.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4267,7 +4267,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5332"
+          "Value": "246362"
         },
         {
           "Name": "Content-Type",
@@ -4275,11 +4275,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EDusD2gllBZseUDprz5y3FufiIddlw+GbMQqVoEK4RQ=\""
+          "Value": "\"yvzAlmvPFJ3wihbONxJaHVKaZhn705vU2RTmjpyFa2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 09:47:47 GMT"
+          "Value": "Sat, 08 Feb 2025 19:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4289,15 +4289,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "oyr6wm3ou2"
+          "Value": "mkteeunc1e"
         },
         {
           "Name": "label",
-          "Value": "assets/img/bg/matthew.jpeg"
+          "Value": "assets/img/bg/Matthew_McConaughey.jpeg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EDusD2gllBZseUDprz5y3FufiIddlw+GbMQqVoEK4RQ="
+          "Value": "sha256-yvzAlmvPFJ3wihbONxJaHVKaZhn705vU2RTmjpyFa2I="
         }
       ]
     },
@@ -4324,7 +4324,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:45:46 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4369,7 +4369,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:45:46 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4406,7 +4406,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:31 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4451,7 +4451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:31 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4488,7 +4488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:33 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4525,7 +4525,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:33 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4570,7 +4570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4607,7 +4607,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:49:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4652,7 +4652,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4697,7 +4697,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:15:20 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4734,7 +4734,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:50 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4771,7 +4771,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:54:50 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4898,7 +4898,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:37 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4943,7 +4943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:01:37 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4980,7 +4980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:07:22 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5017,7 +5017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 11:07:22 GMT"
+          "Value": "Sun, 09 Feb 2025 10:46:45 GMT"
         },
         {
           "Name": "Cache-Control",

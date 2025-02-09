@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -42,8 +46,7 @@
               "RelativeToolTip": "src\\Core\\HotFlix.Application\\ViewModels\\DetailVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T19:04:16.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T19:04:16.762Z"
             },
             {
               "$type": "Document",
@@ -51,9 +54,9 @@
               "Title": "Actor.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\Views\\Detail\\Actor.cshtml",
               "RelativeDocumentMoniker": "presentation\\HotFlix\\Views\\Detail\\Actor.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\Views\\Detail\\Actor.cshtml*",
-              "RelativeToolTip": "presentation\\HotFlix\\Views\\Detail\\Actor.cshtml*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAuwFAAAAA7AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\Views\\Detail\\Actor.cshtml",
+              "RelativeToolTip": "presentation\\HotFlix\\Views\\Detail\\Actor.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwFAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T18:59:04.987Z",
               "EditorCaption": ""
@@ -68,8 +71,7 @@
               "RelativeToolTip": "presentation\\HotFlix\\Controllers\\DetailController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowC8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:32:27.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T14:32:27.688Z"
             },
             {
               "$type": "Document",
@@ -81,8 +83,7 @@
               "RelativeToolTip": "src\\Core\\HotFlix.Domain\\Models\\Season.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:29:47.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T14:29:47.428Z"
             },
             {
               "$type": "Document",
@@ -94,12 +95,7 @@
               "RelativeToolTip": "presentation\\HotFlix\\Views\\Detail\\Index.cshtml",
               "ViewState": "AgIAABAAAAAAAAAAAAAqwCEAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T14:19:00.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-02-08T14:19:00.901Z"
             }
           ]
         }
