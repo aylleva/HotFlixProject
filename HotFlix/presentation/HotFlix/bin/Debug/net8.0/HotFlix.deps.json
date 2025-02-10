@@ -1416,6 +1416,7 @@
       },
       "HotFlix.Infrastructure/1.0.0": {
         "dependencies": {
+          "HotFlix.Application": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Google": "8.0.12",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
           "Microsoft.EntityFrameworkCore": "8.0.12"

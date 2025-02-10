@@ -13,3 +13,8 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastr
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.genruntimeconfig.cache
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\ref\HotFlix.Infrastructure.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix.Infrastructure.sourcelink.json
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Application.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Domain.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Application.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\bin\Debug\net8.0\HotFlix.Domain.pdb
+C:\Users\user\Desktop\HotFlixProject\HotFlix\src\Infrastructure\HotFlix.Infrastructure\obj\Debug\net8.0\HotFlix..9CEA7F3F.Up2Date

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿using HotFlix.Application.Abstraction.Services;
+using HotFlix.Infrastructure.Implementations.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.Extensions.Configuration;
@@ -28,7 +30,7 @@ namespace HotFlix.Infrastructure.ServiceRegistration
                 option.ClientSecret = configuration.GetSection("GoogleKeys:ClientSecret").Value;
               
             });
-    
+            services.AddScoped<IEmailService, EmailService>();
             return services;    
         }
 

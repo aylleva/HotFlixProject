@@ -69,27 +69,17 @@ namespace HotFlix.Controllers
             return View(actor); 
         }
 
-        [HttpPost]
-        [Authorize]
-       public async Task<IActionResult> AddComment(DetailVM commentvm,int? Id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            var user = await _usermeneger.Users
-                .FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+      
+       //public async Task<IActionResult> AddComment(CreateCommentVM commentvm,int? Id)
+       // {
+       //     if (!ModelState.IsValid)
+       //     {
+       //         return View();
+       //     }
+       //     var user = await _usermeneger.Users
+       //         .FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 
-            Comments comment = new Comments()
-            {
-                Description = commentvm.CommentVM.Description,
-                UserId = user.Id,
-                MovieId =Id.Value,
-                CreatedAt = DateTime.Now
-            };
-            await _context.Comments.AddAsync(comment);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(DetailController.Index), "Detail");
-        }
+          
+       // }
     }
 }

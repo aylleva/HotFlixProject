@@ -16,4 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\HotFlix.Application\HotFlix.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -66,6 +66,9 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CodeExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -123,6 +126,9 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("VerificationCode")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -712,7 +718,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                         .IsRequired();
 
                     b.HasOne("HotFlix.Domain.Models.AppUser", "User")
-                        .WithMany()
+                        .WithMany("Comments")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -861,6 +867,11 @@ namespace HotFlix.Persistence.DAL.Migrations
             modelBuilder.Entity("HotFlix.Domain.Models.Actor", b =>
                 {
                     b.Navigation("MovieActors");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.AppUser", b =>
+                {
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Category", b =>

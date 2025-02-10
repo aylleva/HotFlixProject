@@ -37,23 +37,16 @@ namespace HotFlix
             });
 
 
-            builder.Services.AddPersistenceServices(builder.Configuration);
+            builder.Services.AddPersistenceServices(builder.Configuration)
+                .AddInfrastructureServices(builder.Configuration);
 
-
-            builder.Services.AddAuthentication(
-                opt =>
-                {
-                    opt.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                }
-                ).AddCookie(opt =>
-                {
-                    opt.LoginPath = "/account/google-login";
-                }).AddGoogle(opt =>
+            builder.Services.AddSession(options =>
             {
-                opt.ClientId = builder.Configuration["GoogleKeys:ClientId"];
-                opt.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
-            }
-            );
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             var app = builder.Build();
             app.UseRequestLocalization();
 
@@ -68,8 +61,8 @@ namespace HotFlix
             app.UseAuthentication();
             app.UseAuthorization();
 
-           
 
+            app.UseSession();
             app.UseStaticFiles();
 
             app.MapControllerRoute(
