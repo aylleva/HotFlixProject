@@ -13,7 +13,7 @@ namespace HotFlix.Persistence.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250205132252_createcontactstable")]
-    partial class createcontactstable
+    partial class Createcontactstable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

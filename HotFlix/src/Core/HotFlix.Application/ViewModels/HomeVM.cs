@@ -12,5 +12,6 @@ namespace HotFlix.Application.ViewModels
         public ICollection<Movie> ExpectedMovies { get; set; }
         public ICollection<Movie> NewMovies { get; set; }
         public ICollection<Movie> AllMovies { get; set; }
+        public ICollection<PremiumPlan> PremiumPlans { get; set; }
     }
 }

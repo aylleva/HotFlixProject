@@ -104,28 +104,28 @@ namespace HotFlix.Controllers
             return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
         }
 
-        //[Route("google-login")]
-        //public IActionResult LoginWithGoogle()
-        //{
-        //    var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleResponse") };
-        //    return Challenge(properties, GoogleDefaults.AuthenticationScheme);
-        //}
+        [Route("google-login")]
+        public IActionResult LoginWithGoogle()
+        {
+            var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleResponse") };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
 
-        //[Route("google-response")]
-        //public async Task<IActionResult> GoogleResponse()
-        //{
-        //   var result=await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        [Route("google-response")]
+        public async Task<IActionResult> GoogleResponse()
+        {
+            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
-        //    var claims = result.Principal.Identities.FirstOrDefault().Claims.Select(claim => new
-        //    {
-        //        claim.Issuer,
-        //        claim.OriginalIssuer,
-        //        claim.Value,
-        //        claim.Type
-        //    });
-        //    //return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-        //    return Json(claims);
-        //}
+            var claims = result.Principal.Identities.FirstOrDefault().Claims.Select(claim => new
+            {
+                claim.Issuer,
+                claim.OriginalIssuer,
+                claim.Value,
+                claim.Type
+            });
+            //return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
+            return Json(claims);
+        }
 
 
 

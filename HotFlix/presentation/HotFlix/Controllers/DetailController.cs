@@ -1,18 +1,23 @@
 ﻿using HotFlix.Application.ViewModels;
 using HotFlix.Domain.Models;
 using HotFlix.Persistence.DAL;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace HotFlix.Controllers
 {
     public class DetailController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<AppUser> _usermeneger;
 
-        public DetailController(AppDbContext context)
+        public DetailController(AppDbContext context,UserManager<AppUser> usermeneger) 
         {
             _context = context;
+            _usermeneger = usermeneger;
         }
         public async Task<IActionResult> Index(int? Id)
         {
@@ -27,10 +32,24 @@ namespace HotFlix.Controllers
                 .Include(m=>m.Seasons).ThenInclude(s=>s.SeasonVideos)
                 .FirstOrDefaultAsync(m => m.Id == Id);
 
+            ICollection<GetCommentsVM>? comments=await _context.Comments.Include(c=>c.User).Include(u=>u.Movie)
+                .Where(c=>c.MovieId==Id)
+                .Select(c=> new GetCommentsVM
+                {
+                    Id = c.Id,
+                    Description = c.Description,
+                    UserId=c.UserId,
+                    LikeCount = c.LikeCount,
+                    DislikeCount=c.DisLikeCount,
+                    CreatedAt = c.CreatedAt,
+                    UserName=c.User.UserName
+                }).ToListAsync();
+
             if (movie is null) return NotFound();
 
             DetailVM detailVM = new DetailVM
             {
+                Comments = comments,
                 Movie = movie,
                 RelatedMovies = await _context.Movies
                 .Include(m => m.MovieTags).ThenInclude(m => m.Tag)
@@ -48,6 +67,29 @@ namespace HotFlix.Controllers
                 .ThenInclude(m=>m.MovieTags).ThenInclude(m=>m.Tag)
                 .FirstOrDefaultAsync(a=>a.Id==Id);
             return View(actor); 
+        }
+
+        [HttpPost]
+        [Authorize]
+       public async Task<IActionResult> AddComment(DetailVM commentvm,int? Id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            var user = await _usermeneger.Users
+                .FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            Comments comment = new Comments()
+            {
+                Description = commentvm.CommentVM.Description,
+                UserId = user.Id,
+                MovieId =Id.Value,
+                CreatedAt = DateTime.Now
+            };
+            await _context.Comments.AddAsync(comment);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(DetailController.Index), "Detail");
         }
     }
 }

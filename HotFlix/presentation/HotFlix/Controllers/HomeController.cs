@@ -26,7 +26,8 @@ namespace HotFlix.Controllers
                 ExpectedMovies = await _context.Movies.Include(m => m.MovieTags).ThenInclude(mt => mt.Tag)
                 .Take(8)
                 .OrderByDescending(m => m.Premiere)
-                .ToListAsync()
+                .ToListAsync(),
+                PremiumPlans=await _context.PremiumPlans.ToListAsync()
             };
             return View(homeVM);
         }

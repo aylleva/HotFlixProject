@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HotFlix.Persistence.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class createseasonvideostable : Migration
+    public partial class Createseasonvideostable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

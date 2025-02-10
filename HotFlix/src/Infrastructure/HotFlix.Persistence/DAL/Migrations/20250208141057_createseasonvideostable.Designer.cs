@@ -13,7 +13,7 @@ namespace HotFlix.Persistence.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250208141057_createseasonvideostable")]
-    partial class createseasonvideostable
+    partial class Createseasonvideostable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

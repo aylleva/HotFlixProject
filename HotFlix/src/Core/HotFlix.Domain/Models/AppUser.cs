@@ -12,6 +12,7 @@ namespace HotFlix.Domain.Models
         //relational
         public int? PremiumPlanId {  get; set; }
         public PremiumPlan? PremiumPlan { get; set; }
+        public ICollection<Comments>? Comments { get; set; }
 
     }
 }

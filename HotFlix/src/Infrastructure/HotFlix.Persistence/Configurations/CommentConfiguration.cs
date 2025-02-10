@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace HotFlix.Persistence.Configurations
 {
-    internal class CommentConfiguration : IEntityTypeConfiguration<Comment>
+    internal class CommentConfiguration : IEntityTypeConfiguration<Comments>
     {
-        public void Configure(EntityTypeBuilder<Comment> builder)
+        public void Configure(EntityTypeBuilder<Comments> builder)
         {
             builder.Property(x => x.Description).IsRequired().HasColumnType("nvarchar(500)");
         }

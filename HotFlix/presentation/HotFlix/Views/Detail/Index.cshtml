@@ -157,146 +157,85 @@
 							<div class="col-12">
 								<div class="comments">
 									<ul class="comments__list">
-										<li class="comments__item">
-											<div class="comments__autor">
-												<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
-												<span class="comments__name">John Doe</span>
-												<span class="comments__time">30.08.2018, 17:53</span>
-											</div>
-											<p class="comments__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-											<div class="comments__actions">
-												<div class="comments__rate">
-													<button type="button"><i class="ti ti-thumb-up"></i>12</button>
-
-													<button type="button">7<i class="ti ti-thumb-down"></i></button>
+									@foreach(var comment in Model.Comments){
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
+													<span class="comments__name">@comment.UserName</span>
+													<span class="comments__time">@comment.CreatedAt</span>
 												</div>
+												<p class="comments__text">@comment.Description</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="ti ti-thumb-up"></i>@comment.LikeCount</button>
 
-												<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
-												<button type="button"><i class="ti ti-quote"></i>Quote</button>
-											</div>
-										</li>
+														<button type="button">@comment.DislikeCount<i class="ti ti-thumb-down"></i></button>
+													</div>
 
-										<li class="comments__item comments__item--answer">
-											<div class="comments__autor">
-												<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
-												<span class="comments__name">John Doe</span>
-												<span class="comments__time">24.08.2018, 16:41</span>
-											</div>
-											<p class="comments__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-											<div class="comments__actions">
-												<div class="comments__rate">
-													<button type="button"><i class="ti ti-thumb-up"></i>8</button>
-
-													<button type="button">3<i class="ti ti-thumb-down"></i></button>
+													<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
+													<button type="button"><i class="ti ti-quote"></i>Quote</button>
 												</div>
+											</li>
+									}
 
-												<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
-												<button type="button"><i class="ti ti-quote"></i>Quote</button>
-											</div>
-										</li>
-
-										<li class="comments__item comments__item--quote">
-											<div class="comments__autor">
-												<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
-												<span class="comments__name">John Doe</span>
-												<span class="comments__time">11.08.2018, 11:11</span>
-											</div>
-											<p class="comments__text"><span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</span>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-											<div class="comments__actions">
-												<div class="comments__rate">
-													<button type="button"><i class="ti ti-thumb-up"></i>11</button>
-
-													<button type="button">1<i class="ti ti-thumb-down"></i></button>
-												</div>
-
-												<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
-												<button type="button"><i class="ti ti-quote"></i>Quote</button>
-											</div>
-										</li>
-
-										<li class="comments__item">
-											<div class="comments__autor">
-												<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
-												<span class="comments__name">John Doe</span>
-												<span class="comments__time">07.08.2018, 14:33</span>
-											</div>
-											<p class="comments__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-											<div class="comments__actions">
-												<div class="comments__rate">
-													<button type="button"><i class="ti ti-thumb-up"></i>99</button>
-
-													<button type="button">35<i class="ti ti-thumb-down"></i></button>
-												</div>
-
-												<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
-												<button type="button"><i class="ti ti-quote"></i>Quote</button>
-											</div>
-										</li>
-
-										<li class="comments__item">
-											<div class="comments__autor">
-												<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
-												<span class="comments__name">John Doe</span>
-												<span class="comments__time">02.08.2018, 15:24</span>
-											</div>
-											<p class="comments__text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-											<div class="comments__actions">
-												<div class="comments__rate">
-													<button type="button"><i class="ti ti-thumb-up"></i>74</button>
-
-													<button type="button">13<i class="ti ti-thumb-down"></i></button>
-												</div>
-
-												<button type="button"><i class="ti ti-arrow-forward-up"></i>Reply</button>
-												<button type="button"><i class="ti ti-quote"></i>Quote</button>
-											</div>
-										</li>
 									</ul>
 
-									<!-- paginator mobile -->
-									<div class="paginator-mob paginator-mob--comments">
-										<span class="paginator-mob__pages">5 of 628</span>
+								@if(Model.Comments.Count==0){
+									<h4 style="text-align:center; color:white;">No Comments</h4>
+								}
+								else{
+										<!-- paginator mobile -->
+										<div class="paginator-mob paginator-mob--comments">
+											<span class="paginator-mob__pages">5 of 628</span>
 
-										<ul class="paginator-mob__nav">
-											<li>
-												<a href="#">
-													<i class="ti ti-chevron-left"></i>
-													<span>Prev</span>
-												</a>
+											<ul class="paginator-mob__nav">
+												<li>
+													<a href="#">
+														<i class="ti ti-chevron-left"></i>
+														<span>Prev</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Next</span>
+														<i class="ti ti-chevron-right"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<!-- end paginator mobile -->
+										<!-- paginator desktop -->
+										<ul class="paginator paginator--comments">
+											<li class="paginator__item paginator__item--prev">
+												<a href="#"><i class="ti ti-chevron-left"></i></a>
 											</li>
-											<li>
-												<a href="#">
-													<span>Next</span>
-													<i class="ti ti-chevron-right"></i>
-												</a>
+											<li class="paginator__item"><a href="#">1</a></li>
+											<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
+											<li class="paginator__item"><a href="#">3</a></li>
+											<li class="paginator__item"><a href="#">4</a></li>
+											<li class="paginator__item"><span>...</span></li>
+											<li class="paginator__item"><a href="#">36</a></li>
+											<li class="paginator__item paginator__item--next">
+												<a href="#"><i class="ti ti-chevron-right"></i></a>
 											</li>
 										</ul>
-									</div>
-									<!-- end paginator mobile -->
-									<!-- paginator desktop -->
-									<ul class="paginator paginator--comments">
-										<li class="paginator__item paginator__item--prev">
-											<a href="#"><i class="ti ti-chevron-left"></i></a>
-										</li>
-										<li class="paginator__item"><a href="#">1</a></li>
-										<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
-										<li class="paginator__item"><a href="#">3</a></li>
-										<li class="paginator__item"><a href="#">4</a></li>
-										<li class="paginator__item"><span>...</span></li>
-										<li class="paginator__item"><a href="#">36</a></li>
-										<li class="paginator__item paginator__item--next">
-											<a href="#"><i class="ti ti-chevron-right"></i></a>
-										</li>
-									</ul>
-									<!-- end paginator desktop -->
+										<!-- end paginator desktop -->
+								}
 
-									<form action="#" class="sign__form sign__form--comments">
-										<div class="sign__group">
-											<textarea id="text" name="text" class="sign__textarea" placeholder="Add comment"></textarea>
-										</div>
-
-										<button type="button" class="sign__btn sign__btn--small">Send</button>
-									</form>
+									@if(User.Identity.IsAuthenticated){
+										<form method="post" class="sign__form sign__form--comments" asp-controller="detail" asp-action="addcomment" asp-route-id="@Model.Movie.Id">
+											<input asp-for="@Model.Movie.Id" readonly hidden>
+											<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+											<div class="sign__group">
+												<textarea asp-for="CommentVM.Description" class="sign__textarea" placeholder="Add comment"></textarea>
+												<span asp-validation-for="CommentVM.Description".Description" class="text-danger"></span>
+											</div>
+											<button type="submit" class="sign__btn sign__btn--small">Send</button>
+										</form>
+									}
+									else{
+										<div class="text-center p-2 text-white bg-black">For Adding Comments You Have To Login.<a asp-controller="account" asp-action="login">Sign In!</a></div>
+									}
 								</div>
 							</div>
 							<!-- end comments -->

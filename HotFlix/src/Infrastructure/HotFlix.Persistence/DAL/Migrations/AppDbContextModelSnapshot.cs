@@ -168,7 +168,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("HotFlix.Domain.Models.Comment", b =>
+            modelBuilder.Entity("HotFlix.Domain.Models.Comments", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -183,8 +183,14 @@ namespace HotFlix.Persistence.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<int?>("DisLikeCount")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("LikeCount")
+                        .HasColumnType("int");
 
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
@@ -697,7 +703,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("PremiumPlan");
                 });
 
-            modelBuilder.Entity("HotFlix.Domain.Models.Comment", b =>
+            modelBuilder.Entity("HotFlix.Domain.Models.Comments", b =>
                 {
                     b.HasOne("HotFlix.Domain.Models.Movie", "Movie")
                         .WithMany("Comments")
@@ -795,7 +801,7 @@ namespace HotFlix.Persistence.DAL.Migrations
             modelBuilder.Entity("HotFlix.Domain.Models.SeasonVideos", b =>
                 {
                     b.HasOne("HotFlix.Domain.Models.Season", null)
-                        .WithMany("MovieVideos")
+                        .WithMany("SeasonVideos")
                         .HasForeignKey("SeasonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -890,7 +896,7 @@ namespace HotFlix.Persistence.DAL.Migrations
 
             modelBuilder.Entity("HotFlix.Domain.Models.Season", b =>
                 {
-                    b.Navigation("MovieVideos");
+                    b.Navigation("SeasonVideos");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Tag", b =>

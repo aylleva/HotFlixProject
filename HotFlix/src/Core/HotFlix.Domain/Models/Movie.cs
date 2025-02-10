@@ -20,7 +20,7 @@ namespace HotFlix.Domain.Models
         public Director Director { get; set; }
         public ICollection<MovieActors> MovieActors { get; set; }
         public Country Country { get; set; }
-        public ICollection<Comment> Comments { get; set; }
+        public ICollection<Comments> Comments { get; set; }
         public ICollection<Season>? Seasons { get; set; }
 
     }

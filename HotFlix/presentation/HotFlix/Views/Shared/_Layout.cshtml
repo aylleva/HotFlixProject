@@ -1,5 +1,4 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer localizer
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,13 +43,13 @@
 						<ul class="header__nav">
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" role="button"  aria-expanded="false" asp-controller="home" asp-action="index">@localizer["Home"]</a>
+								<a class="header__nav-link" role="button"  aria-expanded="false" asp-controller="home" asp-action="index">Home</a>
 							</li>
 						
 							<!-- end dropdown -->
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" role="button" aria-expanded="false" asp-controller="catalog" asp-action="index">@localizer["Catalog"]</a>
+								<a class="header__nav-link" role="button" aria-expanded="false" asp-controller="catalog" asp-action="index">Catalog</a>
 
 								@* <ul class="dropdown-menu header__dropdown-menu">
 									<li><a href="catalog.html">Catalog style 1</a></li>
@@ -62,7 +61,7 @@
 							<!-- end dropdown -->
 
 							<li class="header__nav-item">
-								<a href="pricing.html" class="header__nav-link">Pricing plan</a>
+								<a asp-controller="pricing" asp-action="index" class="header__nav-link">Pricing plan</a>
 							</li>
 
 							<!-- dropdown -->
@@ -127,8 +126,8 @@
 										<a class="header__nav-link header__nav-link--more" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account<i class="ti ti-chevron-down"></i></a>
 
 										<ul class="dropdown-menu header__dropdown-menu">
-											<li><a asp-controller="account" asp-action="login">Sign in</a></li>
-											<li><a asp-controller="account" asp-action="register">Sign up</a></li>
+											<li><a asp-controller="account" asp-action="login" asp-route-returnurl="@Context.Request.Path.Value">Sign in</a></li>
+											<li><a asp-controller="account" asp-action="register" asp-route-returnurl="@Context.Request.Path.Value">Sign up</a></li>
 										</ul>
 									</li>
 								</ul>
