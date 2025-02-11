@@ -1,5 +1,6 @@
 ﻿@using HotFlix.Application.Abstraction.Services
 @using HotFlix.Application.ViewModels
+@using HotFlix.Domain.Models
 @model ContactVM
 @inject ILayoutService _layoutservice
 @{
@@ -58,15 +59,13 @@
 										<span asp-validation-for="Email" class="text-danger"></span>
 									</div>
 								</div>
-
-								<div class="col-12">
-									<div class="sign__group">
-										<label class="sign__label" asp-for="PartnerShip">PartnerShip</label>
-										<input asp-for="PartnerShip" class="sign__input" placeholder="PartnerShip">
-										<span asp-validation-for="PartnerShip" class="text-danger"></span>
+								<div class="col-12 filter__items">
+											<label class="sign__label" asp-for="PartnerShipId">PartnerShip</label>
+											<select class="filter__select" asp-for="PartnerShipId" asp-items="new SelectList(Model.PartnerShips,nameof(PartnerShip.Id),nameof(PartnerShip.Name))">
+												<option selected disabled>Choose a PartnerShip</option>
+											</select>
+											<span asp-validation-for="PartnerShipId" class="text-danger"></span>
 									</div>
-								</div>
-
 								<div class="col-12">
 									<div class="sign__group">
 										<label class="sign__label" asp-for="Message">Message</label>

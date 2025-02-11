@@ -22896,16 +22896,16 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q8Sdk3N4YA3O0DGsxyPqRrUTfjhgCTknD/9SepCg0sY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13865231"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022Q8Sdk3N4YA3O0DGsxyPqRrUTfjhgCTknD/9SepCg0sY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 07:34:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer_prores_4K.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer_prores_4K.mp4'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer.mp4'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j1i0OI8bLnlA45iJpH\u002BN/CcipGztehBo\u002BerXBn4/K\u002Bc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11554127"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022j1i0OI8bLnlA45iJpH\u002BN/CcipGztehBo\u002BerXBn4/K\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 06:47:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer_prores_4K.vo5zl7ur28.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer_prores_4K.mp4'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer.vo5zl7ur28.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer.mp4'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vo5zl7ur28"},{"Name":"integrity","Value":"sha256-j1i0OI8bLnlA45iJpH\u002BN/CcipGztehBo\u002BerXBn4/K\u002Bc="},{"Name":"label","Value":"_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer_prores_4K.mp4"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vo5zl7ur28"},{"Name":"integrity","Value":"sha256-j1i0OI8bLnlA45iJpH\u002BN/CcipGztehBo\u002BerXBn4/K\u002Bc="},{"Name":"label","Value":"_content/HotFlix/assets/videos/TheDarkKnightRises_OfficialTrailer.mp4"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11554127"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022j1i0OI8bLnlA45iJpH\u002BN/CcipGztehBo\u002BerXBn4/K\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 06:47:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HotFlix/assets/webfont/fonts/tabler-icons.0353vuqoah.woff2">

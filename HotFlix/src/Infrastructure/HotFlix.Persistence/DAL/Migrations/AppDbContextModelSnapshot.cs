@@ -217,44 +217,6 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("HotFlix.Domain.Models.Contact", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<string>("PartnerShip")
-                        .IsRequired()
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Contacts");
-                });
-
             modelBuilder.Entity("HotFlix.Domain.Models.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -308,6 +270,45 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Directors");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.JobContact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("PartnerShipId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PartnerShipId");
+
+                    b.ToTable("JobContacts");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Movie", b =>
@@ -405,6 +406,35 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.HasIndex("TagId");
 
                     b.ToTable("MovieTags");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.PartnerShip", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("PartnerShips");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.PremiumPlan", b =>
@@ -728,6 +758,17 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("HotFlix.Domain.Models.JobContact", b =>
+                {
+                    b.HasOne("HotFlix.Domain.Models.PartnerShip", "PartnerShip")
+                        .WithMany("Contacts")
+                        .HasForeignKey("PartnerShipId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PartnerShip");
+                });
+
             modelBuilder.Entity("HotFlix.Domain.Models.Movie", b =>
                 {
                     b.HasOne("HotFlix.Domain.Models.Category", "Category")
@@ -898,6 +939,11 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("MovieTags");
 
                     b.Navigation("Seasons");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.PartnerShip", b =>
+                {
+                    b.Navigation("Contacts");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.PremiumPlan", b =>

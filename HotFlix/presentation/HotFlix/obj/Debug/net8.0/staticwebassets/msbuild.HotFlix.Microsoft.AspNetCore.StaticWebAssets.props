@@ -34344,12 +34344,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\Oppenheimer_OfficialTrailer2_4K_51_prores.mp4'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer_prores_4K.mp4'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer.mp4'))">
       <SourceType>Package</SourceType>
       <SourceId>HotFlix</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/HotFlix</BasePath>
-      <RelativePath>assets/videos/TheDarkKnightRises_OfficialTrailer_prores_4K.mp4</RelativePath>
+      <RelativePath>assets/videos/TheDarkKnightRises_OfficialTrailer.mp4</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -34360,7 +34360,7 @@
       <Integrity>j1i0OI8bLnlA45iJpH+N/CcipGztehBo+erXBn4/K+c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer_prores_4K.mp4'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videos\TheDarkKnightRises_OfficialTrailer.mp4'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\webfont\fonts\tabler-icons.eot'))">
       <SourceType>Package</SourceType>
