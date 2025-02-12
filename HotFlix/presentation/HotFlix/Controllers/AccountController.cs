@@ -1,15 +1,15 @@
-﻿using HotFlix.Application.Abstraction.Services;
+﻿
 using HotFlix.Application.ViewModels;
 using HotFlix.Domain.Enums;
 using HotFlix.Domain.Models;
+using HotFlix.Persistence.DAL;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 
 namespace HotFlix.Controllers
@@ -19,11 +19,13 @@ namespace HotFlix.Controllers
 
         private readonly UserManager<AppUser> _usermeneger;
         private readonly SignInManager<AppUser> _signinuser;
+        private readonly AppDbContext _context;
 
-        public AccountController(UserManager<AppUser> usermeneger, SignInManager<AppUser> signinuser)
+        public AccountController(UserManager<AppUser> usermeneger, SignInManager<AppUser> signinuser,AppDbContext context)
         {
             _usermeneger = usermeneger;
             _signinuser = signinuser;
+            _context = context;
         }
         public IActionResult Register()
         {
@@ -123,11 +125,36 @@ namespace HotFlix.Controllers
                 claim.Value,
                 claim.Type
             });
-            //return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
-            return Json(claims);
+            var email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email).Value;
+
+            if(email == null)
+            {
+                return RedirectToAction("Login","Account");
+            }
+            var user=await _usermeneger.FindByEmailAsync(email);
+            if(user == null)
+            {
+               user = new AppUser()
+                {
+                    Name = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value,
+                    Surname = claims.FirstOrDefault(c => c.Type == ClaimTypes.Surname).Value,
+                    Email =email,
+                    UserName= claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value
+               };
+            }
+
+            var createresult=await _usermeneger.CreateAsync(user);
+            if (!createresult.Succeeded)
+            {
+                foreach (var error in createresult.Errors)
+                {
+                  return BadRequest(error.Description);
+                }
+            }
+            await _signinuser.SignInAsync(user, true);
+            return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
+
         }
-
-
 
     }
 

@@ -1,5 +1,4 @@
 ﻿
-
 using HotFlix.Domain.Models;
 
 namespace HotFlix.Application.ViewModels
@@ -7,8 +6,8 @@ namespace HotFlix.Application.ViewModels
     public class CatalogVM
     {
         public ICollection<GetMovieVM> Movies { get; set; }
-        public ICollection<GetCategoryVM> Categories { get; set; }
-        public ICollection<GetTagVm> Tags { get; set; }
+        public ICollection<GetCategoryVM>? Categories { get; set; }
+        public ICollection<GetTagVm>? Tags { get; set; }
         public int RatingKey {  get; set; }
         public int TimeKey {  get; set; }
         public int CurrectPage {  get; set; }
@@ -16,5 +15,6 @@ namespace HotFlix.Application.ViewModels
         public int? CategoryId {  get; set; }
         public int? TagId {  get; set; }
         public ICollection<Movie> PremierMovies { get; set; }
+        
     }
 }

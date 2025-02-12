@@ -1,7 +1,6 @@
 ﻿using HotFlix.Application.ViewModels;
 using HotFlix.Domain.Models;
 using HotFlix.Persistence.DAL;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

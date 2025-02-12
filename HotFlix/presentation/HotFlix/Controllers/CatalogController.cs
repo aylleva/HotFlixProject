@@ -22,6 +22,7 @@ namespace HotFlix.Controllers
 
             IQueryable<Movie> query =  _context.Movies;
 
+
             if(categoryId is not null || categoryId > 0)
             {
                 query=query.Where(q=>q.CategoryId == categoryId);

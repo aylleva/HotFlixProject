@@ -39,12 +39,10 @@
 					<div class="sign__content">
 						<!-- registration form -->
 						<form method="post" class="sign__form">
-							<div class="text-danger" asp-validation-summary="ModelOnly"></div>
-							
 							<a asp-controller="home" asp-action="index" class="sign__logo">
 								<img src="~/assets/img/logo.svg" alt="">
 							</a>
-
+							<div class="text-danger" asp-validation-summary="ModelOnly"></div>
 							<div class="sign__group">
 								<input asp-for="Name" class="sign__input" placeholder="Name">
 								<span asp-validation-for="Name" class="text-danger"></span>
@@ -86,7 +84,6 @@
 							<span class="sign__delimiter">or</span>
 
 							<div class="sign__social">
-								<a class="fb" href="#">Sign up with<i class="ti ti-brand-facebook"></i></a>
 								<a class="gl"  asp-controller="account" asp-action="loginwithgoogle">Sign up with<i class="ti ti-brand-google"></i></a>
 							</div>
 

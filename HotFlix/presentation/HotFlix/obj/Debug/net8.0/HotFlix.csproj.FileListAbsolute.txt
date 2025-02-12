@@ -180,3 +180,4 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.csproj.GenerateResource.cache
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\en-US\HotFlix.resources.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\tr-TR\HotFlix.resources.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll

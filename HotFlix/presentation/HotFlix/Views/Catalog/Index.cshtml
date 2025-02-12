@@ -226,7 +226,9 @@
 
 
 </script>
- @* fetch(url, {
+
+<script>
+ fetch(url, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -241,4 +243,5 @@
 				document.getElementById('results').innerHTML = html;
 			})
 			.catch(error => console.error('Error fetching data:', error));
- *@
+
+</script>

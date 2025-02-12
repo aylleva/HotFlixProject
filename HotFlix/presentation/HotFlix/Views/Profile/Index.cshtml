@@ -32,8 +32,7 @@
 								<img src="img/user.svg" alt="">
 							</div>
 							<div class="profile__meta">
-								<h3>John Doe</h3>
-								<span>HOTFLIX ID: 78123</span>
+								<h3>@User.Identity.Name</h3>
 							</div>
 						</div>
 
@@ -42,11 +41,6 @@
 							<li class="nav-item" role="presentation">
 								<button id="1-tab" class="active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">Profile</button>
 							</li>
-
-							<li class="nav-item" role="presentation">
-								<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Subs</button>
-							</li>
-
 							<li class="nav-item" role="presentation">
 								<button id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">Favorites</button>
 							</li>
@@ -57,7 +51,7 @@
 						</ul>
 						<!-- end content tabs nav -->
 						<!-- logout -->
-						<button class="profile__logout" type="button">
+						<button class="profile__logout" asp-controller="account" asp-action="logout" type="submit">
 							<i class="ti ti-logout"></i>
 							<span>Logout</span>
 						</button>
@@ -840,54 +834,6 @@
 						</form>
 					</div>
 					<!-- end details form -->
-					<!-- password form -->
-					<div class="col-12 col-lg-6">
-						<form action="#" class="sign__form sign__form--full">
-							<div class="row">
-								<div class="col-12">
-									<h4 class="sign__title">Change password</h4>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="oldpass">Old password</label>
-										<input id="oldpass" type="password" name="oldpass" class="sign__input">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="newpass">New password</label>
-										<input id="newpass" type="password" name="newpass" class="sign__input">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="confirmpass">Confirm new password</label>
-										<input id="confirmpass" type="password" name="confirmpass" class="sign__input">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="select">Select</label>
-										<select name="select" id="select" class="sign__select">
-											<option value="0">Option</option>
-											<option value="1">Option 2</option>
-											<option value="2">Option 3</option>
-											<option value="3">Option 4</option>
-										</select>
-									</div>
-								</div>
-
-								<div class="col-12">
-									<button class="sign__btn sign__btn--small" type="button">Change</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- end password form -->
 				</div>
 			</div>
 		</div>
