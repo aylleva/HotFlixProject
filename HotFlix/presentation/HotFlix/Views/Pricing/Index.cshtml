@@ -1,4 +1,8 @@
-﻿@model PricingVM
+﻿@using HotFlix.Domain.Models
+@using HotFlix.Persistence.DAL
+@using Microsoft.Extensions.Options
+@model PricingVM
+@inject IOptions<StripeSettings> stripe
 	<!-- page title -->
 	<section class="section section--first">
 		<div class="container">
@@ -39,7 +43,17 @@
 							<li class="plan__item"><i class="ti ti-circle-check"></i> Any Device</li>
 							<li class="plan__item"><i class="ti ti-circle-check"></i> 24/7 Support</li>
 						</ul>
-						<button class="plan__btn" type="button" data-bs-toggle="modal" data-bs-target="#plan-modal">Choose Plan</button>
+						@if(User.Identity.IsAuthenticated){
+							<div style="width:100%;display:block" class="pay_btn" data-plan-id="@plan.Id">
+								<button class="plan__btn" type="button" data-bs-toggle="modal" data-bs-target="#plan-modal">Choose Plan</button>
+							</div>
+						}
+						else{
+							<div style="width:100%;display:block">
+								@* <button class="plan__btn" type="button">Choose Plan</button> *@
+								<span class="sign__text">For Bying Premuim Plan Go To  <a asp-controller="account" asp-action="login">Sign up!</a></span>
+							</div>
+						}
 					</div>
 				</div>
 				<!-- end plan -->
@@ -190,3 +204,60 @@
 		</div>
 	</section>
 	<!-- end partners -->
+<!-- plan modal -->
+<div class="modal fade" id="plan-modal" tabindex="-1" aria-labelledby="plan-modal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal__content">
+				<button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-x"></i></button>
+
+				<form method="post" onchange="this.form.submit()" class="modal__form">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<h4 class="modal__title">Select plan</h4>
+
+					<div class="sign__group">
+						<label asp-for="Name" class="sign__label">Name</label>
+						<input asp-for="Name" class="sign__input" placeholder="Name">
+						<span asp-validation-for="Name" class="text-danger"></span>
+					</div>
+
+					<div class="sign__group">
+						<label asp-for="Surname" class="sign__label">Surname</label>
+						<input asp-for="Surname" class="sign__input" placeholder="Surname">
+						<span asp-validation-for="Surname" class="text-danger"></span>
+					</div>
+
+					<div class="sign__group">
+						<label class="sign__label" asp-for="PlanId">Choose plan:</label>
+						<select asp-for="PlanId" class="sign__select" @* id="selected-plan" *@>
+						@foreach(var plan in Model.Plans){
+								<option selected value="@plan.Id">@plan.PlanName - @plan.Price</option>
+						}
+						</select>
+						<span class="sign__text">You can spend money from your account on the renewal of the connected packages, or to order cars on our website.</span>
+					</div>
+					<script src="//checkout.stripe.com/v2/checkout.js"
+							class="stripe-button"
+							data-key="@stripe.Value.PublishableKey"
+							data-amount="@ViewBag.Total"
+							data-name="[Deveducate]"
+							data-locale="en"
+							data-discription="Sample charge"
+							data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+							data-zip-code="true">
+					</script>
+				
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end plan modal -->
+<script>
+		document.querySelectorAll('.plan__btn').forEach(button => {
+		button.addEventListener('click', function () {
+			let selectedPlan = this.closest('.pay_btn').getAttribute('data-plan-id');
+			document.getElementById('selected-plan').value = selectedPlan;
+		});
+	});
+</script>

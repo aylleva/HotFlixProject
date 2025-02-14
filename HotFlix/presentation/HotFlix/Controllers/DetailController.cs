@@ -22,6 +22,8 @@ namespace HotFlix.Controllers
         {
             if (Id is null || Id < 1) return BadRequest();
 
+           
+
             Movie? movie = await _context.Movies
                 .Include(m => m.MovieTags).ThenInclude(m => m.Tag)
                 .Include(m => m.MovieActors).ThenInclude(m => m.Actor)

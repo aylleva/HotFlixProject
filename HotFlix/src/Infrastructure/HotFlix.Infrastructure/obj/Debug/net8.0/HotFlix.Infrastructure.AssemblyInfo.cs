@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotFlix.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+286ca5b7a3df8022205761b3786e18062cf81988")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+236fc953befb3ff67de6f35b86d407b100dea59f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotFlix.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotFlix.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

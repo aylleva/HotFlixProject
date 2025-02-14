@@ -9,6 +9,11 @@ namespace HotFlix.Application.ViewModels
 {
    public class PricingVM
     {
-        public ICollection<PremiumPlan> Plans { get; set; }
+        public ICollection<PremiumPlan>? Plans { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int PlanId { get; set; }
+
+
     }
 }

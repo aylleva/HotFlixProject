@@ -1,4 +1,11 @@
-﻿@model DetailVM
+﻿@using System.Security.Claims
+@using HotFlix.Domain.Models
+@using Microsoft.AspNetCore.Identity
+@model DetailVM
+@inject UserManager<AppUser> usermeneger
+@{
+	var user = usermeneger.GetUserAsync(User).Result;
+}
 <!-- details -->
 <section class="section section--details">
 	<!-- details content -->
@@ -64,7 +71,7 @@
 					@if (Model.Movie.Category.Name == "TV Series")
 					{
 						<div>
-							@if (User.Identity.IsAuthenticated)
+							@if(user.IsPremium==true)
 							{
 								<video controls autoplay width="715" height="410" id="player">
 									<source src="~/assets/videos/@Model.Movie.VideoUrl" type="audio/mp4">
@@ -95,7 +102,7 @@
 					else
 					{
 						<div>
-							@if (User.Identity.IsAuthenticated)
+							@if (user.IsPremium==true)
 							{
 								<video controls autoplay width="715" height="410" id="player">
 									<source src="~/assets/videos/@Model.Movie.VideoUrl" type="audio/mp4">

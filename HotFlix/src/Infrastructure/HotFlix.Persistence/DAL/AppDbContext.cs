@@ -1,4 +1,5 @@
-﻿using HotFlix.Domain.Models;
+﻿using HotFlix.Domain;
+using HotFlix.Domain.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -30,6 +31,7 @@ namespace HotFlix.Persistence.DAL
         public DbSet<PartnerShip> PartnerShips { get; set; }
         public DbSet<JobContact> JobContacts {  get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<PlanOrder> PlanOrders { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

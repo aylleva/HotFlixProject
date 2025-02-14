@@ -19,6 +19,7 @@ namespace HotFlix.Persistence.ServiceRegistration
             opt.UseSqlServer(configuration.GetConnectionString("Default"),
              m => m.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName)
             ));
+
             services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
                 opt.Password.RequiredLength = 8;
@@ -32,7 +33,6 @@ namespace HotFlix.Persistence.ServiceRegistration
                 opt.Lockout.AllowedForNewUsers = true;
             }
           ).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
-
             services.AddScoped<AppDbContextInitializer>();
             services.AddScoped<ILayoutService,LayoutService>();
             

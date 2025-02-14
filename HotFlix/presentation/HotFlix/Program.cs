@@ -10,6 +10,7 @@ using System;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Stripe;
 
 namespace HotFlix
 {
@@ -36,6 +37,7 @@ namespace HotFlix
                 opt.SupportedCultures = supportedCultures;
             });
 
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
             builder.Services.AddPersistenceServices(builder.Configuration)
                 .AddInfrastructureServices(builder.Configuration);
@@ -64,6 +66,8 @@ namespace HotFlix
 
             app.UseSession();
             app.UseStaticFiles();
+
+            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
             app.MapControllerRoute(
             "admin",
