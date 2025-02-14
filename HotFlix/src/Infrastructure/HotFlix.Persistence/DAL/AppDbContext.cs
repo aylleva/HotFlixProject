@@ -32,6 +32,8 @@ namespace HotFlix.Persistence.DAL
         public DbSet<JobContact> JobContacts {  get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<PlanOrder> PlanOrders { get; set; }
+        public DbSet<FavoriteMovies> FavoriteMovies { get; set; }
+        public DbSet<MovieWatches> MovieWatches { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

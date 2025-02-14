@@ -130,6 +130,9 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<string>("VerificationCode")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("WatchedFilms")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -272,6 +275,39 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.ToTable("Directors");
                 });
 
+            modelBuilder.Entity("HotFlix.Domain.Models.FavoriteMovies", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("FavoriteMovies");
+                });
+
             modelBuilder.Entity("HotFlix.Domain.Models.JobContact", b =>
                 {
                     b.Property<int>("Id")
@@ -406,6 +442,33 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.HasIndex("TagId");
 
                     b.ToTable("MovieTags");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.MovieWatches", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("WatchedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("MovieWatches");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.PartnerShip", b =>
@@ -805,6 +868,25 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("HotFlix.Domain.Models.FavoriteMovies", b =>
+                {
+                    b.HasOne("HotFlix.Domain.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HotFlix.Domain.Models.AppUser", "User")
+                        .WithMany("FavoriteMovies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("HotFlix.Domain.Models.JobContact", b =>
                 {
                     b.HasOne("HotFlix.Domain.Models.PartnerShip", "PartnerShip")
@@ -879,6 +961,25 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("Movie");
 
                     b.Navigation("Tag");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.MovieWatches", b =>
+                {
+                    b.HasOne("HotFlix.Domain.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HotFlix.Domain.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Season", b =>
@@ -979,6 +1080,8 @@ namespace HotFlix.Persistence.DAL.Migrations
             modelBuilder.Entity("HotFlix.Domain.Models.AppUser", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("FavoriteMovies");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Category", b =>

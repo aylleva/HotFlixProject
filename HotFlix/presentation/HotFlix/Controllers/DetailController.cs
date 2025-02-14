@@ -22,7 +22,7 @@ namespace HotFlix.Controllers
         {
             if (Id is null || Id < 1) return BadRequest();
 
-           
+            var user = await _usermeneger.Users.FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             Movie? movie = await _context.Movies
                 .Include(m => m.MovieTags).ThenInclude(m => m.Tag)
@@ -47,7 +47,6 @@ namespace HotFlix.Controllers
                 }).ToListAsync();
 
             if (movie is null) return NotFound();
-
             DetailVM detailVM = new DetailVM
             {
                 Comments = comments,
@@ -57,6 +56,19 @@ namespace HotFlix.Controllers
             .Where(m => m.CategoryId == movie.CategoryId && m.Id!=Id)
             .ToListAsync()
             };
+
+           if(user is not null)
+            {
+                MovieWatches watches = new MovieWatches()
+                {
+                    MovieId = Id.Value,
+                    UserId = user.Id,
+                    WatchedAt = DateTime.UtcNow
+                };
+                await _context.MovieWatches.AddAsync(watches);
+                user.WatchedFilms++;
+                await _context.SaveChangesAsync();
+            }
 
             return View(detailVM);
         }

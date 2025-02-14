@@ -118,16 +118,10 @@
 								<i class="ti ti-player-play-filled"></i>
 							</a>
 							<span class="item__rate item__rate--green">@movie.Rating</span>
-							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+							<a asp-controller="profile" asp-action="addmovie" asp-route-id="@movie.Id" class="item__favorite" type="button"><i class="ti ti-bookmark"></i></a>
 						</div>
 						<div class="item__content">
 							<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>
-							@* 	<span class="item__category">
-												@foreach (var tag in Model.FirstOrDefault(m => m.Id == movie.Id).MovieTags)
-												{
-													<a href="#">@tag.Tag.Name</a>
-												}
-											</span> *@
 						</div>
 					</div>
 				</div>

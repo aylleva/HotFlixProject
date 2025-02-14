@@ -1,4 +1,9 @@
-﻿	<!-- page title -->
+﻿@model ProfileVM
+@{
+	int count = 0;
+	int no = 0;
+}
+<!-- page title -->
 <section class="section section--first">
 	<div class="container">
 		<div class="row">
@@ -51,10 +56,10 @@
 						</ul>
 						<!-- end content tabs nav -->
 						<!-- logout -->
-						<button class="profile__logout" asp-controller="account" asp-action="logout" type="submit">
+						<a class="profile__logout" asp-controller="account" asp-action="logout" >
 							<i class="ti ti-logout"></i>
 							<span>Logout</span>
-						</button>
+						</a>
 						<!-- end logout -->
 					</div>
 				</div>
@@ -72,7 +77,7 @@
 					<div class="col-12 col-md-6 col-xl-3">
 						<div class="stats">
 							<span>Premium plan</span>
-							<p>$34.99 / month</p>
+							<p>@Model.PremiumPLan</p>
 							<i class="ti ti-credit-card"></i>
 						</div>
 					</div>
@@ -81,7 +86,7 @@
 					<div class="col-12 col-md-6 col-xl-3">
 						<div class="stats">
 							<span>Films watched</span>
-							<p>1 678</p>
+							<p>@Model.MovieViews</p>
 							<i class="ti ti-movie"></i>
 						</div>
 					</div>
@@ -90,7 +95,7 @@
 					<div class="col-12 col-md-6 col-xl-3">
 						<div class="stats">
 							<span>Your comments</span>
-							<p>2 573</p>
+							<p>@Model.CommentCount</p>
 							<i class="ti ti-message-circle"></i>
 						</div>
 					</div>
@@ -99,7 +104,7 @@
 					<div class="col-12 col-md-6 col-xl-3">
 						<div class="stats">
 							<span>Your reviews</span>
-							<p>1 021</p>
+							<p>0</p>
 							<i class="ti ti-star-half-filled"></i>
 						</div>
 					</div>
@@ -111,96 +116,46 @@
 					<div class="col-12 col-xl-6">
 						<div class="dashbox">
 							<div class="dashbox__title">
-								<h3><i class="ti ti-movie"></i> Movies for you</h3>
+								<h3><i class="ti ti-movie"></i> Your Favorite Movies</h3>
 
 								<div class="dashbox__wrap">
-									<a class="dashbox__refresh" href="#"><i class="ti ti-refresh"></i></a>
 									<a class="dashbox__more" href="catalog.html">View All</a>
 								</div>
 							</div>
 
 							<div class="dashbox__table-wrap dashbox__table-wrap--1">
-								<table class="dashbox__table">
+								<table class="dashbox__table" id="favorite_movie">
 									<thead>
 										<tr>
-											<th>ID</th>
+											<th>NO</th>
 											<th>TITLE</th>
 											<th>CATEGORY</th>
 											<th>RATING</th>
+											<th>Remove</th>
 										</tr>
 									</thead>
 
 									<tbody>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">241</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">The Lost City</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Movie</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 9.2</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">825</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Undercurrents</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Movie</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 9.1</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">9271</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Tales from the Underworld</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">TV Series</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 9.0</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">635</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">The Unseen World</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">TV Series</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 8.9</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">825</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Redemption Road</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">TV Series</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 8.9</div>
-											</td>
-										</tr>
+										@foreach(var movie in Model.FavoriteMovies){
+											count++;
+											<tr>
+												<td>
+													<div class="dashbox__table-text dashbox__table-text--grey">@count</div>
+												</td>
+												<td>
+													<div class="dashbox__table-text"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.MovieId">@movie.Name</a></div>
+												</td>
+												<td>
+													<div  class="dashbox__table-text">@movie.CategoryName</div>
+												</td>
+												<td>
+													<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i>@movie.Rating</div>
+												</td>
+												<td>
+													<a asp-controller="profile" asp-action="delete" asp-route-id="@movie.MovieId" class="remove-movie" style="color:wheat;"></a>
+												</td>
+											</tr>
+										}
 									</tbody>
 								</table>
 							</div>
@@ -214,8 +169,7 @@
 								<h3><i class="ti ti-star-half-filled"></i> Latest reviews</h3>
 
 								<div class="dashbox__wrap">
-									<a class="dashbox__refresh" href="#"><i class="ti ti-refresh"></i></a>
-									<a class="dashbox__more" href="#">View All</a>
+									<a class="dashbox__more" asp-controller="catalog" asp-action="index">View All Movies</a>
 								</div>
 							</div>
 
@@ -225,82 +179,30 @@
 										<tr>
 											<th>ID</th>
 											<th>ITEM</th>
-											<th>AUTHOR</th>
+											<th>Category</th>
 											<th>RATING</th>
 										</tr>
 									</thead>
 
 									<tbody>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">824</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">I Dream in Another Language</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Eliza Josceline</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 7.2</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">602</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Benched</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Ketut</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 6.3</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">538</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Whitney</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Brian Cranston</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 8.4</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">129</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Blindspotting</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Quang</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 9.0</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--grey">360</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text"><a href="details.html">Another</a></div>
-											</td>
-											<td>
-												<div class="dashbox__table-text">Jackson Brown</div>
-											</td>
-											<td>
-												<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> 7.7</div>
-											</td>
-										</tr>
+										@foreach(var movie in Model.ReviewedMovie){
+											no++;
+											<tr>
+												<td>
+													<div class="dashbox__table-text dashbox__table-text--grey">@no</div>
+												</td>
+												<td>
+													<div class="dashbox__table-text"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.ID">@movie.Name</a></div>
+												</td>
+												<td>
+													<div class="dashbox__table-text">@movie.CategoryName</div>
+												</td>
+												<td>
+													<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i> @movie.Rating</div>
+												</td>
+											</tr>
+										}
+									
 									</tbody>
 								</table>
 							</div>
@@ -365,424 +267,26 @@
 
 			<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
 				<div class="row">
-					<!-- item -->
+					@foreach(var movie in Model.FavoriteMovies){
+						<!-- item -->
 					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 						<div class="item">
 							<div class="item__cover">
-								<img src="img/covers/cover.jpg" alt="">
-								<a href="details.html" class="item__play">
+								<img src="~/assets/img/covers/@movie.Image" alt="">
+									<a asp-controller="detail" asp-action="index" asp-route-id="@movie.MovieId" class="item__play">
 									<i class="ti ti-player-play-filled"></i>
 								</a>
-								<span class="item__rate item__rate--green">8.4</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
+								<span class="item__rate item__rate--green">@movie.Rating</span>
+									<a class="item__favorite item__favorite--active" asp-controller="profile" asp-action="delete" asp-route-id="@movie.MovieId"><i class="ti ti-bookmark"></i></a>
 							</div>
 							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
+									<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.MovieId">@movie.Name</a></h3>
 							</div>
 						</div>
 					</div>
 					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover2.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">7.1</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover3.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--red">6.3</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Whitney</a></h3>
-								<span class="item__category">
-									<a href="#">Romance</a>
-									<a href="#">Drama</a>
-									<a href="#">Music</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover4.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--yellow">6.9</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Blindspotting</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-									<a href="#">Drama</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover5.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">8.4</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover6.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">7.1</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover7.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">7.1</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover8.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--red">5.5</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover9.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--yellow">6.7</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Blindspotting</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-									<a href="#">Drama</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover10.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--red">5.6</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Whitney</a></h3>
-								<span class="item__category">
-									<a href="#">Romance</a>
-									<a href="#">Drama</a>
-									<a href="#">Music</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover11.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">9.2</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover12.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">8.4</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover13.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">8.0</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover14.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">7.2</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover15.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--yellow">5.9</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Whitney</a></h3>
-								<span class="item__category">
-									<a href="#">Romance</a>
-									<a href="#">Drama</a>
-									<a href="#">Music</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover16.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">8.3</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Blindspotting</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-									<a href="#">Drama</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover17.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">8.0</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
-								<span class="item__category">
-									<a href="#">Action</a>
-									<a href="#">Triler</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-					<!-- item -->
-					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-						<div class="item">
-							<div class="item__cover">
-								<img src="img/covers/cover18.jpg" alt="">
-								<a href="details.html" class="item__play">
-									<i class="ti ti-player-play-filled"></i>
-								</a>
-								<span class="item__rate item__rate--green">7.1</span>
-								<button class="item__favorite item__favorite--active" type="button"><i class="ti ti-bookmark"></i></button>
-							</div>
-							<div class="item__content">
-								<h3 class="item__title"><a href="details.html">Benched</a></h3>
-								<span class="item__category">
-									<a href="#">Comedy</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- end item -->
-				</div>
-
-				<div class="row">
-					<!-- paginator -->
-					<div class="col-12">
-						<!-- paginator mobile -->
-						<div class="paginator-mob">
-							<span class="paginator-mob__pages">18 of 1713</span>
-
-							<ul class="paginator-mob__nav">
-								<li>
-									<a href="#">
-										<i class="ti ti-chevron-left"></i>
-										<span>Prev</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Next</span>
-										<i class="ti ti-chevron-right"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- end paginator mobile -->
-						<!-- paginator desktop -->
-						<ul class="paginator">
-							<li class="paginator__item paginator__item--prev">
-								<a href="#"><i class="ti ti-chevron-left"></i></a>
-							</li>
-							<li class="paginator__item"><a href="#">1</a></li>
-							<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
-							<li class="paginator__item"><a href="#">3</a></li>
-							<li class="paginator__item"><a href="#">4</a></li>
-							<li class="paginator__item"><span>...</span></li>
-							<li class="paginator__item"><a href="#">87</a></li>
-							<li class="paginator__item paginator__item--next">
-								<a href="#"><i class="ti ti-chevron-right"></i></a>
-							</li>
-						</ul>
-						<!-- end paginator desktop -->
-					</div>
-					<!-- end paginator -->
+					}
+					
 				</div>
 			</div>
 
@@ -841,3 +345,25 @@
 	</div>
 </div>
 <!-- end content -->
+<script>
+		$(document).on("click", ".remove-movie", function () {
+		let movieId = $(this).data("id");
+		let row = $(this).closest("tr");
+
+		$.ajax({
+			url: "Profile/Delete",
+			type: "GET",
+			data: { id: movieId },
+			success: function (response) {
+				if (response.success) {
+					row.fadeOut(500, function () { $(this).remove(); });
+				}
+			}
+		});
+	});
+</script>
+<script>
+		document.querySelectorAll('.remove-movie').forEach(btn => {
+		btn.innerHTML = '✖';
+	});
+</script>

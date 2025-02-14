@@ -14,7 +14,9 @@ namespace HotFlix.Domain.Models
         public PremiumPlan? PremiumPlan { get; set; }
         public string? VerificationCode { get; set; }
         public DateTime? CodeExpiryTime { get; set; }
+        public int WatchedFilms {  get; set; }
         public ICollection<Comments>? Comments { get; set; }
+        public ICollection<FavoriteMovies>? FavoriteMovies { get; set; }
 
     }
 }
