@@ -71,11 +71,11 @@
 					@if (Model.Movie.Category.Name == "TV Series")
 					{
 						<div>
-							@if(user.IsPremium==true)
+							@if (user.IsPremium == true)
 							{
-								<video controls autoplay width="715" height="410" id="player">
-									<source src="~/assets/videos/@Model.Movie.VideoUrl" type="audio/mp4">
-								</video>
+									<video controls autoplay width="715" height="410" id="player">
+										<source src="~/assets/videos/@Model.Movie.VideoUrl" type="audio/mp4">
+									</video>
 							}
 							else
 							{
@@ -87,14 +87,14 @@
 						@if (User.Identity.IsAuthenticated)
 						{
 							<div class="section__item-filter">
-								@foreach (var season in Model.Movie.Seasons)
-								{
-									<select class="section__item-select" name="season" id="filter__season">
-										@foreach (var serie in Model.Movie.Seasons.FirstOrDefault(s => s.Id == season.Id).SeasonVideos)
-										{
-											<option selected value="@season.Id">Season @season.SeasonNumber Series @serie.SeriesNumber </option>
+								<form asp-route-sezonid="@Model.SezonId">
+									<select onchange="this.form.submit()" class="section__item-select" asp-for="SerieId" id="filter__season">
+										@foreach(var serie in Model.Movie.Seasons.FirstOrDefault().SeasonVideos){
+											<option value="@serie.Id">Series @serie.SeriesNumber </option>
 										}
 									</select>
+								</form>
+									
 								}
 							</div>
 						}
@@ -102,7 +102,7 @@
 					else
 					{
 						<div>
-							@if (user.IsPremium==true)
+							@if (user.IsPremium == true)
 							{
 								<video controls autoplay width="715" height="410" id="player">
 									<source src="~/assets/videos/@Model.Movie.VideoUrl" type="audio/mp4">
@@ -164,7 +164,8 @@
 							<div class="col-12">
 								<div class="comments">
 									<ul class="comments__list">
-									@foreach(var comment in Model.Comments){
+										@foreach (var comment in Model.Comments)
+										{
 											<li class="comments__item">
 												<div class="comments__autor">
 													<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
@@ -183,14 +184,16 @@
 													<button type="button"><i class="ti ti-quote"></i>Quote</button>
 												</div>
 											</li>
-									}
+										}
 
 									</ul>
 
-								@if(Model.Comments.Count==0){
-									<h4 style="text-align:center; color:white;">No Comments</h4>
-								}
-								else{
+									@if (Model.Comments.Count == 0)
+									{
+										<h4 style="text-align:center; color:white;">No Comments</h4>
+									}
+									else
+									{
 										<!-- paginator mobile -->
 										<div class="paginator-mob paginator-mob--comments">
 											<span class="paginator-mob__pages">5 of 628</span>
@@ -227,20 +230,22 @@
 											</li>
 										</ul>
 										<!-- end paginator desktop -->
-								}
+									}
 
-									@if(User.Identity.IsAuthenticated){
+									@if (User.Identity.IsAuthenticated)
+									{
 										<form method="post" class="sign__form sign__form--comments" asp-controller="detail" asp-action="addcomment" asp-route-id="@Model.Movie.Id">
 											<input asp-for="@Model.Movie.Id" readonly hidden>
 											<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 											<div class="sign__group">
 												<textarea asp-for="CommentVM.Description" class="sign__textarea" placeholder="Add comment"></textarea>
-												<span asp-validation-for="CommentVM.Description".Description" class="text-danger"></span>
+												<span asp-validation-for="CommentVM.Description" .Description" class="text-danger"></span>
 											</div>
 											<button type="submit" class="sign__btn sign__btn--small">Send</button>
 										</form>
 									}
-									else{
+									else
+									{
 										<div class="text-center p-2 text-white bg-black">For Adding Comments You Have To Login.<a asp-controller="account" asp-action="login">Sign In!</a></div>
 									}
 								</div>

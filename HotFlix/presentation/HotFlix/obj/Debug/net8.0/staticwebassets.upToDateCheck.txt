@@ -1873,12 +1873,12 @@ wwwroot\assets\img\bg\section__bg.jpg
 wwwroot\assets\img\bg\tao.jpeg
 wwwroot\assets\img\covers\alice in borderland.jpg
 wwwroot\assets\img\covers\batmanthedark.jpg
-wwwroot\assets\img\covers\inception.jpeg
+wwwroot\assets\img\covers\inceptionnew.jpeg
 wwwroot\assets\img\covers\interstellar.jpg
-wwwroot\assets\img\covers\martian.jpeg
 wwwroot\assets\img\covers\oppenhaimer.jpg
 wwwroot\assets\img\covers\squidgame.jpg
-wwwroot\assets\img\covers\texascrime.jpeg
+wwwroot\assets\img\covers\texaschainn.jpg
+wwwroot\assets\img\covers\themartiannew.jpeg
 wwwroot\assets\img\gallery\project-1.jpg
 wwwroot\assets\img\gallery\project-2.jpg
 wwwroot\assets\img\gallery\project-3.jpg

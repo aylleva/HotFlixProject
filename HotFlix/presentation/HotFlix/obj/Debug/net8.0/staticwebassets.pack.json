@@ -7501,16 +7501,12 @@
       "PackagePath": "staticwebassets\\assets\\img\\covers\\batmanthedark.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\inception.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\covers\\inception.jpeg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\inceptionnew.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\inceptionnew.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\interstellar.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\covers\\interstellar.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\martian.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\covers\\martian.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\oppenhaimer.jpg",
@@ -7521,8 +7517,12 @@
       "PackagePath": "staticwebassets\\assets\\img\\covers\\squidgame.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\texascrime.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\covers\\texascrime.jpeg"
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\texaschainn.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\texaschainn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\themartiannew.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\themartiannew.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\gallery\\project-1.jpg",

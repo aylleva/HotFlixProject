@@ -153753,8 +153753,8 @@
       ]
     },
     {
-      "Route": "assets/img/covers/inception.jpeg",
-      "AssetFile": "assets/img/covers/inception.jpeg",
+      "Route": "assets/img/covers/inceptionnew.jpeg",
+      "AssetFile": "assets/img/covers/inceptionnew.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -153767,7 +153767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12283"
+          "Value": "289272"
         },
         {
           "Name": "Content-Type",
@@ -153775,23 +153775,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UehcJuIVmQcObmV7gA977Wlqoa1C+veDCtwE0AMbvo0=\""
+          "Value": "\"hLVD2nUq8iXYfyPAHzS+Xs7CHDVLLciZrfvqDPKilgA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:53:31 GMT"
+          "Value": "Sat, 15 Feb 2025 11:45:49 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UehcJuIVmQcObmV7gA977Wlqoa1C+veDCtwE0AMbvo0="
+          "Value": "sha256-hLVD2nUq8iXYfyPAHzS+Xs7CHDVLLciZrfvqDPKilgA="
         }
       ]
     },
     {
-      "Route": "assets/img/covers/inception.x8ln170g87.jpeg",
-      "AssetFile": "assets/img/covers/inception.jpeg",
+      "Route": "assets/img/covers/inceptionnew.olzh85sm6q.jpeg",
+      "AssetFile": "assets/img/covers/inceptionnew.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -153804,7 +153804,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12283"
+          "Value": "289272"
         },
         {
           "Name": "Content-Type",
@@ -153812,25 +153812,25 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UehcJuIVmQcObmV7gA977Wlqoa1C+veDCtwE0AMbvo0=\""
+          "Value": "\"hLVD2nUq8iXYfyPAHzS+Xs7CHDVLLciZrfvqDPKilgA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:53:31 GMT"
+          "Value": "Sat, 15 Feb 2025 11:45:49 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x8ln170g87"
+          "Value": "olzh85sm6q"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UehcJuIVmQcObmV7gA977Wlqoa1C+veDCtwE0AMbvo0="
+          "Value": "sha256-hLVD2nUq8iXYfyPAHzS+Xs7CHDVLLciZrfvqDPKilgA="
         },
         {
           "Name": "label",
-          "Value": "assets/img/covers/inception.jpeg"
+          "Value": "assets/img/covers/inceptionnew.jpeg"
         }
       ]
     },
@@ -153913,88 +153913,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-T+fHLr+s5KavlGznEkLOXII7ViwuyChsCQxDN0aILfA="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/covers/martian.jpeg",
-      "AssetFile": "assets/img/covers/martian.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7803"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t6oiZuSS0p0VixrxgvUv7TYrEWqbvswpIf0HmpX55l8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:45:09 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-t6oiZuSS0p0VixrxgvUv7TYrEWqbvswpIf0HmpX55l8="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/covers/martian.r3v9du8bym.jpeg",
-      "AssetFile": "assets/img/covers/martian.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7803"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t6oiZuSS0p0VixrxgvUv7TYrEWqbvswpIf0HmpX55l8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:45:09 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r3v9du8bym"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-t6oiZuSS0p0VixrxgvUv7TYrEWqbvswpIf0HmpX55l8="
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/covers/martian.jpeg"
         }
       ]
     },
@@ -154163,8 +154081,8 @@
       ]
     },
     {
-      "Route": "assets/img/covers/texascrime.jpeg",
-      "AssetFile": "assets/img/covers/texascrime.jpeg",
+      "Route": "assets/img/covers/texaschainn.jpg",
+      "AssetFile": "assets/img/covers/texaschainn.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -154177,7 +154095,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9284"
+          "Value": "111906"
         },
         {
           "Name": "Content-Type",
@@ -154185,23 +154103,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bb72MKNjfg/4nboFsBXKu1HxtQluE07DvW0e6g+k2Qc=\""
+          "Value": "\"rqDj8dTa6y9d7TJkubcVs4WEb32ZeAK40wYXlY30sYQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:45:57 GMT"
+          "Value": "Sat, 15 Feb 2025 11:51:44 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Bb72MKNjfg/4nboFsBXKu1HxtQluE07DvW0e6g+k2Qc="
+          "Value": "sha256-rqDj8dTa6y9d7TJkubcVs4WEb32ZeAK40wYXlY30sYQ="
         }
       ]
     },
     {
-      "Route": "assets/img/covers/texascrime.vzfw1q2jbr.jpeg",
-      "AssetFile": "assets/img/covers/texascrime.jpeg",
+      "Route": "assets/img/covers/texaschainn.qxny7ndg7p.jpg",
+      "AssetFile": "assets/img/covers/texaschainn.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -154214,7 +154132,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9284"
+          "Value": "111906"
         },
         {
           "Name": "Content-Type",
@@ -154222,25 +154140,107 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bb72MKNjfg/4nboFsBXKu1HxtQluE07DvW0e6g+k2Qc=\""
+          "Value": "\"rqDj8dTa6y9d7TJkubcVs4WEb32ZeAK40wYXlY30sYQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 20:45:57 GMT"
+          "Value": "Sat, 15 Feb 2025 11:51:44 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vzfw1q2jbr"
+          "Value": "qxny7ndg7p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Bb72MKNjfg/4nboFsBXKu1HxtQluE07DvW0e6g+k2Qc="
+          "Value": "sha256-rqDj8dTa6y9d7TJkubcVs4WEb32ZeAK40wYXlY30sYQ="
         },
         {
           "Name": "label",
-          "Value": "assets/img/covers/texascrime.jpeg"
+          "Value": "assets/img/covers/texaschainn.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/covers/themartiannew.fwrghtkors.jpeg",
+      "AssetFile": "assets/img/covers/themartiannew.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wYmtgBKDa1mZGQTqOzb/d1qfS8YPIH/EGOioIFKTKi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 11:48:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fwrghtkors"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wYmtgBKDa1mZGQTqOzb/d1qfS8YPIH/EGOioIFKTKi8="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/covers/themartiannew.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/covers/themartiannew.jpeg",
+      "AssetFile": "assets/img/covers/themartiannew.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wYmtgBKDa1mZGQTqOzb/d1qfS8YPIH/EGOioIFKTKi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 11:48:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wYmtgBKDa1mZGQTqOzb/d1qfS8YPIH/EGOioIFKTKi8="
         }
       ]
     },

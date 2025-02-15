@@ -48,5 +48,9 @@ namespace HotFlix.Controllers
             Response.Cookies.Append("Language", "en");
             return Redirect(Request.GetTypedHeaders().Referer.ToString());
         }
+        public IActionResult Error(string errormessage)
+        {
+            return View(model: errormessage);
+        }
     }
 }

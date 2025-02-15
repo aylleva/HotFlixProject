@@ -58,9 +58,9 @@ namespace HotFlix.Controllers
 
         public async Task<IActionResult> AddMovie(int? Id)
         {
-            if (Id is null || Id < 1) return BadRequest();
+            if (Id is null || Id < 1) throw new Exception("Sorry! Movie Was Not Found");
             var result=await _context.Movies.AnyAsync(m=>m.Id == Id);
-            if(!result) return NotFound();
+            if(!result) throw new Exception("Sorry! Movie Was Not Found");
 
             var user = await _usermeneger.Users.Include(u=>u.FavoriteMovies).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 
@@ -78,9 +78,9 @@ namespace HotFlix.Controllers
    
         public async Task<IActionResult> Delete(int? Id)
         {
-            if (Id is null || Id < 1) return BadRequest();
+            if (Id is null || Id < 1) throw new Exception("Sorry! Movie Was Not Found");
             var result = await _context.Movies.AnyAsync(m => m.Id == Id);
-            if (!result) return NotFound();
+            if (!result) throw new Exception("Sorry! Movie Was Not Found");
 
             var user = await _usermeneger.Users.Include(u => u.FavoriteMovies).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 

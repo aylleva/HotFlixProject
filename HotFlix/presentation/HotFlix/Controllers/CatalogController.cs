@@ -30,7 +30,7 @@ namespace HotFlix.Controllers
 
             if(tagId is not null || tagId > 0)
             {
-                query =query.Include(q=>q.MovieTags.Where(mt=>mt.TagId==tagId));
+                query =query.Where(m=>m.MovieTags.Any(mt=>mt.TagId == tagId));
             }
 
             switch (ratingkey)
@@ -56,13 +56,13 @@ namespace HotFlix.Controllers
                     break;
             }
 
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new Exception("Sorry! Page Was Not Found");
 
             int count = _context.Movies.Count();
-            double total = Math.Ceiling((double)count / 2);
+            double total = Math.Ceiling((double)count / 5);
 
-            query = query.Skip((page - 1) * 2).Take(2);
-            if (page>total) return BadRequest();
+            query = query.Skip((page - 1) * 5).Take(5);
+            if (page>total) throw new Exception("Sorry! Page Was Not Found");
 
             CatalogVM catalogvm = new CatalogVM
             {

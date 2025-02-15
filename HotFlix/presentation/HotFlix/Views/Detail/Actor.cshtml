@@ -1,5 +1,5 @@
 ﻿@using HotFlix.Domain.Models
-@model Actor
+@model ActorVM
 <!-- details -->
 <section class="section section--details">
 	<!-- details background -->
@@ -10,7 +10,7 @@
 		<div class="row">
 			<!-- title -->
 			<div class="col-12">
-				<h1 class="section__title section__title--head">@Model.FullName</h1>
+				<h1 class="section__title section__title--head">@Model.Actor.FullName</h1>
 			</div>
 			<!-- end title -->
 			<!-- content -->
@@ -19,7 +19,7 @@
 					<div class="row">
 						<div class="col-12 col-sm-5 col-md-5">
 							<div class="item__cover">
-								<img src="~/assets/img/bg/@Model.Image" alt="">
+								<img src="~/assets/img/bg/@Model.Actor.Image" alt="">
 							</div>
 						</div>
 
@@ -27,11 +27,10 @@
 							<div class="item__content">
 								<ul class="item__meta">
 									<li><span>Career:</span>Actor</li>
-									<li><span>Age:</span> @Model.Age</li>
-									<li><span>Total number of movies:</span> @Model.MovieCount</li>
+									<li><span>Age:</span> @Model.Actor.Age</li>
+									<li><span>Total number of movies:</span> @Model.Actor.MovieCount</li>
 									<li><span>Zodiac:</span> Cancer</li>
 									<li><span>Genres:</span> <a href="#">Action</a> <a href="#">Triler</a> <a href="#">Drama</a></li>
-									<li><span>Total number of movies:</span> 109</li>
 									<li><span>First movie:</span> <a href="#">Girl Fight (2000)</a></li>
 									<li><span>Last movie:</span> <a href="#">Fast and the Furious 10 (2023)</a></li>
 									<li><span>Best movie:</span> <a href="#">Avatar</a></li>
@@ -79,22 +78,24 @@
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab" tabindex="0">
 						<div class="row">
-						@foreach(var movie in Model.MovieActors){
+							@foreach (var movie in Model.Movies)
+							{
 								<!-- item -->
 								<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 									<div class="item">
 										<div class="item__cover">
-											<img src="~/assets/img/covers/@movie.Movie.Image" alt="">
-											<a asp-controller="detail" asp-action="index" asp-route-id="@movie.Movie.Id" class="item__play">
+											<img src="~/assets/img/covers/@movie.Image" alt="">
+											<a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id" class="item__play">
 												<i class="ti ti-player-play-filled"></i>
 											</a>
-											<span class="item__rate item__rate--green">@movie.Movie.Rating</span>
+											<span class="item__rate item__rate--green">@movie.Rating</span>
 											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
 										</div>
 										<div class="item__content">
-											<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Movie.Id">@movie.Movie.Name</a></h3>
+											<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>
 											<span class="item__category">
-												@foreach(var tag in Model.MovieActors.FirstOrDefault(m=>m.MovieId==movie.Movie.Id).Movie.MovieTags){
+												@foreach (var tag in Model.Actor.MovieActors.FirstOrDefault(m => m.MovieId == movie.Id).Movie.MovieTags)
+												{
 													<a href="#">@tag.Tag.Name</a>
 												}
 											</span>
@@ -106,42 +107,20 @@
 						</div>
 
 						<div class="row">
-							<!-- paginator -->
-							<div class="col-12">
-								<!-- paginator mobile -->
-								<div class="paginator-mob">
-									<span class="paginator-mob__pages">18 of 1713</span>
-
-									<ul class="paginator-mob__nav">
-										<li>
-											<a href="#">
-												<i class="ti ti-chevron-left"></i>
-												<span>Prev</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span>Next</span>
-												<i class="ti ti-chevron-right"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<!-- end paginator mobile -->
 								<!-- paginator desktop -->
 								<ul class="paginator">
-									<li class="paginator__item paginator__item--prev">
-										<a href="#"><i class="ti ti-chevron-left"></i></a>
+								<li class="paginator__item paginator__item--prev @(Model.CurrectPage<1?"disabled":"")">
+									<a asp-route-page="@(Model.CurrectPage-1)"><i class="ti ti-chevron-left"></i></a>
+								</li>
+								@for (var i = 0; i < Model.TotalPage; i++)
+								{
+									<li class="paginator__item @(Model.CurrectPage==i+1?" active disabled":"")">
+										<a asp-route-page="@(i+1)">@(i + 1)</a>
 									</li>
-									<li class="paginator__item"><a href="#">1</a></li>
-									<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
-									<li class="paginator__item"><a href="#">3</a></li>
-									<li class="paginator__item"><a href="#">4</a></li>
-									<li class="paginator__item"><span>...</span></li>
-									<li class="paginator__item"><a href="#">87</a></li>
-									<li class="paginator__item paginator__item--next">
-										<a href="#"><i class="ti ti-chevron-right"></i></a>
-									</li>
+								}
+								<li class="paginator__item paginator__item--next  @(Model.CurrectPage==Model.TotalPage?"disabled":"")">
+									<a asp-route-page="@(Model.CurrectPage+1)"><i class="ti ti-chevron-right"></i></a>
+								</li>
 								</ul>
 								<!-- end paginator desktop -->
 							</div>

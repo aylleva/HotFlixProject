@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -154,6 +155,47 @@ namespace HotFlix.Controllers
             await _signinuser.SignInAsync(user, true);
             return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
 
+        }
+
+        public async Task<IActionResult> Update()
+        {
+            var user = await _usermeneger.Users.FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            UpdateUserVM userVM = new UpdateUserVM() { 
+            Name=user.Name,
+            Surname=user.Surname,
+            Email=user.Email,
+            UserName=user.UserName
+            };
+
+            return View(userVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(UpdateUserVM userVM)
+        {
+            var user = await _usermeneger.Users.FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            if (!ModelState.IsValid)
+            {
+                return View(userVM);
+            }
+            
+            var newuser=await _usermeneger.FindByNameAsync(userVM.UserName);
+            if(newuser is not null)
+            {
+                ModelState.AddModelError(string.Empty, "This UserName is Already Exist");
+                return View(userVM);
+            }
+
+            user.Name=userVM.Name;
+            user.UserName=userVM.UserName;
+            user.Surname=userVM.Surname;
+            user.Email=userVM.Email;
+
+            await _usermeneger.UpdateAsync(user);
+            await _context.SaveChangesAsync();
+         
+            return RedirectToAction("index", "Home");
         }
 
     }

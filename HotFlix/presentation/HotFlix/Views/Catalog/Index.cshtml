@@ -160,11 +160,11 @@
 					</li>
 					@for(var i=0;i<Model.TotalPage;i++){
 						<li class="paginator__item @(Model.CurrectPage==i+1?" active disabled":"")" >
-							<a asp-route-page="@(i+1)">@(i+1)</a>
+							<a asp-route-categoryid="@Model.CategoryId" asp-route-ratingkey="@Model.RatingKey" asp-route-tagid="@Model.TagId" asp-route-timekey="@Model.TimeKey" asp-route-page="@(i+1)">@(i + 1)</a>
 						</li>
 					}
 					<li class="paginator__item paginator__item--next  @(Model.CurrectPage==Model.TotalPage?"disabled":"")">
-						<a asp-route-page="@(Model.CurrectPage+1)"><i class="ti ti-chevron-right"></i></a>
+						<a  asp-route-page="@(Model.CurrectPage+1)"><i class="ti ti-chevron-right"></i></a>
 					</li>
 				</ul>
 				<!-- end paginator desktop -->

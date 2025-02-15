@@ -1,4 +1,10 @@
 ﻿@model ProfileVM
+@using HotFlix.Domain.Models
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> usermeneger
+@{
+	var user = usermeneger.GetUserAsync(User).Result;
+}
 @{
 	int count = 0;
 	int no = 0;
@@ -37,7 +43,7 @@
 								<img src="img/user.svg" alt="">
 							</div>
 							<div class="profile__meta">
-								<h3>@User.Identity.Name</h3>
+								<h3>@user.UserName</h3>
 							</div>
 						</div>
 
@@ -50,9 +56,6 @@
 								<button id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">Favorites</button>
 							</li>
 
-							<li class="nav-item" role="presentation">
-								<button id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">Settings</button>
-							</li>
 						</ul>
 						<!-- end content tabs nav -->
 						<!-- logout -->
@@ -289,58 +292,6 @@
 					
 				</div>
 			</div>
-
-			<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
-				<div class="row">
-					<!-- details form -->
-					<div class="col-12 col-lg-6">
-						<form action="#" class="sign__form sign__form--full">
-							<div class="row">
-								<div class="col-12">
-									<h4 class="sign__title">Profile details</h4>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="username">Username</label>
-										<input id="username" type="text" name="username" class="sign__input" placeholder="User 123">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="email">Email</label>
-										<input id="email" type="text" name="email" class="sign__input" placeholder="email@email.com">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="fname">Name</label>
-										<input id="fname" type="text" name="fname" class="sign__input" placeholder="John Doe">
-									</div>
-								</div>
-
-								<div class="col-12 col-md-6 col-lg-12 col-xl-6">
-									<div class="sign__group">
-										<label class="sign__label" for="sign__gallery-upload">Avatar</label>
-										<div class="sign__gallery">
-											<label id="gallery1" for="sign__gallery-upload">Upload (40x40)</label>
-											<input data-name="#gallery1" id="sign__gallery-upload" name="gallery" class="sign__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
-										</div>
-									</div>
-								</div>
-
-								<div class="col-12">
-									<button class="sign__btn sign__btn--small" type="button">Save</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- end details form -->
-				</div>
-			</div>
-		</div>
 		<!-- end content tabs -->
 	</div>
 </div>

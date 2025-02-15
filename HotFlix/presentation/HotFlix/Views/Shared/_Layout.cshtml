@@ -1,4 +1,9 @@
-﻿
+﻿@using HotFlix.Domain.Models
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> usermeneger
+@{
+	var user = usermeneger.GetUserAsync(User).Result;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,11 +116,12 @@
 								<div class="header__profile">
 									<a class="header__sign-in header__sign-in--user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<i class="ti ti-user"></i>
-										<span>@User.Identity.Name</span>
+										<span>@user.UserName</span>
 									</a>
 
 									<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
 										<li><a asp-controller="profile" asp-action="index"><i class="ti ti-ghost"></i>Profile</a></li>
+										<li><a asp-controller="account" asp-action="update"><i class="ti ti-ghost"></i>Update</a></li>
 										<li><a asp-controller="account" asp-action="logout"><i class="ti ti-logout"></i>Logout</a></li>
 									</ul>
 								</div>
