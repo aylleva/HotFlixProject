@@ -1,11 +1,13 @@
 ﻿using HotFlix.Application.ViewModels;
 using HotFlix.Domain.Models;
 using HotFlix.Persistence.DAL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
 using System.Security.Claims;
+using System.Transactions;
 
 namespace HotFlix.Controllers
 {
@@ -19,7 +21,7 @@ namespace HotFlix.Controllers
             _context = context;
             _usermeneger = usermeneger;
         }
-        public async Task<IActionResult> Index(int? Id,int? sezonId,int? serieId)
+        public async Task<IActionResult> Index(int? Id)
         {
             if (Id is null || Id < 1) throw new Exception("Sorry! Movie Was Not Found");
 
@@ -47,7 +49,9 @@ namespace HotFlix.Controllers
                     LikeCount = c.LikeCount,
                     DislikeCount=c.DisLikeCount,
                     CreatedAt = c.CreatedAt,
-                    UserName=c.User.UserName
+                    UserName=c.User.UserName,
+                    MovieId=c.MovieId
+
                 }).ToListAsync();
 
             DetailVM detailVM = new DetailVM
@@ -58,9 +62,7 @@ namespace HotFlix.Controllers
                 .Include(m => m.MovieTags).ThenInclude(m => m.Tag)
             .Where(m => m.CategoryId == movie.CategoryId && m.Id != Id)
             .ToListAsync(),
-                SerieId = serieId,
-                SezonId = sezonId,
-               
+                         
             };
 
            if(user is not null)
@@ -108,17 +110,87 @@ namespace HotFlix.Controllers
             return View(actorvm); 
         }
 
+        [Authorize]
+        public async Task<IActionResult> AddComment(DetailVM commentvm, int? Id)
+        {
+            if (Id is null || Id < 1) throw new Exception("Sorry! Movie Was Not Found");
 
-        //public async Task<IActionResult> AddComment(CreateCommentVM commentvm, int? Id)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View();
-        //    }
-        //    var user = await _usermeneger.Users
-        //        .FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            if (!ModelState.IsValid)
+            {
+                return View(commentvm);
+            }
+            var user = await _usermeneger.Users
+                .Include(u=>u.Comments).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 
+            var movie = await _context.Movies.Include(m=>m.Comments).FirstOrDefaultAsync(m => m.Id == Id);
+            if (movie is null) throw new Exception("Movie Was Not Found");
 
-        //}
+            Comments comment = new Comments
+            {
+                Description = commentvm.NewComment.Description,
+                CreatedAt = DateTime.Now,
+                MovieId = Id.Value,
+                UserId = user.Id,
+                LikeCount = 0,
+                DisLikeCount = 0
+            };
+            movie.Comments.Add(comment);
+            user.Comments.Add(comment);
+            await _context.SaveChangesAsync();  
+
+            return RedirectToAction("Index","Detail",new {id=Id});
+        }
+
+        [Authorize]
+        public async Task<IActionResult> LikeComment(int? Id,int? movieId)
+        {
+            if (Id is null || Id < 1) throw new Exception("Sorry! Comment Was Not Found");
+
+            var comment=await _context.Comments.FirstOrDefaultAsync(c=>c.Id== Id && c.MovieId==movieId);
+            
+            if(comment is not null)
+            {
+                comment.LikeCount++;
+            }
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Detail", new { id = movieId });
+        }
+        [Authorize]
+        public async Task<IActionResult> DislikeComment(int? Id, int? movieId)
+        {
+            if (Id is null || Id < 1) throw new Exception("Sorry! Comment Was Not Found");
+
+            var comment = await _context.Comments.FirstOrDefaultAsync(c => c.Id == Id && c.MovieId == movieId);
+
+            if (comment is not null)
+            {
+                comment.DisLikeCount++;
+            }
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Detail", new { id = movieId });
+        }
+        [Authorize]
+        public async Task<IActionResult> Delete(int? Id, int? movieId)
+        {
+            if (Id is null || Id < 1) throw new Exception("Sorry! Comment Was Not Found");
+
+            var user = await _usermeneger.Users
+           .Include(u => u.Comments).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var movie=await _context.Movies.Include(m=>m.Comments).FirstOrDefaultAsync(m=>m.Id==movieId);  
+
+            var comment = await _context.Comments.FirstOrDefaultAsync(c => c.Id == Id && c.MovieId == movieId);
+
+            if (comment is not null)
+            {
+               movie.Comments.Remove(comment);
+               user.Comments.Remove(comment);
+            }
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Detail", new { id = movieId });
+        }
     }
 }
