@@ -40,6 +40,11 @@ namespace HotFlix
 
             builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = "/home/error";
+            });
+
             builder.Services.AddPersistenceServices(builder.Configuration)
                 .AddInfrastructureServices(builder.Configuration);
 
@@ -61,13 +66,26 @@ namespace HotFlix
                 initialize.CreateAdmin().Wait();
             }
 
+            app.Use(async (context, next) =>
+            {
+                if (context.User.Identity.IsAuthenticated &&
+                    !context.User.IsInRole("Admin") &&
+                    context.Request.Path.StartsWithSegments("/admin"))
+                {
+                    context.Response.Redirect("/home/error");
+                    return;
+                }
+
+                await next();
+            });
+
             app.UseAuthentication();
             app.UseAuthorization();
 
 
             app.UseSession();
             app.UseStaticFiles();
-            app.UseMiddleware<GlobalExceptionHandler>();
+            //app.UseMiddleware<GlobalExceptionHandler>();
 
             StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 

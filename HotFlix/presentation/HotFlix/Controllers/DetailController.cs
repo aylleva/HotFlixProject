@@ -5,9 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Stripe;
 using System.Security.Claims;
-using System.Transactions;
 
 namespace HotFlix.Controllers
 {
@@ -39,6 +37,8 @@ namespace HotFlix.Controllers
 
             if (movie is null) throw new Exception("Sorry! Movie Was Not Found");
 
+           
+
             ICollection<GetCommentsVM>? comments=await _context.Comments.Include(c=>c.User).Include(u=>u.Movie)
                 .Where(c=>c.MovieId==Id)
                 .Select(c=> new GetCommentsVM
@@ -54,15 +54,32 @@ namespace HotFlix.Controllers
 
                 }).ToListAsync();
 
+            ICollection<GetReviewsVm>? reviews = await _context.Reviews.Include(r => r.Ratings).Include(c => c.User).Include(u => u.Movie)
+               .Where(c => c.MovieId == Id)
+               .Select(c => new GetReviewsVm
+               {
+                   Id = c.Id,
+                   Title = c.Title,
+                   UserId = c.UserId,
+                   CreatedAt = c.CreatedAt,
+                   UserName = c.User.UserName,
+                   MovieId = c.MovieId,
+                   Rating = c.Ratings.RatingNumber
+
+               }).ToListAsync();
+
+
+
             DetailVM detailVM = new DetailVM
             {
+                Reviews = reviews,
                 Comments = comments,
                 Movie = movie,
                 RelatedMovies = await _context.Movies
                 .Include(m => m.MovieTags).ThenInclude(m => m.Tag)
             .Where(m => m.CategoryId == movie.CategoryId && m.Id != Id)
             .ToListAsync(),
-                         
+               Ratings=await _context.Ratings.ToListAsync()                          
             };
 
            if(user is not null)
@@ -191,6 +208,45 @@ namespace HotFlix.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index", "Detail", new { id = movieId });
+        }
+
+        [Authorize] 
+        public async Task<IActionResult> AddReview(DetailVM reviewvm,int? Id)
+        {
+
+            if (Id is null || Id < 1) throw new Exception("Sorry! Movie Was Not Found");
+
+            if (!ModelState.IsValid)
+            {
+                return View(reviewvm);
+            }
+            var user = await _usermeneger.Users
+                .Include(u => u.Reviews).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var result = await _context.Ratings.AnyAsync(r => r.Id == reviewvm.NewReview.RatingId);
+            if (!result)
+            {
+                ModelState.AddModelError(nameof(CreateReviewVm.RatingId), "Rating Does not exists");
+                return View(reviewvm);
+            }
+
+            var movie = await _context.Movies.Include(m => m.Reviews).FirstOrDefaultAsync(m => m.Id == Id);
+            if (movie is null) throw new Exception("Movie Was Not Found");
+
+            Review review = new Review()
+            {
+                Title = reviewvm.NewReview.Title,
+                MovieId = Id.Value,
+                UserId = user.Id,
+                CreatedAt = DateTime.Now,
+                RatingId = reviewvm.NewReview.RatingId
+            };
+            
+            movie.Reviews.Add(review);
+            user.Reviews.Add(review);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Detail", new { id = Id });
         }
     }
 }

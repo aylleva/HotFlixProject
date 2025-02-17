@@ -7329,6 +7329,90 @@
       "PackagePath": "staticwebassets\\admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\admin.css",
+      "PackagePath": "staticwebassets\\adminflix\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\admin.styl",
+      "PackagePath": "staticwebassets\\adminflix\\css\\admin.styl"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\adminflix\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\adminflix\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\slimselect.css",
+      "PackagePath": "staticwebassets\\adminflix\\css\\slimselect.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\css\\slimselect.css.map",
+      "PackagePath": "staticwebassets\\adminflix\\css\\slimselect.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\icon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\adminflix\\icon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\img\\angle-down.svg",
+      "PackagePath": "staticwebassets\\adminflix\\img\\angle-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\adminflix\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\img\\section\\section.jpg",
+      "PackagePath": "staticwebassets\\adminflix\\img\\section\\section.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\img\\user.svg",
+      "PackagePath": "staticwebassets\\adminflix\\img\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\js\\admin.js",
+      "PackagePath": "staticwebassets\\adminflix\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\adminflix\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\adminflix\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\js\\slimselect.min.js",
+      "PackagePath": "staticwebassets\\adminflix\\js\\slimselect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\adminflix\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\webfont\\fonts\\tabler-icons.eot",
+      "PackagePath": "staticwebassets\\adminflix\\webfont\\fonts\\tabler-icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\webfont\\fonts\\tabler-icons.ttf",
+      "PackagePath": "staticwebassets\\adminflix\\webfont\\fonts\\tabler-icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\webfont\\fonts\\tabler-icons.woff",
+      "PackagePath": "staticwebassets\\adminflix\\webfont\\fonts\\tabler-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\webfont\\fonts\\tabler-icons.woff2",
+      "PackagePath": "staticwebassets\\adminflix\\webfont\\fonts\\tabler-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\adminflix\\webfont\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\adminflix\\webfont\\tabler-icons.min.css"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
     },

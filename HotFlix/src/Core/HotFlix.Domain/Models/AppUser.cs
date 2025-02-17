@@ -17,6 +17,7 @@ namespace HotFlix.Domain.Models
         public int WatchedFilms {  get; set; }
         public ICollection<Comments>? Comments { get; set; }
         public ICollection<FavoriteMovies>? FavoriteMovies { get; set; }
+        public ICollection<Review>? Reviews { get; set; }
 
     }
 }

@@ -22,6 +22,7 @@ namespace HotFlix.Domain.Models
         public Country Country { get; set; }
         public ICollection<Comments> Comments { get; set; }
         public ICollection<Season>? Seasons { get; set; }
+        public ICollection<Review>? Reviews { get; set; }
 
     }
 }

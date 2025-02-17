@@ -9,6 +9,8 @@ namespace HotFlix.Application.ViewModels
         public Movie? Movie { get; set; }
         public ICollection<GetCommentsVM>? Comments { get; set; }
         public CreateCommentVM? NewComment { get; set; }
-        
+        public ICollection<GetReviewsVm>? Reviews { get; set; }
+        public CreateReviewVm? NewReview { get; set; }
+        public ICollection<Rating>? Ratings { get; set; }
     }
 }

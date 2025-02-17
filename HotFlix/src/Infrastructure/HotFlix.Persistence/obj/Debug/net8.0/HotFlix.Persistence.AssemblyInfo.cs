@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotFlix.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc30bfbbd19b35ef5439dd8b2f78e9234e8e36c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb65174797416181c1dae921c37cd3aa7631ef3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotFlix.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotFlix.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

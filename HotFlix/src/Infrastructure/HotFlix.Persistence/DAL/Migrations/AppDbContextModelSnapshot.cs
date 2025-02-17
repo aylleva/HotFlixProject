@@ -130,7 +130,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<string>("VerificationCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("WatchedFilms")
+                    b.Property<int>("WatchedFilms")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -535,6 +535,64 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PremiumPlans");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.Rating", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RatingNumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ratings");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RatingId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("RatingId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Season", b =>
@@ -978,6 +1036,33 @@ namespace HotFlix.Persistence.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotFlix.Domain.Models.Review", b =>
+                {
+                    b.HasOne("HotFlix.Domain.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HotFlix.Domain.Models.Rating", "Ratings")
+                        .WithMany()
+                        .HasForeignKey("RatingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HotFlix.Domain.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("Ratings");
 
                     b.Navigation("User");
                 });

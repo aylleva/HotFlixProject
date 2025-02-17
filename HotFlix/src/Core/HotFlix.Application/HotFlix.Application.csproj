@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Abstraction\Repositories\" />
-    <Folder Include="FluentValidation\" />
     <Folder Include="ServiceRegistration\" />
   </ItemGroup>
 

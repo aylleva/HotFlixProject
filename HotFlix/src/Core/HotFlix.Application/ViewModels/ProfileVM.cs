@@ -7,6 +7,7 @@ namespace HotFlix.Application.ViewModels
         public int? CommentCount { get; set; }   
         public string? PremiumPLan {  get; set; }
         public int? MovieViews {  get; set; }
+        public int? ReviewCount { get; set; }
         public ICollection<ReviewMovieVM>? ReviewedMovie { get; set; }
     }
 }

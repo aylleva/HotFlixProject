@@ -150227,6 +150227,1728 @@
       ]
     },
     {
+      "Route": "adminflix/css/admin.css",
+      "AssetFile": "adminflix/css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FbyR2ZB+PlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 17:27:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FbyR2ZB+PlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/admin.omhxn7rfut.styl",
+      "AssetFile": "adminflix/css/admin.styl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gMUxRg/7ve+f5Zr74uinztEnDjgxJUsB6NAJogh2gw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 17:27:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "omhxn7rfut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gMUxRg/7ve+f5Zr74uinztEnDjgxJUsB6NAJogh2gw8="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/admin.styl"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/admin.styl",
+      "AssetFile": "adminflix/css/admin.styl",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gMUxRg/7ve+f5Zr74uinztEnDjgxJUsB6NAJogh2gw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 17:27:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gMUxRg/7ve+f5Zr74uinztEnDjgxJUsB6NAJogh2gw8="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/admin.vrc5wt8liz.css",
+      "AssetFile": "adminflix/css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FbyR2ZB+PlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 17:27:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vrc5wt8liz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FbyR2ZB+PlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/admin.css"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/bootstrap.min.1nn37wxl06.css",
+      "AssetFile": "adminflix/css/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1nn37wxl06"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/bootstrap.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/bootstrap.min.css",
+      "AssetFile": "adminflix/css/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/bootstrap.min.css.h9w02eufey.map",
+      "AssetFile": "adminflix/css/bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9w02eufey"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/bootstrap.min.css.map"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/bootstrap.min.css.map",
+      "AssetFile": "adminflix/css/bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 17:37:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q4Kn6ZWNtMLRa3AAP+rz72YRhvwo0jyFKhpe62pXIAs="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/slimselect.css",
+      "AssetFile": "adminflix/css/slimselect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/slimselect.css.l1rqm1ze10.map",
+      "AssetFile": "adminflix/css/slimselect.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1rqm1ze10"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/slimselect.css.map"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/slimselect.css.map",
+      "AssetFile": "adminflix/css/slimselect.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um++SPXIyG9EDeTA="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/css/slimselect.hwi3etgmom.css",
+      "AssetFile": "adminflix/css/slimselect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwi3etgmom"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/css/slimselect.css"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/icon/favicon-32x32.1dwj663ss6.png",
+      "AssetFile": "adminflix/icon/favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1dwj663ss6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/icon/favicon-32x32.png"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/icon/favicon-32x32.png",
+      "AssetFile": "adminflix/icon/favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU+c6OASem28K4="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/angle-down.9tlmm5w6tr.svg",
+      "AssetFile": "adminflix/img/angle-down.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Oct 2023 15:26:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9tlmm5w6tr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/img/angle-down.svg"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/angle-down.svg",
+      "AssetFile": "adminflix/img/angle-down.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Oct 2023 15:26:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/logo.svg",
+      "AssetFile": "adminflix/img/logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/logo.u1wpvh91zg.svg",
+      "AssetFile": "adminflix/img/logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u1wpvh91zg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fl7FxQnQ2y+VyBPr9DP1gacN8z6+LTbjb5Cce7FP3Ro="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/img/logo.svg"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/section/section.4hanh9rwbd.jpg",
+      "AssetFile": "adminflix/img/section/section.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:36:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4hanh9rwbd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/img/section/section.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/section/section.jpg",
+      "AssetFile": "adminflix/img/section/section.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Mar 2024 04:36:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/user.cwejz68mog.svg",
+      "AssetFile": "adminflix/img/user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwejz68mog"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/img/user.svg"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/img/user.svg",
+      "AssetFile": "adminflix/img/user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 03:09:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/admin.be9xxzr8ij.js",
+      "AssetFile": "adminflix/js/admin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LXX/vD6nFE3i1m0NT4+tKm6YMoa8D7o960E/QAAqZ18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Feb 2024 04:52:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "be9xxzr8ij"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LXX/vD6nFE3i1m0NT4+tKm6YMoa8D7o960E/QAAqZ18="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/js/admin.js"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/admin.js",
+      "AssetFile": "adminflix/js/admin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LXX/vD6nFE3i1m0NT4+tKm6YMoa8D7o960E/QAAqZ18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Feb 2024 04:52:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LXX/vD6nFE3i1m0NT4+tKm6YMoa8D7o960E/QAAqZ18="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/bootstrap.bundle.min.js",
+      "AssetFile": "adminflix/js/bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/bootstrap.bundle.min.js.go5vef9xw4.map",
+      "AssetFile": "adminflix/js/bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "go5vef9xw4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/js/bootstrap.bundle.min.js.map"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "adminflix/js/bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/bootstrap.bundle.min.q4dyqoj6rx.js",
+      "AssetFile": "adminflix/js/bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Feb 2023 18:19:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q4dyqoj6rx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh8LHqeebiyiT0YD5V0+kJ90cboLJ5zbbepAVUEGxqI="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/js/bootstrap.bundle.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/slimselect.min.i8na1zelki.js",
+      "AssetFile": "adminflix/js/slimselect.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8na1zelki"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/js/slimselect.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/slimselect.min.js",
+      "AssetFile": "adminflix/js/slimselect.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Feb 2023 20:26:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3j6wJbZ1W/vt7P+LLH21gUr9CcIZ5cS8U4YOHe7UeSs="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/smooth-scrollbar.5h5430riiq.js",
+      "AssetFile": "adminflix/js/smooth-scrollbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 08:25:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5h5430riiq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/js/smooth-scrollbar.js"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/js/smooth-scrollbar.js",
+      "AssetFile": "adminflix/js/smooth-scrollbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Sep 2021 08:25:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.0353vuqoah.woff2",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0353vuqoah"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/webfont/fonts/tabler-icons.woff2"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.4brerv2kwh.ttf",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4brerv2kwh"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/webfont/fonts/tabler-icons.ttf"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.eot",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.g6k3ekiuf3.eot",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6k3ekiuf3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/webfont/fonts/tabler-icons.eot"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.rdf8b3dire.woff",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rdf8b3dire"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/webfont/fonts/tabler-icons.woff"
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.ttf",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo+2CXSs0v5t8U="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.woff",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yZH7xNa6DIx35sp+Amw2+Pobvk1s5eqgcAgcdzcDaw="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/fonts/tabler-icons.woff2",
+      "AssetFile": "adminflix/webfont/fonts/tabler-icons.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/tabler-icons.min.css",
+      "AssetFile": "adminflix/webfont/tabler-icons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="
+        }
+      ]
+    },
+    {
+      "Route": "adminflix/webfont/tabler-icons.min.qo295kgtd4.css",
+      "AssetFile": "adminflix/webfont/tabler-icons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Feb 2024 00:55:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qo295kgtd4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="
+        },
+        {
+          "Name": "label",
+          "Value": "adminflix/webfont/tabler-icons.min.css"
+        }
+      ]
+    },
+    {
       "Route": "assets/css/bootstrap.min.1nn37wxl06.css",
       "AssetFile": "assets/css/bootstrap.min.css",
       "Selectors": [],

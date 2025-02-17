@@ -21984,6 +21984,258 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t03Zb25897OIoeFTkVzcbt/KuVlMjvbCAAv8FVqAboM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"110315"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022t03Zb25897OIoeFTkVzcbt/KuVlMjvbCAAv8FVqAboM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 19:58:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/admin.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FbyR2ZB\u002BPlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"47846"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FbyR2ZB\u002BPlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 May 2024 17:27:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/admin.omhxn7rfut.styl">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\admin.styl'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"omhxn7rfut"},{"Name":"integrity","Value":"sha256-gMUxRg/7ve\u002Bf5Zr74uinztEnDjgxJUsB6NAJogh2gw8="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/admin.styl"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"40950"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022gMUxRg/7ve\u002Bf5Zr74uinztEnDjgxJUsB6NAJogh2gw8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 May 2024 17:27:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/admin.styl">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\admin.styl'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gMUxRg/7ve\u002Bf5Zr74uinztEnDjgxJUsB6NAJogh2gw8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"40950"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022gMUxRg/7ve\u002Bf5Zr74uinztEnDjgxJUsB6NAJogh2gw8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 May 2024 17:27:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/admin.vrc5wt8liz.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vrc5wt8liz"},{"Name":"integrity","Value":"sha256-FbyR2ZB\u002BPlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/admin.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47846"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FbyR2ZB\u002BPlasnT2UxSIs9UDLLJcLL3YA/2ahR7bZO8Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 May 2024 17:27:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/bootstrap.min.1nn37wxl06.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1nn37wxl06"},{"Name":"integrity","Value":"sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/bootstrap.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"220780"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 17:37:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/bootstrap.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"220780"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ky6hUQiSiZG88MCkZBX8ZS3l/8AVjDUgU1e5DGXus4Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 17:37:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/bootstrap.min.css.h9w02eufey.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\bootstrap.min.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h9w02eufey"},{"Name":"integrity","Value":"sha256-q4Kn6ZWNtMLRa3AAP\u002Brz72YRhvwo0jyFKhpe62pXIAs="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/bootstrap.min.css.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"568408"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022q4Kn6ZWNtMLRa3AAP\u002Brz72YRhvwo0jyFKhpe62pXIAs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 17:37:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/bootstrap.min.css.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\bootstrap.min.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q4Kn6ZWNtMLRa3AAP\u002Brz72YRhvwo0jyFKhpe62pXIAs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"568408"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022q4Kn6ZWNtMLRa3AAP\u002Brz72YRhvwo0jyFKhpe62pXIAs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 17:37:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/slimselect.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\slimselect.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9777"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/slimselect.css.l1rqm1ze10.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\slimselect.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l1rqm1ze10"},{"Name":"integrity","Value":"sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um\u002B\u002BSPXIyG9EDeTA="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/slimselect.css.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2107"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022l8oGQB9xsAODCVquCeDhhWBX6j4um\u002B\u002BSPXIyG9EDeTA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/slimselect.css.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\slimselect.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-l8oGQB9xsAODCVquCeDhhWBX6j4um\u002B\u002BSPXIyG9EDeTA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2107"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022l8oGQB9xsAODCVquCeDhhWBX6j4um\u002B\u002BSPXIyG9EDeTA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/css/slimselect.hwi3etgmom.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\css\slimselect.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hwi3etgmom"},{"Name":"integrity","Value":"sha256-j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38="},{"Name":"label","Value":"_content/HotFlix/adminflix/css/slimselect.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9777"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j5vXfI/mbWrZ5IgIKUSYxZsms2eJAyJZE7DgHkVuv38=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/icon/favicon-32x32.1dwj663ss6.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\icon\favicon-32x32.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1dwj663ss6"},{"Name":"integrity","Value":"sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU\u002Bc6OASem28K4="},{"Name":"label","Value":"_content/HotFlix/adminflix/icon/favicon-32x32.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"306"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022awe4ODuwwEmaPcGt3/pTk9nbdQKFspU\u002Bc6OASem28K4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/icon/favicon-32x32.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\icon\favicon-32x32.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-awe4ODuwwEmaPcGt3/pTk9nbdQKFspU\u002Bc6OASem28K4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"306"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022awe4ODuwwEmaPcGt3/pTk9nbdQKFspU\u002Bc6OASem28K4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/angle-down.9tlmm5w6tr.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\angle-down.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9tlmm5w6tr"},{"Name":"integrity","Value":"sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="},{"Name":"label","Value":"_content/HotFlix/adminflix/img/angle-down.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1154"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Oct 2023 15:26:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/angle-down.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\angle-down.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1154"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022E142fWAUka3lIhjHHdPRuHcaaekBMXDfZ57iNtlC5LU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Oct 2023 15:26:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/logo.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\logo.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fl7FxQnQ2y\u002BVyBPr9DP1gacN8z6\u002BLTbjb5Cce7FP3Ro="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1373"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fl7FxQnQ2y\u002BVyBPr9DP1gacN8z6\u002BLTbjb5Cce7FP3Ro=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/logo.u1wpvh91zg.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\logo.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u1wpvh91zg"},{"Name":"integrity","Value":"sha256-fl7FxQnQ2y\u002BVyBPr9DP1gacN8z6\u002BLTbjb5Cce7FP3Ro="},{"Name":"label","Value":"_content/HotFlix/adminflix/img/logo.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1373"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022fl7FxQnQ2y\u002BVyBPr9DP1gacN8z6\u002BLTbjb5Cce7FP3Ro=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/section/section.4hanh9rwbd.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\section\section.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4hanh9rwbd"},{"Name":"integrity","Value":"sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="},{"Name":"label","Value":"_content/HotFlix/adminflix/img/section/section.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"92369"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 11 Mar 2024 04:36:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/section/section.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\section\section.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"92369"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022yLnRrGvBs2QM6OZ3EQGOpYlgoeOxK13CM8E79n8vkNw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 11 Mar 2024 04:36:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/user.cwejz68mog.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\user.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cwejz68mog"},{"Name":"integrity","Value":"sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="},{"Name":"label","Value":"_content/HotFlix/adminflix/img/user.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"713"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00221FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/img/user.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\img\user.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"713"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00221FJnXvyTWRPIwzhUeW6cngTw9soknfArSC4Sad99lGA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 03:09:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/admin.be9xxzr8ij.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\admin.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"be9xxzr8ij"},{"Name":"integrity","Value":"sha256-LXX/vD6nFE3i1m0NT4\u002BtKm6YMoa8D7o960E/QAAqZ18="},{"Name":"label","Value":"_content/HotFlix/adminflix/js/admin.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4523"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LXX/vD6nFE3i1m0NT4\u002BtKm6YMoa8D7o960E/QAAqZ18=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 Feb 2024 04:52:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/admin.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\admin.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LXX/vD6nFE3i1m0NT4\u002BtKm6YMoa8D7o960E/QAAqZ18="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4523"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LXX/vD6nFE3i1m0NT4\u002BtKm6YMoa8D7o960E/QAAqZ18=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 Feb 2024 04:52:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/bootstrap.bundle.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\bootstrap.bundle.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Bh8LHqeebiyiT0YD5V0\u002BkJ90cboLJ5zbbepAVUEGxqI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"80599"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Bh8LHqeebiyiT0YD5V0\u002BkJ90cboLJ5zbbepAVUEGxqI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 18:19:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/bootstrap.bundle.min.js.go5vef9xw4.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\bootstrap.bundle.min.js.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"go5vef9xw4"},{"Name":"integrity","Value":"sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="},{"Name":"label","Value":"_content/HotFlix/adminflix/js/bootstrap.bundle.min.js.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"333974"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 18:19:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/bootstrap.bundle.min.js.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\bootstrap.bundle.min.js.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"333974"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022gGiqbDRGWOARiSnk17hRxCewPqfIXJaCaU1zAVmsyrw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 18:19:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/bootstrap.bundle.min.q4dyqoj6rx.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\bootstrap.bundle.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q4dyqoj6rx"},{"Name":"integrity","Value":"sha256-Bh8LHqeebiyiT0YD5V0\u002BkJ90cboLJ5zbbepAVUEGxqI="},{"Name":"label","Value":"_content/HotFlix/adminflix/js/bootstrap.bundle.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"80599"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Bh8LHqeebiyiT0YD5V0\u002BkJ90cboLJ5zbbepAVUEGxqI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Feb 2023 18:19:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/slimselect.min.i8na1zelki.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\slimselect.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i8na1zelki"},{"Name":"integrity","Value":"sha256-3j6wJbZ1W/vt7P\u002BLLH21gUr9CcIZ5cS8U4YOHe7UeSs="},{"Name":"label","Value":"_content/HotFlix/adminflix/js/slimselect.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35284"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223j6wJbZ1W/vt7P\u002BLLH21gUr9CcIZ5cS8U4YOHe7UeSs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/slimselect.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\slimselect.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3j6wJbZ1W/vt7P\u002BLLH21gUr9CcIZ5cS8U4YOHe7UeSs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35284"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223j6wJbZ1W/vt7P\u002BLLH21gUr9CcIZ5cS8U4YOHe7UeSs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Feb 2023 20:26:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/smooth-scrollbar.5h5430riiq.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\smooth-scrollbar.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5h5430riiq"},{"Name":"integrity","Value":"sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="},{"Name":"label","Value":"_content/HotFlix/adminflix/js/smooth-scrollbar.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52534"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 08:25:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/js/smooth-scrollbar.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\js\smooth-scrollbar.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52534"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uQfBsa53iBomlakuLVqFKRpj/gEfvvKUL/Hdf4NLDeU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Sep 2021 08:25:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.0353vuqoah.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0353vuqoah"},{"Name":"integrity","Value":"sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="},{"Name":"label","Value":"_content/HotFlix/adminflix/webfont/fonts/tabler-icons.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"774252"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.4brerv2kwh.ttf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.ttf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4brerv2kwh"},{"Name":"integrity","Value":"sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo\u002B2CXSs0v5t8U="},{"Name":"label","Value":"_content/HotFlix/adminflix/webfont/fonts/tabler-icons.ttf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2159808"},{"Name":"Content-Type","Value":"application/x-font-ttf"},{"Name":"ETag","Value":"\u0022wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo\u002B2CXSs0v5t8U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.eot">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.eot'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2159992"},{"Name":"Content-Type","Value":"application/vnd.ms-fontobject"},{"Name":"ETag","Value":"\u00226MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.g6k3ekiuf3.eot">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.eot'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g6k3ekiuf3"},{"Name":"integrity","Value":"sha256-6MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk="},{"Name":"label","Value":"_content/HotFlix/adminflix/webfont/fonts/tabler-icons.eot"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2159992"},{"Name":"Content-Type","Value":"application/vnd.ms-fontobject"},{"Name":"ETag","Value":"\u00226MbDlrgojmUoyt0pRz4w4S9US7dx5TCLS0XDlKJF7Kk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.rdf8b3dire.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rdf8b3dire"},{"Name":"integrity","Value":"sha256-3yZH7xNa6DIx35sp\u002BAmw2\u002BPobvk1s5eqgcAgcdzcDaw="},{"Name":"label","Value":"_content/HotFlix/adminflix/webfont/fonts/tabler-icons.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1093348"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00223yZH7xNa6DIx35sp\u002BAmw2\u002BPobvk1s5eqgcAgcdzcDaw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.ttf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.ttf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo\u002B2CXSs0v5t8U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2159808"},{"Name":"Content-Type","Value":"application/x-font-ttf"},{"Name":"ETag","Value":"\u0022wHhn8Ph4oxp/8cKtpvXEfFdQgx9lZEo\u002B2CXSs0v5t8U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3yZH7xNa6DIx35sp\u002BAmw2\u002BPobvk1s5eqgcAgcdzcDaw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1093348"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00223yZH7xNa6DIx35sp\u002BAmw2\u002BPobvk1s5eqgcAgcdzcDaw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/fonts/tabler-icons.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\fonts\tabler-icons.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"774252"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022hGwYNrAZO8KBN27j2tM81V6Jz8SzETwWJNXTjiqByf0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/tabler-icons.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\tabler-icons.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"202078"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HotFlix/adminflix/webfont/tabler-icons.min.qo295kgtd4.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminflix\webfont\tabler-icons.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qo295kgtd4"},{"Name":"integrity","Value":"sha256-2qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ="},{"Name":"label","Value":"_content/HotFlix/adminflix/webfont/tabler-icons.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"202078"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222qo2IY0L2cQtVnYCiHJaQwR1AUa1b1eVlOa2tT6/lBQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Feb 2024 00:55:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HotFlix/assets/css/bootstrap.min.1nn37wxl06.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\bootstrap.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

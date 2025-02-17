@@ -76,7 +76,7 @@
 										<i class="ti ti-player-play-filled"></i>
 									</a>
 									<span class="item__rate item__rate--green">@movie.Rating</span>
-									<a asp-controller="profile"  asp-action="addmovie" asp-route-id="@movie.Id" class="item__favorite" ><i class="ti ti-bookmark"></i></a>
+									<a asp-controller="profile"  asp-action="addmovie" asp-route-id="@movie.Id" class="item__favorite" id="favorite"><i class="ti ti-bookmark"></i></a>
 								</div>
 								<div class="item__content">
 									<h3 class="item__title"><a asp-controller="detail" asp-action="index" asp-route-id="@movie.Id">@movie.Name</a></h3>

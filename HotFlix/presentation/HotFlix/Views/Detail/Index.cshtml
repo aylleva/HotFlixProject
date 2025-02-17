@@ -161,6 +161,11 @@
 							<button id="1-tab" class="active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">Comments</button>
 						</li>
 
+						<li class="nav-item" role="presentation">
+							<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</button>
+						</li>
+
+
 					</ul>
 					<!-- end content tabs nav -->
 				</div>
@@ -223,6 +228,47 @@
 								</div>
 							</div>
 							<!-- end comments -->
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+						<div class="row">
+							<!-- reviews -->
+							<div class="col-12">
+								<div class="reviews">
+									<ul class="reviews__list">
+									@foreach(var review in Model.Reviews){
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<span class="reviews__name">@review.UserName</span>
+													<span class="reviews__time">@review.CreatedAt</span>
+
+													<span class="reviews__rating reviews__rating--yellow">@review.Rating</span>
+												</div>
+												<p class="reviews__text">@review.Title</p>
+											</li>
+									}
+									</ul>
+
+								
+										<form method="post" class="sign__form sign__form--comments" asp-action="addreview" asp-controller="detail" asp-route-id="@Model.Movie.Id">
+											<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+											<div class="sign__group">
+												<select asp-for="NewReview.RatingId" class="sign__select" asp-items="new SelectList(Model.Ratings,nameof(Rating.Id),nameof(Rating.RatingNumber))">
+													<option selected disabled value="">Choose a Rating</option>
+												</select>
+											</div>
+
+											<div class="sign__group">
+												<textarea asp-for="NewReview.Title" class="sign__textarea" placeholder="Add review"></textarea>
+												<span asp-validation-for="NewReview.Title" class="text-danger"></span>
+											</div>
+
+											<button type="submit" class="sign__btn sign__btn--small">Send</button>
+										</form>
+									
+								</div>
+							</div>
+							<!-- end reviews -->
 						</div>
 					</div>
 

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -34,6 +35,8 @@ namespace HotFlix.Persistence.DAL
         public DbSet<PlanOrder> PlanOrders { get; set; }
         public DbSet<FavoriteMovies> FavoriteMovies { get; set; }
         public DbSet<MovieWatches> MovieWatches { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

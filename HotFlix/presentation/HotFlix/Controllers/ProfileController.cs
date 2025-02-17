@@ -1,6 +1,7 @@
 ﻿using HotFlix.Application.ViewModels;
 using HotFlix.Domain.Models;
 using HotFlix.Persistence.DAL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,8 @@ using System.Security.Claims;
 
 namespace HotFlix.Controllers
 {
+
+    
     public class ProfileController : Controller
     {
         private readonly AppDbContext _context;
@@ -20,7 +23,7 @@ namespace HotFlix.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var user = await _usermeneger.Users.Include(u => u.Comments).Include(u=>u.PremiumPlan).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = await _usermeneger.Users.Include(u=>u.Reviews).Include(u => u.Comments).Include(u=>u.PremiumPlan).FirstOrDefaultAsync(u => u.Id == User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             ProfileVM profilevm = new ProfileVM
             {
@@ -46,7 +49,8 @@ namespace HotFlix.Controllers
                  .ToListAsync(),
                 CommentCount = user.Comments.Count(),
                 PremiumPLan = user.PremiumPlan.PlanName,
-                MovieViews = user.WatchedFilms
+                MovieViews = user.WatchedFilms,
+                ReviewCount = user.Reviews.Count()
             };
 
             if(profilevm is null)
