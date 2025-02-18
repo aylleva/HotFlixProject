@@ -14,6 +14,8 @@ namespace HotFlix.Domain.Models
         public int CategoryId {  get; set; }
         public int CountryId {  get; set; }
         public int DirectorId {  get; set; }
+        public bool Status {  get; set; }
+        public int Views {  get; set; }
         //relational
         public ICollection<MovieTags> MovieTags { get; set; }
         public Category Category { get; set; }

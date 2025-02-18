@@ -1,0 +1,135 @@
+﻿@model IEnumerable<GetCategoryDto>
+@{
+	int count = 0;
+}
+<div class="main__title-wrap">
+	<a asp-controller="category" asp-action="create" class="main__title-link main__title-link--wrap">Add Category</a>
+	<!-- end search -->
+</div>
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Categories</h2>
+
+					<span class="main__title-stat">@Model.Count()</span>
+				</div>
+			</div>
+			<!-- end main title -->
+			<!-- items -->
+			<div class="col-12">
+				<div class="catalog catalog--1">
+					<table class="catalog__table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>NAME</th>
+								<th>Movie Count</th>
+								<th>ACTIONS</th>
+							</tr>
+						</thead>
+
+						
+							@foreach (var category in Model)
+							{
+								count++;
+							<tbody>
+								<tr>
+									<td>
+										<div class="catalog__text">@count</div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@category.Name</a></div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@category.MovieCount</a></div>
+									</td>
+									<td>
+										<div class="catalog__btns">
+											<a asp-controller="category" asp-action="update" asp-route-id="@category.Id" class="catalog__btn catalog__btn--edit">
+												<i class="ti ti-edit"></i>
+											</a>
+											<a asp-controller="category" asp-action="delete" asp-route-id="@category.Id" class="catalog__btn catalog__btn--delete">
+												<i class="ti ti-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<!-- delete modal -->
+							</tbody>
+							
+						}
+
+						
+					</table>
+				</div>
+			</div>
+			<!-- end items -->
+			<!-- paginator -->
+			<div class="col-12">
+				<div class="main__paginator">
+					<!-- amount -->
+					<span class="main__paginator-pages">10 of 169</span>
+					<!-- end amount -->
+
+					<ul class="main__paginator-list">
+						<li>
+							<a href="#">
+								<i class="ti ti-chevron-left"></i>
+								<span>Prev</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Next</span>
+								<i class="ti ti-chevron-right"></i>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="paginator">
+						<li class="paginator__item paginator__item--prev">
+							<a href="#"><i class="ti ti-chevron-left"></i></a>
+						</li>
+						<li class="paginator__item"><a href="#">1</a></li>
+						<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
+						<li class="paginator__item"><a href="#">3</a></li>
+						<li class="paginator__item"><a href="#">4</a></li>
+						<li class="paginator__item"><span>...</span></li>
+						<li class="paginator__item"><a href="#">29</a></li>
+						<li class="paginator__item"><a href="#">30</a></li>
+						<li class="paginator__item paginator__item--next">
+							<a href="#"><i class="ti ti-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end paginator -->
+		</div>
+	</div>
+</main>
+@* @foreach(var category in Model){
+	<!-- end main content -->
+	<div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="modal-delete" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal__content">
+					<form action="#" class="modal__form">
+						<h4 class="modal__title">Item delete</h4>
+
+						<p class="modal__text">Are you sure to permanently delete this item?</p>
+
+						<div class="modal__btns">
+							<a class="modal__btn modal__btn--apply" asp-controller="category" asp-action="delete" asp-route-id="@category.Id"><span>Delete</span></a>
+							<button class="modal__btn modal__btn--dismiss" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Dismiss</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end delete modal -->
+} *@

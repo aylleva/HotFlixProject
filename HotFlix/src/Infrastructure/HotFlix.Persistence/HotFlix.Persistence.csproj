@@ -27,8 +27,4 @@
     <ProjectReference Include="..\..\Core\HotFlix.Application\HotFlix.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Implementations\Repositories\" />
-  </ItemGroup>
-
 </Project>

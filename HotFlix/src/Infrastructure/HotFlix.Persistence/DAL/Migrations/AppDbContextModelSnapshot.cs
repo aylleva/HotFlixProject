@@ -392,6 +392,9 @@ namespace HotFlix.Persistence.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<string>("TrailerUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -402,6 +405,9 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<string>("VideoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Views")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -1043,7 +1049,7 @@ namespace HotFlix.Persistence.DAL.Migrations
             modelBuilder.Entity("HotFlix.Domain.Models.Review", b =>
                 {
                     b.HasOne("HotFlix.Domain.Models.Movie", "Movie")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1055,7 +1061,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                         .IsRequired();
 
                     b.HasOne("HotFlix.Domain.Models.AppUser", "User")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1167,6 +1173,8 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("FavoriteMovies");
+
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("HotFlix.Domain.Models.Category", b =>
@@ -1191,6 +1199,8 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Navigation("MovieActors");
 
                     b.Navigation("MovieTags");
+
+                    b.Navigation("Reviews");
 
                     b.Navigation("Seasons");
                 });

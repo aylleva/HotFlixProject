@@ -7,6 +7,8 @@ using HotFlix.Domain.Models;
 using HotFlix.Application.Abstraction.Services;
 using HotFlix.Persistence.Implementations.Services;
 using System.Reflection;
+using HotFlix.Application.Abstraction.Repositories;
+using HotFlix.Persistence.Implementations.Repositories;
 
 
 namespace HotFlix.Persistence.ServiceRegistration
@@ -35,6 +37,9 @@ namespace HotFlix.Persistence.ServiceRegistration
           ).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
             services.AddScoped<AppDbContextInitializer>();
             services.AddScoped<ILayoutService,LayoutService>();
+
+            services.AddScoped<ICategoryRepository,CategoryRepository>();   
+            services.AddScoped<ICategoryService,CategoryService>(); 
             
             return services;
         }
