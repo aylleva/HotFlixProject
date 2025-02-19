@@ -66,19 +66,6 @@ namespace HotFlix
                 initialize.CreateAdmin().Wait();
             }
 
-            app.Use(async (context, next) =>
-            {
-                if (context.User.Identity.IsAuthenticated &&
-                    !context.User.IsInRole("Admin") &&
-                    context.Request.Path.StartsWithSegments("/admin"))
-                {
-                    context.Response.Redirect("/home/error");
-                    return;
-                }
-
-                await next();
-            });
-
             app.UseAuthentication();
             app.UseAuthorization();
 

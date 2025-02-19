@@ -62,7 +62,7 @@ namespace HotFlix.Areas.Admin.Controllers
             var result=await _service.AnyAsync(c=>c.Name.Trim() == categoryDto.Name.Trim() && c.Id!=Id);
             if (result)
             {
-                ModelState.AddModelError(nameof(CreateCategoryDto.Name), "Category is allready exist");
+                ModelState.AddModelError(nameof(UpdateCategoryDto.Name), "Category is allready exist");
                 return View(categoryDto);
             }
             _service.UpdateAsync(Id, categoryDto);
@@ -70,9 +70,9 @@ namespace HotFlix.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Delete(int Id)
+        public async  Task<IActionResult> Delete(int Id)
         {
-            _service.DeleteAsync(Id);
+            await _service.DeleteAsync(Id);
             return RedirectToAction(nameof(Index));
         }
     }

@@ -47,10 +47,10 @@ namespace HotFlix.Controllers
 
                    }).OrderByDescending(m=>m.Watched).Take(5)
                  .ToListAsync(),
-                CommentCount = user.Comments.Count(),
-                PremiumPLan = user.PremiumPlan.PlanName,
+                CommentCount = user.Comments?.Count(),
+                PremiumPLan = user.PremiumPlan?.PlanName,
                 MovieViews = user.WatchedFilms,
-                ReviewCount = user.Reviews.Count()
+                ReviewCount = user.Reviews?.Count()
             };
 
             if(profilevm is null)

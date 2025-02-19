@@ -53,7 +53,6 @@ namespace HotFlix.Persistence.Implementations.Services
             if (category is null) throw new Exception("Not Found");
 
             category.Name = categoryDto.Name;
-
              _repository.Update(category);
             await _repository.SaveChangesAsync();   
         }

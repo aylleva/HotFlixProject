@@ -40,7 +40,19 @@ namespace HotFlix.Persistence.ServiceRegistration
 
             services.AddScoped<ICategoryRepository,CategoryRepository>();   
             services.AddScoped<ICategoryService,CategoryService>(); 
-            
+
+            services.AddScoped<ICountryService,CountryService>();
+            services.AddScoped<ICountryRepository,CountryRepository>();
+
+            services.AddScoped<IDirectorRepository, DirectorRepository>();
+            services.AddScoped<IDirectorService, DirectorService>();
+
+            services.AddScoped<IPartnerShipRepository, PartnerShipRepository>();
+            services.AddScoped<IPartnerShipService, PartnerShipService>();
+
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<ITagService, TagService>();
+
             return services;
         }
     }

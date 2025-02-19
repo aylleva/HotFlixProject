@@ -44,16 +44,16 @@ namespace HotFlix.Persistence.Implementations.Repositories.Generic
             return IsTracking ? query : query.AsNoTracking();
         }
 
-        public async Task<T> GetbyIdAsync(int? id, params string[] includes)
+        public async Task<T> GetbyIdAsync(int id, params string[] includes)
         {
-            IQueryable<T> query = _table;
+            IQueryable<T> query = _table.Where(x=>x.Id==id);
 
             if (includes is not null)
             {
                 query = getincludes(query, includes);
             }
 
-            return await query.FirstOrDefaultAsync(c => c.Id == id);
+            return await query.FirstOrDefaultAsync();
         }
         public async Task AddAsync(T entity)
         {

@@ -16,7 +16,7 @@ namespace HotFlix.Application.Abstraction.Repositories.Generic
             int take = 0,
             params string[]? includes);
 
-        Task<T> GetbyIdAsync(int? id, params string[] includes);
+        Task<T> GetbyIdAsync(int id, params string[] includes);
 
         Task AddAsync(T entity);
 
