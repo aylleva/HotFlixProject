@@ -1914,6 +1914,7 @@ wwwroot\assets\img\partners\codecanyon-light-background.png
 wwwroot\assets\img\partners\photodune-light-background.png
 wwwroot\assets\img\partners\themeforest-light-background.png
 wwwroot\assets\img\user.svg
+wwwroot\assets\img\userimage.jpeg
 wwwroot\assets\js\bootstrap.bundle.min.js
 wwwroot\assets\js\bootstrap.bundle.min.js.map
 wwwroot\assets\js\main.js

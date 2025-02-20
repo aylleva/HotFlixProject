@@ -80,6 +80,13 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsBanned")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsPremium")
                         .HasColumnType("bit");
 
@@ -130,7 +137,7 @@ namespace HotFlix.Persistence.DAL.Migrations
                     b.Property<string>("VerificationCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("WatchedFilms")
+                    b.Property<int?>("WatchedFilms")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -194,6 +201,12 @@ namespace HotFlix.Persistence.DAL.Migrations
 
                     b.Property<int?>("DisLikeCount")
                         .HasColumnType("int");
+
+                    b.Property<bool?>("HasDisliked")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("HasLiked")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");

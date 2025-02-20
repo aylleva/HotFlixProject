@@ -81,6 +81,7 @@
 								}
 								else
 								{
+									<h1 class="section__title section__title--head">@Model.Movie.Name Trailer</h1>
 									<video controls autoplay width="715" height="410" id="player">
 										<source src="~/assets/videos/@Model.Movie.TrailerUrl" type="audio/mp4">
 									</video>
@@ -93,21 +94,7 @@
 								</video>
 							}
 						</div>
-						@if (User.Identity.IsAuthenticated)
-						{
-							<div class="section__item-filter">
-								<form>
-									<select onchange="this.form.submit()" class="section__item-select" id="filter__season">
-										@foreach (var serie in Model.Movie.Seasons.FirstOrDefault().SeasonVideos)
-										{
-											<option value="@serie.Id">Series @serie.SeriesNumber </option>
-										}
-									</select>
-								</form>
-
-								}
-							</div>
-						}
+						
 					}
 					else
 					{
@@ -123,6 +110,7 @@
 								}
 								else
 								{
+									<h1 class="section__title section__title--head">@Model.Movie.Name Trailer</h1>
 									<video controls autoplay width="715" height="410" id="player">
 										<source src="~/assets/videos/@Model.Movie.TrailerUrl" type="audio/mp4">
 									</video>
@@ -130,6 +118,7 @@
 								}
 							}
 							else{
+								<h1 class="section__title section__title--head">@Model.Movie.Name Trailer</h1>
 								<video controls autoplay width="715" height="410" id="player">
 									<source src="~/assets/videos/@Model.Movie.TrailerUrl" type="audio/mp4">
 								</video>
@@ -188,17 +177,25 @@
 										{
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="~/assets/img/user.svg" alt="">
+													<img class="comments__avatar" src="~/assets/img/@comment.UserImage" alt="">
 													<span class="comments__name">@comment.UserName</span>
 													<span class="comments__time">@comment.CreatedAt</span>
 												</div>
 												<p class="comments__text">@comment.Description</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
-														<a asp-controller="detail" asp-action="likecomment" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId">@comment.LikeCount<i class="ti ti-thumb-up"></i></a>
-														<a asp-controller="detail" asp-action="dislikecomment" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId">@comment.DislikeCount<i class="ti ti-thumb-down"></i></a>
+													@if(User.Identity.IsAuthenticated){
+															<a  class="like-btn" asp-controller="detail" asp-action="likecomment" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId">@comment.LikeCount<i class="ti ti-thumb-up"></i></a>
+															<a  asp-controller="detail" asp-action="dislikecomment" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId">@comment.DislikeCount<i class="ti ti-thumb-down"></i></a>
+													}
+													else{
+															<button type="button">@comment.LikeCount<i class="ti ti-thumb-up"></i></button>
+															<button type="button">@comment.DislikeCount<i class="ti ti-thumb-down"></i></button>
+													}
 													</div>
-													<a asp-controller="detail" asp-action="delete" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId"><i class="ti ti-quote"></i>Delete</a>
+													@if(User.Identity.Name==comment.UserName && User.Identity.IsAuthenticated){
+														<a asp-controller="detail" asp-action="delete" asp-route-id="@comment.Id" asp-route-movieid="@comment.MovieId"><i class="ti ti-quote"></i>Delete</a>
+													}
 												</div>
 											</li>
 										}
@@ -239,6 +236,7 @@
 									@foreach(var review in Model.Reviews){
 											<li class="reviews__item">
 												<div class="reviews__autor">
+													<img class="comments__avatar" src="~/assets/img/@review.Image" alt="">
 													<span class="reviews__name">@review.UserName</span>
 													<span class="reviews__time">@review.CreatedAt</span>
 
@@ -250,6 +248,7 @@
 									</ul>
 
 								
+									@if(User.Identity.IsAuthenticated){
 										<form method="post" class="sign__form sign__form--comments" asp-action="addreview" asp-controller="detail" asp-route-id="@Model.Movie.Id">
 											<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 											<div class="sign__group">
@@ -265,6 +264,10 @@
 
 											<button type="submit" class="sign__btn sign__btn--small">Send</button>
 										</form>
+									}
+									else{
+										<div class="text-center p-2 text-white bg-black">For Adding Review You Have To Login.<a asp-controller="account" asp-action="login">Sign In!</a></div>
+									}
 									
 								</div>
 							</div>
@@ -375,3 +378,31 @@
 	</div>
 </section>
 <!-- end content -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$(".like-btn, .dislike-btn").click(function (e) {
+			e.preventDefault(); // Səhifənin yenilənməsinin qarşısını alır
+
+			var url = $(this).attr("href"); // Linkin URL-ni alır
+			var commentId = $(this).attr("asp-route-commentId"); // Comment ID-ni alır
+
+			$.ajax({
+				type: "POST",
+				url: url,  // Controller metoduna yönləndir
+				data: { commentId: commentId },
+				success: function (response) {
+					if (response.success) {
+						$("#like-count-" + commentId).text(response.likeCount);
+						$("#dislike-count-" + commentId).text(response.dislikeCount);
+					} else {
+						alert(response.message);
+					}
+				},
+				error: function () {
+					alert("Xəta baş verdi!");
+				}
+			});
+		});
+	});
+</script>

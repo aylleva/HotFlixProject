@@ -89,5 +89,10 @@ namespace HotFlix.Persistence.Implementations.Repositories.Generic
         {
             _table.Update(entity);
         }
+
+        public async Task<int> Count()
+        {
+           return  await _table.CountAsync();
+        }
     }
 }

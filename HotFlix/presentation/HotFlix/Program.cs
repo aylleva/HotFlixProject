@@ -12,6 +12,7 @@ using System.Globalization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Stripe;
 using HotFlix.MiddleWares;
+using HotFlix.Areas.Admin.MiddleWare;
 
 namespace HotFlix
 {
@@ -66,6 +67,11 @@ namespace HotFlix
                 initialize.CreateAdmin().Wait();
             }
 
+            app.UseCookiePolicy(new CookiePolicyOptions()
+            {
+                MinimumSameSitePolicy = SameSiteMode.Lax
+            });
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -73,6 +79,7 @@ namespace HotFlix
             app.UseSession();
             app.UseStaticFiles();
             //app.UseMiddleware<GlobalExceptionHandler>();
+            //app.UseMiddleware<AdminGlobalExceptionHandler>();
 
             StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 

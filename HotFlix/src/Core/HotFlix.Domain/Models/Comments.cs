@@ -11,5 +11,7 @@ namespace HotFlix.Domain.Models
         public Movie Movie { get; set; }
         public int? LikeCount {  get; set; }
         public int? DisLikeCount { get; set; }
+        public bool? HasLiked { get; set; }
+        public bool? HasDisliked { get; set; }
     }
 }

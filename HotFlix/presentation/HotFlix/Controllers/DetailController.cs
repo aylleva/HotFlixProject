@@ -50,7 +50,8 @@ namespace HotFlix.Controllers
                     DislikeCount=c.DisLikeCount,
                     CreatedAt = c.CreatedAt,
                     UserName=c.User.UserName,
-                    MovieId=c.MovieId
+                    MovieId=c.MovieId,
+                    UserImage=c.User.Image
 
                 }).ToListAsync();
 
@@ -64,7 +65,8 @@ namespace HotFlix.Controllers
                    CreatedAt = c.CreatedAt,
                    UserName = c.User.UserName,
                    MovieId = c.MovieId,
-                   Rating = c.Ratings.RatingNumber
+                   Rating = c.Ratings.RatingNumber,
+                   Image = c.User.Image
 
                }).ToListAsync();
 
@@ -149,7 +151,9 @@ namespace HotFlix.Controllers
                 MovieId = Id.Value,
                 UserId = user.Id,
                 LikeCount = 0,
-                DisLikeCount = 0
+                DisLikeCount = 0,
+                HasDisliked =false,
+                HasLiked =false
             };
             movie.Comments.Add(comment);
             user.Comments.Add(comment);
@@ -159,7 +163,7 @@ namespace HotFlix.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> LikeComment(int? Id,int? movieId)
+        public async Task<JsonResult> LikeComment(int? Id,int? movieId)
         {
             if (Id is null || Id < 1) throw new Exception("Sorry! Comment Was Not Found");
 
@@ -168,13 +172,20 @@ namespace HotFlix.Controllers
             if(comment is not null)
             {
                 comment.LikeCount++;
+                comment.HasLiked = true;
+
+                if (comment.HasDisliked==true)
+                {
+                    comment.DisLikeCount--;
+                    comment.HasDisliked = false;
+                }
             }
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "Detail", new { id = movieId });
+            return  Json(new { success = true, likeCount = comment.LikeCount, dislikeCount = comment.DisLikeCount });
         }
         [Authorize]
-        public async Task<IActionResult> DislikeComment(int? Id, int? movieId)
+        public async Task<JsonResult> DislikeComment(int? Id, int? movieId)
         {
             if (Id is null || Id < 1) throw new Exception("Sorry! Comment Was Not Found");
 
@@ -183,10 +194,17 @@ namespace HotFlix.Controllers
             if (comment is not null)
             {
                 comment.DisLikeCount++;
+                comment.HasDisliked= true;
+
+                if (comment.HasLiked == true)
+                {
+                    comment.LikeCount--;
+                    comment.HasLiked= false;
+                }
             }
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "Detail", new { id = movieId });
+            return Json(new { success = true, likeCount = comment.LikeCount, dislikeCount = comment.DisLikeCount });
         }
         [Authorize]
         public async Task<IActionResult> Delete(int? Id, int? movieId)

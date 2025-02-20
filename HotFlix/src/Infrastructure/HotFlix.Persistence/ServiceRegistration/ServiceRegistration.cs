@@ -53,6 +53,19 @@ namespace HotFlix.Persistence.ServiceRegistration
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<ITagService, TagService>();
 
+            services.AddScoped<IPremiumPlanRepository, PremiumPlanRepository>();
+            services.AddScoped<IPremiumService, PremiumService>();
+
+            services.AddScoped<ICommentRepository, CommentRepository>();
+            services.AddScoped<ICommentService, CommentService>();
+
+            services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<IReviewService, ReviewService>();
+
+            services.AddScoped<IUserService, UserService>();
+            
+
+
             return services;
         }
     }

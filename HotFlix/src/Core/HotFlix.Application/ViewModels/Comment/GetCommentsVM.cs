@@ -15,6 +15,7 @@ namespace HotFlix.Application.ViewModels
         public int? LikeCount {  get; set; }
         public int? DislikeCount { get; set; }
         public string UserName {  get; set; }
+        public string UserImage {  get; set; }
         public int MovieId { get; set; }
     }
 }

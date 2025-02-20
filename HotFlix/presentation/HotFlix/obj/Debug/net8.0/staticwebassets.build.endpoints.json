@@ -157115,6 +157115,88 @@
       ]
     },
     {
+      "Route": "assets/img/userimage.0v2zdg3bed.jpeg",
+      "AssetFile": "assets/img/userimage.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PFY8JPqryukMxH9kULIJoT0cpFG/Y4MPJPlE9zPBB0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 18:16:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0v2zdg3bed"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PFY8JPqryukMxH9kULIJoT0cpFG/Y4MPJPlE9zPBB0c="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/userimage.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/userimage.jpeg",
+      "AssetFile": "assets/img/userimage.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PFY8JPqryukMxH9kULIJoT0cpFG/Y4MPJPlE9zPBB0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 18:16:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PFY8JPqryukMxH9kULIJoT0cpFG/Y4MPJPlE9zPBB0c="
+        }
+      ]
+    },
+    {
       "Route": "assets/js/bootstrap.bundle.min.js",
       "AssetFile": "assets/js/bootstrap.bundle.min.js",
       "Selectors": [],

@@ -1,0 +1,26 @@
+﻿@using HotFlix.Domain.Models
+@model ICollection<Movie>
+@{
+	int count = 0;
+}
+<tbody>
+	@foreach (var movie in Model)
+	{
+		count++;
+		<tr>
+			<td>
+				<div class="dashbox__table-text dashbox__table-text--grey">@count</div>
+			</td>
+			<td>
+				<div class="dashbox__table-text"><a href="#">@movie.Name</a></div>
+			</td>
+			<td>
+				<div class="dashbox__table-text">@movie.Category.Name</div>
+			</td>
+			<td>
+				<div class="dashbox__table-text dashbox__table-text--rate"><i class="ti ti-star"></i>@movie.Rating</div>
+			</td>
+		</tr>
+	}
+
+</tbody>

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using HotFlix.Application.Abstraction.Services;
+using HotFlix.Application.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotFlix.Areas.Admin.Controllers
@@ -7,9 +9,35 @@ namespace HotFlix.Areas.Admin.Controllers
     [Area("Admin")]
     public class ReviewController : Controller
     {
-        public IActionResult Index()
+        private readonly IReviewService _service;
+
+        public ReviewController(IReviewService service)
         {
-            return View();
+           _service = service;
+        }
+        public async Task<IActionResult> Index(int page = 1, int take = 10)
+        {
+            if (page < 1) throw new Exception("Page was not found");
+
+            int count = await _service.CountAsync();
+            double total = Math.Ceiling((double)count / 2);
+
+            if (page > total) throw new Exception("Page was not found");
+
+            PaginatedItemDto<ReviewDto> reviewDto = new()
+            {
+                CurrectPage = page,
+                TotalPage = total,
+                Items = _service.GetAllAsync(page, take),
+            };
+            return View(reviewDto);
+          
+        }
+
+        public async Task<IActionResult> Delete(int Id)
+        {
+            await _service.DeleteAsync(Id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

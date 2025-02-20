@@ -1,0 +1,51 @@
+﻿@model UpdatePremiumPlanDto
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Add new Plan</h2>
+				</div>
+			</div>
+			<!-- end main title -->
+			<!-- form -->
+			<div class="col-12">
+				<form method="post" class="sign__form sign__form--add">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="row">
+						<div class="col-12 col-xl-7">
+							<div class="row">
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="PlanName" class="sign__input" placeholder="PlanName">
+										<span asp-validation-for="PlanName" class="text-danger"></span>
+									</div>
+									<div class="sign__group">
+										<input asp-for="Price" class="sign__input" placeholder="Price">
+										<span asp-validation-for="Price" class="text-danger"></span>
+									</div>
+									<div class="sign__group">
+										<input asp-for="Quality" class="sign__input" placeholder="Quality">
+										<span asp-validation-for="Quality" class="text-danger"></span>
+									</div>
+									<div class="sign__group">
+										<input asp-for="Expires" class="sign__input" placeholder="Expires">
+										<span asp-validation-for="Expires" class="text-danger"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<button type="submit" class="sign__btn sign__btn--small"><span>Publish</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- end form -->
+		</div>
+	</div>
+</main>
+<!-- end main content -->

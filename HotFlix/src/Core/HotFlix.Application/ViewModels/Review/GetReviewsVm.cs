@@ -1,5 +1,4 @@
 ﻿
-
 namespace HotFlix.Application.ViewModels
 {
     public class GetReviewsVm
@@ -11,5 +10,6 @@ namespace HotFlix.Application.ViewModels
         public int Rating {  get; set; }
         public string UserName { get; set; }
         public int MovieId { get; set; }
+        public string Image {  get; set; }
     }
 }

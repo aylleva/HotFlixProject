@@ -48,6 +48,9 @@ namespace HotFlix.Controllers
                 Surname = uservm.Surname,
                 Email = uservm.Email,
                 UserName = uservm.UserName,
+                WatchedFilms = 0,
+                IsBanned = false,
+                Image= "userimage.jpeg"
             };
 
             var result = await _usermeneger.CreateAsync(user, uservm.Password);
@@ -97,6 +100,11 @@ namespace HotFlix.Controllers
                 return View();
             }
 
+            if(user.IsBanned==true)
+            {
+                ModelState.AddModelError(string.Empty, "Your Account Has Been Banned!");
+                return View();
+            }
             if (returnUrl is null)
             {
                 return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
@@ -133,18 +141,23 @@ namespace HotFlix.Controllers
 
             if(email == null)
             {
+
                 return RedirectToAction("Login","Account");
             }
             var user=await _usermeneger.FindByEmailAsync(email);
             if(user == null)
             {
-               user = new AppUser()
+                user = new AppUser()
                 {
                     Name = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value,
                     Surname = claims.FirstOrDefault(c => c.Type == ClaimTypes.Surname).Value,
-                    Email =email,
-                    UserName= claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value
-               };
+                    Email = email,
+                    UserName = claims.FirstOrDefault(c => c.Type == ClaimTypes.GivenName).Value,
+                     WatchedFilms = 0,
+                     IsBanned = false,
+                     Image= "userimage.jpeg"
+
+                };
             }
 
             var createresult=await _usermeneger.CreateAsync(user);

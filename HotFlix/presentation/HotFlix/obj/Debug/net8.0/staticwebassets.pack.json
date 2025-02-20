@@ -7665,6 +7665,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\user.svg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\userimage.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\userimage.jpeg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
     },

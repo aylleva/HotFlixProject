@@ -1,0 +1,86 @@
+﻿@model IEnumerable<GetPremiumPlanDto>
+@{
+	int count = 0;
+}
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Premium PLans</h2>
+
+					<span class="main__title-stat">@Model.Count()</span>
+				</div>
+			</div>
+			<div class="main__title-wrap">
+				<a asp-controller="premiumplan" asp-action="create" class="main__title-link main__title-link--wrap">Add Plan</a>
+				<!-- end search -->
+			</div>
+			<!-- end main title -->
+			<!-- items -->
+			<div class="col-12">
+				<div class="catalog catalog--1">
+					<table class="catalog__table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>NAME</th>
+								<th>Quality</th>
+								<th>Price</th>
+								<th>Expirec</th>
+								<th>User Count</th>
+								<th>ACTIONS</th>
+							</tr>
+						</thead>
+
+
+						@foreach (var plan in Model)
+						{
+							count++;
+							<tbody>
+								<tr>
+									<td>
+										<div class="catalog__text">@count</div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@plan.PlanName</a></div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@plan.Quality</a></div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@plan.Price $</a></div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@plan.Expires</a></div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@plan.UserCount</a></div>
+									</td>
+									<td>
+										<div class="catalog__btns">
+											<a asp-controller="premiumplan" asp-action="update" asp-route-id="@plan.Id" class="catalog__btn catalog__btn--edit">
+												<i class="ti ti-edit"></i>
+											</a>
+											<a asp-controller="premiumplan" asp-action="delete" asp-route-id="@plan.Id" class="catalog__btn catalog__btn--delete">
+												<i class="ti ti-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<!-- delete modal -->
+							</tbody>
+
+						}
+
+
+					</table>
+				</div>
+			</div>
+			<!-- end items -->
+			
+		</div>
+	</div>
+</main>

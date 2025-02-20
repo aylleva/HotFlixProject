@@ -25,5 +25,8 @@ namespace HotFlix.Application.Abstraction.Repositories.Generic
         void Update(T entity);
         Task<bool> AnyAsync(Expression<Func<T, bool>>? expression);
         Task<int> SaveChangesAsync();
+
+        Task<int> Count();
+       
     }
 }
