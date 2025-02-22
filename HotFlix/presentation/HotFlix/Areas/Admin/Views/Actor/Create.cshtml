@@ -1,5 +1,60 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model CreateActorDto
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Add new Actor</h2>
+				</div>
+			</div>
+			<!-- end main title -->
+			<!-- form -->
+			<div class="col-12">
+				<form method="post" enctype="multipart/form-data" class="sign__form sign__form--add">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="row">
+						<div class="col-12 col-xl-7">
+							<div class="row">
+								<div class="col-12">
+									<div class="sign__group">
+										<div class="sign__gallery">
+											<label asp-for="Image">Upload cover (240x340)</label>
+											<input asp-for="Image" class="sign__gallery-upload">
+											<span asp-validation-for="Image" class="text-danger"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="FullName" class="sign__input" placeholder="FullName">
+										<span asp-validation-for="FullName" class="text-danger"></span>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="Age" class="sign__input" placeholder="Age">
+										<span asp-validation-for="Age" class="text-danger"></span>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="MovieCount" class="sign__input" placeholder="Movie Count">
+										<span asp-validation-for="MovieCount" class="text-danger"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<button type="submit" class="sign__btn sign__btn--small"><span>Publish</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- end form -->
+		</div>
+	</div>
+</main>
+<!-- end main content -->

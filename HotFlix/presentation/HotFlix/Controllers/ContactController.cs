@@ -53,7 +53,9 @@ namespace HotFlix.Controllers
             Name = vm.Name,
             Email = vm.Email,
             Message = vm.Message,
-            PartnerShipId = vm.PartnerShipId
+            PartnerShipId = vm.PartnerShipId,
+            CreatedAt = DateTime.Now,
+            UpdatedAt = DateTime.Now
             };
 
             await _context.JobContacts.AddAsync(contact);

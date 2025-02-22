@@ -1,0 +1,51 @@
+﻿@model ContactDto
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			
+			<!-- end main title -->
+			<!-- form -->
+			<div class="col-12">
+				<form  class="sign__form sign__form--add">
+					<div class="row">
+						<div class="col-12 col-xl-7">
+							<div class="row">
+								<div class="col-12">
+									<div class="sign__group">
+										<div class="sign__gallery">
+											<input asp-for="Name" disabled class="sign__gallery-upload">
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="Email" disabled class="sign__input" >
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="Message" disabled class="sign__input" placeholder="Age">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="PartnerShipName" disabled class="sign__input" placeholder="Movie Count">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="sign__group">
+										<input asp-for="CreatedDate" disabled class="sign__input" placeholder="Movie Count">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- end form -->
+		</div>
+	</div>
+</main>
+<!-- end main content -->

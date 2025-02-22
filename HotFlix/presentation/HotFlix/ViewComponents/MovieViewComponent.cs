@@ -23,12 +23,14 @@ namespace HotFlix.ViewComponents
             {
                 case SortType.Movie:
                     movies=await _context.Movies.Where(m=>m.Category.Name=="Movies")
+                        .Where(m => m.Status == false)
                         .Include(m=>m.MovieTags).ThenInclude(mt=>mt.Tag)
                         .Take(10)
                         .ToListAsync(); 
                     break;
                 case SortType.TVSeries:
                     movies = await _context.Movies.Where(m => m.Category.Name == "Tv Series")
+                        .Where(m => m.Status == false)
                         .Include(m => m.MovieTags).ThenInclude(mt => mt.Tag)
                          .Take(10)
                         .ToListAsync();

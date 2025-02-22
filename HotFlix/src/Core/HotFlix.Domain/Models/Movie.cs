@@ -17,10 +17,10 @@ namespace HotFlix.Domain.Models
         public bool Status {  get; set; }
         public int Views {  get; set; }
         //relational
-        public ICollection<MovieTags> MovieTags { get; set; }
+        public List<MovieTags> MovieTags { get; set; }
         public Category Category { get; set; }
         public Director Director { get; set; }
-        public ICollection<MovieActors> MovieActors { get; set; }
+        public List<MovieActors> MovieActors { get; set; }
         public Country Country { get; set; }
         public ICollection<Comments> Comments { get; set; }
         public ICollection<Season>? Seasons { get; set; }

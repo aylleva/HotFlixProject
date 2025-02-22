@@ -11,15 +11,16 @@ namespace HotFlix.Application.Abstraction.Services
 {
     public interface IActorService
     {
-        Task<IEnumerable<GetActorDto>> GetAllAsync();
+        Task<IEnumerable<GetActorDto>> GetAllAsync(int page,int take);
 
         Task<Actor> GetbyIdAsync(int id);
 
         Task CreateAsync(CreateActorDto actorDto);
 
-        Task UpdateAsync(int id, UpdateCategoryDto categoryDto);
+        Task UpdateAsync(int id, UpdateActorDto actorDto);
 
         Task DeleteAsync(int id);
-        Task<bool> AnyAsync(Expression<Func<Category, bool>>? expression);
+        Task<bool> AnyAsync(Expression<Func<Actor, bool>>? expression);
+        Task<int> CountAsync();
     }
 }

@@ -1,5 +1,128 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model PaginatedItemDto<GetActorDto>
 @{
+	int count = (Model.CurrectPage - 1) * 10;
 }
+<!-- main content -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="row">
+			
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Comments</h2>
+					<div class="main__title-wrap">
+						<a asp-controller="actor" asp-action="create" class="main__title-link main__title-link--wrap">Add Actor</a>
+						<!-- end search -->
+					</div>
+					<div class="main__title-wrap">
+						<select class="filter__select" name="sort" id="filter__sort">
+							<option value="0">Date created</option>
+							<option value="1">Rating</option>
+						</select>
+
+						<!-- search -->
+						<form action="#" class="main__title-form">
+							<input type="text" placeholder="Key word..">
+							<button type="button">
+								<i class="ti ti-search"></i>
+							</button>
+						</form>
+						<!-- end search -->
+					</div>
+				</div>
+			</div>
+			<!-- end main title -->
+			<!-- comments -->
+			<div class="col-12">
+				<div class="catalog catalog--1">
+					<table class="catalog__table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>FullName</th>
+								<th>Age</th>
+								<th>Movie Count</th>
+								<th>ACTIONS</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							@foreach (var actor in await Model.Items)
+							{
+								count++;
+								<tr>
+									<td>
+										<div class="catalog__text">@count</div>
+									</td>
+									<td>
+										<div class="catalog__text"><a href="#">@actor.FullName</a></div>
+									</td>
+									<td>
+										<div class="catalog__text">@actor.Age</div>
+									</td>
+									<td>
+										<div class="catalog__text">@actor.MovieCount</div>
+									</td>
+									<td>
+										<div class="catalog__btns">
+											<a asp-controller="actor" asp-action="update" asp-route-id="@actor.Id"  class="catalog__btn catalog__btn--view" >
+
+												<i class="ti ti-eye"></i>
+											</a>
+											<a asp-controller="actor" asp-action="delete" asp-route-id="@actor.Id" class="catalog__btn catalog__btn--delete">
+												<i class="ti ti-trash"></i>
+											</a>
+										</div>
+
+									</td>
+								</tr>
+							}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- end comments -->
+			<!-- paginator -->
+			<div class="col-12">
+				<div class="main__paginator">
+
+					<ul class="main__paginator-list">
+						<li>
+							<a href="#">
+								<i class="ti ti-chevron-left"></i>
+								<span>Prev</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Next</span>
+								<i class="ti ti-chevron-right"></i>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="paginator">
+						<li class="paginator__item paginator__item--prev @(Model.CurrectPage<1?"disabled":"")">
+							<a asp-route-page="@(Model.CurrectPage-1)"><i class="ti ti-chevron-left"></i></a>
+						</li>
+						@for (var i = 0; i < Model.TotalPage; i++)
+						{
+							<li class="paginator__item @(Model.CurrectPage==i+1?" active disabled":"")">
+								<a asp-route-page="@(i+1)">@(i + 1)</a>
+							</li>
+						}
+						<li class="paginator__item paginator__item--next  @(Model.CurrectPage==Model.TotalPage?"disabled":"")">
+							<a asp-route-page="@(Model.CurrectPage+1)"><i class="ti ti-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end paginator -->
+		</div>
+	</div>
+</main>
+<!-- end main content -->
+<!-- view modal -->
+<!-- end view modal -->

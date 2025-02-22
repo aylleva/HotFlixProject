@@ -20,9 +20,4 @@
     <ProjectReference Include="..\HotFlix.Domain\HotFlix.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\Comment\" />
-    <Folder Include="Dtos\Review\" />
-  </ItemGroup>
-
 </Project>

@@ -63,8 +63,16 @@ namespace HotFlix.Persistence.ServiceRegistration
             services.AddScoped<IReviewService, ReviewService>();
 
             services.AddScoped<IUserService, UserService>();
-            
 
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IMovieService, MovieService>();
+
+            services.AddScoped<IActorRepository, ActorRepository>();
+            services.AddScoped<IActorService, ActorService>();
+
+
+            services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddScoped<IContactService, ContactService>();
 
             return services;
         }

@@ -33,6 +33,7 @@ namespace HotFlix.Controllers
                 .Include(m => m.Director)
                 .Include(m => m.Country)
                 .Include(m=>m.Seasons).ThenInclude(s=>s.SeasonVideos)
+                .Where(m => m.Status == false)
                 .FirstOrDefaultAsync(m => m.Id == Id);
 
             if (movie is null) throw new Exception("Sorry! Movie Was Not Found");

@@ -1863,12 +1863,16 @@ wwwroot\assets\css\slimselect.css.map
 wwwroot\assets\css\splide.min.css
 wwwroot\assets\icon\favicon-32x32.png
 wwwroot\assets\img\angle-down.svg
+wwwroot\assets\img\bg\290e0f3b-8bc1-4f8c-801e-801217aafd40.png
+wwwroot\assets\img\bg\502dcfb3-7b8e-4f6f-85d8-64f93dd4b9be.png
+wwwroot\assets\img\bg\8d480fe0-272d-40ab-981a-4846ed3e43e1.png
 wwwroot\assets\img\bg\anne.jpg
 wwwroot\assets\img\bg\christianbale.jpeg
 wwwroot\assets\img\bg\cillianm.jpeg
 wwwroot\assets\img\bg\dorisa.jpeg
 wwwroot\assets\img\bg\drrobert.jpeg
 wwwroot\assets\img\bg\emilyblunt.jpeg
+wwwroot\assets\img\bg\fb181014-6540-4063-8823-c39877996247.jpg
 wwwroot\assets\img\bg\florencab.jpeg
 wwwroot\assets\img\bg\gongyoo.jpeg
 wwwroot\assets\img\bg\jacobl.jpeg
@@ -1894,6 +1898,8 @@ wwwroot\assets\img\bg\section__bg.jpg
 wwwroot\assets\img\bg\tao.jpeg
 wwwroot\assets\img\covers\alice in borderland.jpg
 wwwroot\assets\img\covers\batmanthedark.jpg
+wwwroot\assets\img\covers\eea9fa73-ab71-4fdc-a04d-994a73e2e636.png
+wwwroot\assets\img\covers\ff264ab3-0056-4d69-bbaf-b85e1d7bac02.jpg
 wwwroot\assets\img\covers\inceptionnew.jpeg
 wwwroot\assets\img\covers\interstellar.jpg
 wwwroot\assets\img\covers\oppenhaimer.jpg

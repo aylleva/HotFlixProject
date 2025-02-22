@@ -20,7 +20,7 @@ namespace HotFlix.Controllers
         public async Task<IActionResult> Index(int? tagId, int? categoryId, int ratingkey=1,int timekey=1,int page=1)
         {
 
-            IQueryable<Movie> query =  _context.Movies;
+            IQueryable<Movie> query =  _context.Movies.Where(m => m.Status == false);
 
 
             if(categoryId is not null || categoryId > 0)
@@ -85,7 +85,7 @@ namespace HotFlix.Controllers
                     Name = t.Name
                 }).ToListAsync(),
                 PremierMovies=await _context.Movies.Include(m=>m.MovieTags)
-                .ThenInclude(mt=>mt.Tag).OrderBy(m=>m.Premiere).ToListAsync(),
+                .ThenInclude(mt=>mt.Tag).Where(m => m.Status == false).OrderBy(m=>m.Premiere).ToListAsync(),
 
                 CurrectPage = page,
                 TotalPage = total,

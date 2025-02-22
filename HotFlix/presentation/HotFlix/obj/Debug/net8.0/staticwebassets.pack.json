@@ -7461,6 +7461,18 @@
       "PackagePath": "staticwebassets\\assets\\img\\angle-down.svg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\290e0f3b-8bc1-4f8c-801e-801217aafd40.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\290e0f3b-8bc1-4f8c-801e-801217aafd40.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\502dcfb3-7b8e-4f6f-85d8-64f93dd4b9be.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\502dcfb3-7b8e-4f6f-85d8-64f93dd4b9be.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\8d480fe0-272d-40ab-981a-4846ed3e43e1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\8d480fe0-272d-40ab-981a-4846ed3e43e1.png"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\Jessica_Chastain.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\Jessica_Chastain.jpeg"
     },
@@ -7491,6 +7503,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\emilyblunt.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\bg\\emilyblunt.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\fb181014-6540-4063-8823-c39877996247.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\fb181014-6540-4063-8823-c39877996247.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\bg\\florencab.jpeg",
@@ -7583,6 +7599,14 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\batmanthedark.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\covers\\batmanthedark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\eea9fa73-ab71-4fdc-a04d-994a73e2e636.png",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\eea9fa73-ab71-4fdc-a04d-994a73e2e636.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\ff264ab3-0056-4d69-bbaf-b85e1d7bac02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\covers\\ff264ab3-0056-4d69-bbaf-b85e1d7bac02.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\HotFlixProject\\HotFlix\\presentation\\HotFlix\\wwwroot\\assets\\img\\covers\\inceptionnew.jpeg",

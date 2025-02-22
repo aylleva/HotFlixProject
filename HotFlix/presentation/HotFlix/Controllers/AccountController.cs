@@ -88,6 +88,12 @@ namespace HotFlix.Controllers
                 return View();
             }
 
+            if (user.IsBanned == true)
+            {
+                ModelState.AddModelError(string.Empty, "Your Account Has Been Banned!");
+                return View();
+            }
+
             var result = await _signinuser.PasswordSignInAsync(user, uservm.Password, true, true);
             if (!result.Succeeded)
             {
@@ -100,11 +106,6 @@ namespace HotFlix.Controllers
                 return View();
             }
 
-            if(user.IsBanned==true)
-            {
-                ModelState.AddModelError(string.Empty, "Your Account Has Been Banned!");
-                return View();
-            }
             if (returnUrl is null)
             {
                 return RedirectToAction(nameof(HomeController.Index), "Home", new { Area = " " });
