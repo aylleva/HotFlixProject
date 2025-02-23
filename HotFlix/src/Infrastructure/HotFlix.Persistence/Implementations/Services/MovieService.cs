@@ -27,9 +27,9 @@ namespace HotFlix.Persistence.Implementations.Services
             
         }
 
-        public async Task<IEnumerable<GetMovieDto>> GetAll(int page, int take)
+        public async Task<IEnumerable<GetMovieDto>> GetAll(int? page, int? take)
         {
-            IEnumerable<Movie> movies = await _repository.GetAll(null, null, false, false, false, (page - 1) * take, take, nameof(Movie.Category), nameof(Movie.Reviews)).ToListAsync();
+            IEnumerable<Movie> movies = await _repository.GetAll(null, null, false, false, false, ((page - 1) * take).Value, take.Value, nameof(Movie.Category), nameof(Movie.Reviews)).ToListAsync();
 
             IEnumerable<GetMovieDto> moviesDto = movies.Select(c => new GetMovieDto
             {

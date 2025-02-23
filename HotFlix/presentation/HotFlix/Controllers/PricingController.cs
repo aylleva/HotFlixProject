@@ -48,7 +48,8 @@ namespace HotFlix.Controllers
                 Surname = ordervm.Surname,
                 PremiumPlanId = ordervm.PlanId,
                 UserId = User.FindFirstValue(ClaimTypes.NameIdentifier),
-                Price = total
+                Price = total,
+                
             };
 
             var optionCust = new CustomerCreateOptions
@@ -67,7 +68,8 @@ namespace HotFlix.Controllers
                 Currency = "USD",
                 Description = "Premium Plan Activated",
                 Source = stripeToken,
-                ReceiptEmail = stripeEmail
+                ReceiptEmail = stripeEmail,
+               
 
 
             };

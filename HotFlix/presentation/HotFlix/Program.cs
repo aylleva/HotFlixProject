@@ -13,6 +13,10 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Stripe;
 using HotFlix.MiddleWares;
 using HotFlix.Areas.Admin.MiddleWare;
+using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
+using Microsoft.Extensions.Options;
+using HotFlix.Domain.Utilities;
 
 namespace HotFlix
 {
@@ -21,31 +25,34 @@ namespace HotFlix
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddControllersWithViews()
-                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+            builder.Services.AddControllersWithViews();
+
 
             builder.Services.AddLocalization(opt =>
             {
                 opt.ResourcesPath = "Resources";
             });
-            builder.Services.Configure<RequestLocalizationOptions>(opt =>
+            builder.Services.Configure<RequestLocalizationOptions>(options =>
             {
                 var supportedCultures = new[]
                 {
                     new CultureInfo("en-US"),
                     new CultureInfo("tr-TR")
                 };
-                opt.DefaultRequestCulture = new RequestCulture("en-US");
-                opt.SupportedCultures = supportedCultures;
+                options.DefaultRequestCulture = new RequestCulture(supportedCultures.First());
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
             });
+
 
             builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
             builder.Services.ConfigureApplicationCookie(options =>
             {
-                options.AccessDeniedPath = "/home/error";
+                options.AccessDeniedPath = "/Home/Error";
             });
 
+            builder.Services.AddScoped<SharedViewLocalizer>();
             builder.Services.AddPersistenceServices(builder.Configuration)
                 .AddInfrastructureServices(builder.Configuration);
 
@@ -59,6 +66,7 @@ namespace HotFlix
             var app = builder.Build();
             app.UseRequestLocalization();
 
+            app.UseStatusCodePagesWithReExecute("/Home/Error", "?code{0}");
             using(var scope = app.Services.CreateScope())
             {
                 var initialize=scope.ServiceProvider.GetRequiredService<AppDbContextInitializer>();
@@ -66,6 +74,7 @@ namespace HotFlix
                 initialize.CreateRoles().Wait();
                 initialize.CreateAdmin().Wait();
             }
+
 
             app.UseCookiePolicy(new CookiePolicyOptions()
             {
@@ -78,8 +87,8 @@ namespace HotFlix
 
             app.UseSession();
             app.UseStaticFiles();
-            //app.UseMiddleware<GlobalExceptionHandler>();
-            //app.UseMiddleware<AdminGlobalExceptionHandler>();
+            app.UseMiddleware<GlobalExceptionHandler>();
+            app.UseMiddleware<AdminGlobalExceptionHandler>();
 
             StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 

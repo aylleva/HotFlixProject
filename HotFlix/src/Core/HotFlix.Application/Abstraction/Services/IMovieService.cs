@@ -7,7 +7,7 @@ namespace HotFlix.Application.Abstraction.Services
 {
     public interface IMovieService
     {
-        Task<IEnumerable<GetMovieDto>> GetAll(int page, int take);
+        Task<IEnumerable<GetMovieDto>> GetAll(int? page, int? take);
 
         Task<Movie> GetByIdAsync(int id);
 

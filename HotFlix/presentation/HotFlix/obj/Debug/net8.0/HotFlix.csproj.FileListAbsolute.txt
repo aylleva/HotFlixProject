@@ -166,8 +166,6 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
-C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.Resources.Home.Index.en-US.resources
-C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.Resources.Home.Index.tr-TR.resources
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.csproj.GenerateResource.cache
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\en-US\HotFlix.resources.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\tr-TR\HotFlix.resources.dll
@@ -287,3 +285,6 @@ C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.Resources.Home.Resource.en-US.resources
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.Resources.Home.Resource.tr-TR.resources
+C:\Users\user\Desktop\HotFlixProject\HotFlix\presentation\HotFlix\obj\Debug\net8.0\HotFlix.MvcApplicationPartsAssemblyInfo.cs

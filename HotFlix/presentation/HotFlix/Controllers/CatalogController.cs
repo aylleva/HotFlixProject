@@ -59,9 +59,9 @@ namespace HotFlix.Controllers
             if (page < 1) throw new Exception("Sorry! Page Was Not Found");
 
             int count = _context.Movies.Count();
-            double total = Math.Ceiling((double)count / 5);
+            double total = Math.Ceiling((double)count / 10);
 
-            query = query.Skip((page - 1) * 5).Take(5);
+            query = query.Skip((page - 1) * 10).Take(10);
             if (page>total) throw new Exception("Sorry! Page Was Not Found");
 
             CatalogVM catalogvm = new CatalogVM

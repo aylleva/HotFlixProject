@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotFlix.Areas.Admin.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class HomeController : Controller
     {

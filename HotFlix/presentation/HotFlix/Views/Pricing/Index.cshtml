@@ -1,7 +1,12 @@
 ﻿@using HotFlix.Domain.Models
 @using HotFlix.Persistence.DAL
+@using Microsoft.AspNetCore.Identity
 @using Microsoft.Extensions.Options
 @model PricingVM
+@inject UserManager<AppUser> usermeneger
+@{
+	var user = usermeneger.GetUserAsync(User).Result;
+}
 @inject IOptions<StripeSettings> stripe
 	<!-- page title -->
 	<section class="section section--first">
@@ -44,9 +49,12 @@
 							<li class="plan__item"><i class="ti ti-circle-check"></i> 24/7 Support</li>
 						</ul>
 						@if(User.Identity.IsAuthenticated){
-							<div style="width:100%;display:block" class="pay_btn" data-plan-id="@plan.Id">
-								<button class="plan__btn" type="button" data-bs-toggle="modal" data-bs-target="#plan-modal">Choose Plan</button>
-							</div>
+							@if(user.IsPremium==false){
+								<div style="width:100%;display:block" class="pay_btn" data-plan-id="@plan.Id">
+									<button class="plan__btn" type="button" data-bs-toggle="modal" data-bs-target="#plan-modal">Choose Plan</button>
+								</div>
+							}
+							
 						}
 						else{
 							<div style="width:100%;display:block">

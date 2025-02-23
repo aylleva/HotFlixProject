@@ -1,8 +1,12 @@
 ﻿@using HotFlix.Domain.Models
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Localization
+@using HotFlix.Domain.Utilities.Extentions;
 @inject UserManager<AppUser> usermeneger
 @{
 	var user = usermeneger.GetUserAsync(User).Result;
+	var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+	var cultureList = ViewData["Cultures"] as List<SelectListItem>;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -48,20 +52,13 @@
 						<ul class="header__nav">
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" role="button"  aria-expanded="false" asp-controller="home" asp-action="index">Home</a>
+								<a class="header__nav-link" role="button" aria-expanded="false" asp-controller="home" asp-action="index">@Html.Translate(key: "Home")</a>
 							</li>
-						
+
 							<!-- end dropdown -->
 							<!-- dropdown -->
 							<li class="header__nav-item">
 								<a class="header__nav-link" role="button" aria-expanded="false" asp-controller="catalog" asp-action="index">Catalog</a>
-
-								@* <ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="catalog.html">Catalog style 1</a></li>
-									<li><a href="catalog2.html">Catalog style 2</a></li>
-									<li><a href="details.html">Details Movie</a></li>
-									<li><a href="details2.html">Details TV Series</a></li>
-								</ul> *@
 							</li>
 							<!-- end dropdown -->
 
@@ -71,7 +68,7 @@
 
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Services <i class="ti ti-chevron-down"></i></a>
+								<a class="header__nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services <i class="ti ti-chevron-down"></i></a>
 
 								<ul class="dropdown-menu header__dropdown-menu">
 									<li><a asp-controller="about" asp-action="index">About Us</a></li>
@@ -81,14 +78,14 @@
 								</ul>
 							</li>
 							<!-- end dropdown -->
-							
+
 						</ul>
 						<!-- end header nav -->
 						<!-- header auth -->
 						<div class="header__auth">
-							<form action="#" class="header__search">
-								<input class="header__search-input" type="text" placeholder="Search...">
-								<button class="header__search-button" type="button">
+							<form action="@Url.Action("SearchMovie", "Search")" method="get" class="header__search">
+								<input name="query" class="header__search-input" type="text" placeholder="Search...">
+								<button class="header__search-button" type="submit">
 									<i class="ti ti-search"></i>
 								</button>
 								<button class="header__search-close" type="button">
@@ -101,32 +98,43 @@
 							</button>
 
 							<!-- dropdown -->
-							<div class="header__lang">
-								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN <i class="ti ti-chevron-down"></i></a>
-
-								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a asp-controller="home" asp-action="changelanguage" asp-route-lang="en">English</a></li>
-									<li><a asp-controller="home" asp-action="changelanguage" asp-route-lang="tr">Turkish</a></li>
-									
-								</ul>
-							</div>
+							
+							@* 	<form asp-controller="home" asp-action="setlanguage"
+									  asp-route-returnurl="@Context.Request.Path" method="post">
+										<select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureList" onchange="this.form.submit()">
+										</select>
+								</form>
+							 *@
 							<!-- end dropdown -->
 							<!-- dropdown -->
-							@if(User.Identity.IsAuthenticated){
+							@if (User.Identity.IsAuthenticated)
+							{
 								<div class="header__profile">
 									<a class="header__sign-in header__sign-in--user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<i class="ti ti-user"></i>
 										<span>@user.UserName</span>
 									</a>
 
-									<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
-										<li><a asp-controller="profile" asp-action="index"><i class="ti ti-ghost"></i>Profile</a></li>
-										<li><a asp-controller="account" asp-action="update"><i class="ti ti-ghost"></i>Update</a></li>
-										<li><a asp-controller="account" asp-action="logout"><i class="ti ti-logout"></i>Logout</a></li>
-									</ul>
+									@if (User.IsInRole("Member"))
+									{
+										<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
+											<li><a asp-controller="profile" asp-action="index"><i class="ti ti-ghost"></i>Profile</a></li>
+											<li><a asp-controller="account" asp-action="update"><i class="ti ti-settings"></i>Update</a></li>
+											<li><a asp-controller="account" asp-action="logout"><i class="ti ti-logout"></i>Logout</a></li>
+										</ul>
+									}
+									else
+									{
+										<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
+											<li><a asp-area="admin" asp-controller="home" asp-action="index"><i class="ti ti-ghost"></i>Admin Panel</a></li>
+											<li><a asp-controller="account" asp-action="update"><i class="ti ti-settings"></i>Update</a></li>
+											<li><a asp-controller="account" asp-action="logout"><i class="ti ti-logout"></i>Logout</a></li>
+										</ul>
+									}
 								</div>
 							}
-							else{
+							else
+							{
 								<ul>
 									<li class="header__nav-item">
 										<a class="header__nav-link header__nav-link--more" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account<i class="ti ti-chevron-down"></i></a>
@@ -155,7 +163,7 @@
 		</div>
 	</header>
 	<!-- end header -->
-        @RenderBody()
+	@RenderBody()
 	<!-- footer -->
 	<footer class="footer">
 		<div class="container">

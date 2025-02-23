@@ -59,9 +59,9 @@
 				<p>@User.Identity.Name</p>
 			</div>
 
-			<button class="sidebar__user-btn" type="button">
-				<i class="ti ti-logout"></i>
-			</button>
+			<a asp-area="" asp-controller="account" asp-action="logout" class="sidebar__user-btn"  >
+				<i class="ti ti-logout" title="Logout"></i>
+			</a>
 		</div>
 		<!-- end sidebar user -->
 		<!-- sidebar nav -->
@@ -106,12 +106,12 @@
 				</li>
 
 				<li class="sidebar__nav-item">
-					<a asp-controller="contact" asp-action="index" class="sidebar__nav-link"><i class="ti ti-settings"></i> <span>Settings</span></a>
+					<a asp-controller="contact" asp-action="index" class="sidebar__nav-link"><i class="ti ti-settings"></i> <span>Contacts</span></a>
 				</li>
 
 
 				<li class="sidebar__nav-item">
-					<a href="../main/index.html" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Back to HotFlix</span></a>
+					<a asp-area="" asp-controller="home" asp-action="index" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Back to HotFlix</span></a>
 				</li>
 			</ul>
 		</div>
