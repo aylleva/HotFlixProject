@@ -18,7 +18,7 @@ namespace HotFlix.Areas.Admin.Controllers
         {
             _service = service;
         }
-        public async Task<IActionResult> Index(int page = 1, int take = 10)
+        public async Task<IActionResult> Index(string? search, int page = 1, int take = 10)
         {
             if (page < 1) throw new Exception("Page was not found");
 
@@ -26,12 +26,13 @@ namespace HotFlix.Areas.Admin.Controllers
             double total = Math.Ceiling((double)count / 10);
 
             if (page > total) throw new Exception("Page was not found");
-
+           
             PaginatedItemDto<GetActorDto> actorDto = new()
             {
                 CurrectPage = page,
                 TotalPage = total,
-                Items = _service.GetAllAsync(page, take),
+                Items = _service.GetAllAsync(page, take,search),
+                Search = search
             };
             return View(actorDto);
         }

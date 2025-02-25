@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Connections;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
 
 
 namespace HotFlix.Persistence.Implementations.Services
@@ -27,10 +28,13 @@ namespace HotFlix.Persistence.Implementations.Services
             
         }
 
-        public async Task<IEnumerable<GetMovieDto>> GetAll(int? page, int? take)
+        public async Task<IEnumerable<GetMovieDto>> GetAll(int? page, int? take,string? search)
         {
-            IEnumerable<Movie> movies = await _repository.GetAll(null, null, false, false, false, ((page - 1) * take).Value, take.Value, nameof(Movie.Category), nameof(Movie.Reviews)).ToListAsync();
-
+            var movies=  await _repository.GetAll(null, null, false, false, false, ((page - 1) * take).Value, take.Value, nameof(Movie.Category), nameof(Movie.Reviews)).ToListAsync();
+            if(search is not null)
+            {
+                movies= await _repository.GetAll(a=>a.Name.Contains(search), null, false, false, false, ((page - 1) * take).Value, take.Value, nameof(Movie.Category), nameof(Movie.Reviews)).ToListAsync();
+            }
             IEnumerable<GetMovieDto> moviesDto = movies.Select(c => new GetMovieDto
             {
                 Id = c.Id,

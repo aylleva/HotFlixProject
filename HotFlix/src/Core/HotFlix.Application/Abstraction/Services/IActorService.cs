@@ -11,7 +11,7 @@ namespace HotFlix.Application.Abstraction.Services
 {
     public interface IActorService
     {
-        Task<IEnumerable<GetActorDto>> GetAllAsync(int page,int take);
+        Task<IEnumerable<GetActorDto>> GetAllAsync(int page,int take, string? search);
 
         Task<Actor> GetbyIdAsync(int id);
 

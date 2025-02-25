@@ -1,0 +1,50 @@
+﻿@using HotFlix.Domain
+@model PlanOrder
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plan Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .email-container { max-width: 600px; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .header { text-align: center; background: #007bff; color: white; padding: 15px; border-radius: 8px 8px 0 0; }
+        .content { padding: 20px; text-align: center; }
+        .content h2 { color: #333; }
+        .content p { font-size: 16px; color: #666; }
+        .plan-details { background: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .plan-details p { margin: 5px 0; font-weight: bold; }
+        .button { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; font-size: 16px; border-radius: 5px; }
+        .button:hover { background: #0056b3; }
+        .footer { margin-top: 20px; font-size: 14px; color: #888; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="email-container">
+        <div class="header">
+            <h1>Premium Plan Is Active Now!</h1>
+        </div>
+        <div class="content">
+            <h2>Hello Dear, @Model.User.Name!</h2>
+            <p>You have successfully purchased your **Premium Plan**. 🎉</p>
+            
+            <div class="plan-details">
+                <p>📌 **Plan Name:** @Model.PremiumPlanPlan.PlanName</p>
+                <p>💰 **Price:** @Model.Price AZN</p>
+                <p>⏳ **Expires:** @Model.PremiumPlanPlan.Expires</p>
+            </div>
+
+            <p>You can manage your account by clicking the button below:</p>
+            <a href="https://localhost:7118/" class="button">Control My Account</a>
+        </div>
+        <div class="footer">
+            <p>Contact With Us <a href="HotFlixContact@gmail.com">HotFlixContact@gmail.com</a></p>
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -11,5 +11,6 @@ namespace HotFlix.Application.Dtos
         public int CurrectPage {  get; set; }
         public double TotalPage {  get; set; }
         public Task<IEnumerable<T>> Items { get; set; } 
+        public string? Search {  get; set; }
     }
 }

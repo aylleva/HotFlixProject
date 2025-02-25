@@ -9,7 +9,7 @@ namespace HotFlix.Application.Abstraction.Services
 {
     public interface IUserService
     {
-        Task<IEnumerable<UsersDto>> GetAllAsync(int page, int take);
+        Task<IEnumerable<UsersDto>> GetAllAsync(int page, int take, string? search);
         Task DeleteAsync(string id);
         Task<int> CountAsync();
 

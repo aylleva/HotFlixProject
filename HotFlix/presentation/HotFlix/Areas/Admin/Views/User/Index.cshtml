@@ -13,23 +13,16 @@
 
 					<span class="main__title-stat"></span>
 
-					@* <div class="main__title-wrap">
-
-						<select class="filter__select" name="sort" id="filter__sort">
-							<option value="0">Date created</option>
-							<option value="1">Pricing plan</option>
-							<option value="2">Status</option>
-						</select>
-
+					<div class="main__title-wrap">
 						<!-- search -->
-						<form action="#" class="main__title-form">
-							<input type="text" placeholder="Find user..">
-							<button type="button">
+						<form asp-action="index" class="main__title-form">
+							<input type="text" name="search" value="@Model.Search" placeholder="Find movie / tv series..">
+							<button type="submit">
 								<i class="ti ti-search"></i>
 							</button>
 						</form>
 						<!-- end search -->
-					</div> *@
+					</div>
 				</div>
 			</div>
 			<!-- end main title -->

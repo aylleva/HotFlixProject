@@ -23,12 +23,15 @@ namespace HotFlix.Persistence.Implementations.Services
             _usermeneger = usermeneger;
         }
        
-        public async Task<IEnumerable<UsersDto>> GetAllAsync(int page, int take)
+        public async Task<IEnumerable<UsersDto>> GetAllAsync(int page, int take,string? search)
         {
             IEnumerable<AppUser> users = await _usermeneger.Users.
                 Include(u=>u.PremiumPlan).Include(u=>u.Comments).Include(u=>u.Reviews).Skip((page - 1) * take).Take(take)
                 .ToListAsync();
-
+            if (search is not null)
+            {
+                users = users.Where(u => u.UserName.Contains(search));
+            }
             IEnumerable<UsersDto> usersdto = users.Select(u => new UsersDto
             {
                 Id = u.Id,

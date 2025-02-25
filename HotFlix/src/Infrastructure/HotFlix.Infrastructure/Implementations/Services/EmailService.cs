@@ -39,5 +39,22 @@ namespace HotFlix.Infrastructure.Implementations.Services
 
             smpt.Send(message);
         }
+
+        public async Task SendEmailAsync(string email, string subject, string body, bool isHTML)
+        {
+            SmtpClient smtp = new SmtpClient(_configuration["Email:Host"],587);
+            smtp.EnableSsl = true;
+            smtp.Credentials = new NetworkCredential(_configuration["Email:LoginEmail"], _configuration["Email:Password"]);
+
+            MailAddress from = new MailAddress(_configuration["Email:LoginEmail"], "HotFlix");
+            MailAddress to = new MailAddress(email);
+
+            MailMessage message = new MailMessage(from, to);
+            message.Subject = subject;
+            message.IsBodyHtml = isHTML;
+            message.Body = body;
+
+            await smtp.SendMailAsync(message);
+        }
     }
 }

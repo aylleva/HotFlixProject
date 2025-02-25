@@ -25,10 +25,14 @@ namespace HotFlix.Persistence.Implementations.Services
           _repository = repository;
            _env = env;
         }
-        public async Task<IEnumerable<GetActorDto>> GetAllAsync(int page,int take)
+        public async Task<IEnumerable<GetActorDto>> GetAllAsync(int page,int take,string? search)
         {
-            IEnumerable<Actor> actors = await _repository.GetAll(skip: (page - 1) * take,take:take).ToListAsync();
+            IEnumerable<Actor> actors = await _repository.GetAll( skip: (page - 1) * take,take:take).ToListAsync();
 
+            if (search is not null)
+            {
+                actors = await _repository.GetAll(a => a.FullName.Contains(search), null, false, false, false, ((page - 1) * take), take).ToListAsync();
+            }
             IEnumerable<GetActorDto> actorDto = actors.Select(c => new GetActorDto
             {
                 Id = c.Id,

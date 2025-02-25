@@ -10,5 +10,6 @@ namespace HotFlix.Application.Abstraction.Services
    public interface IEmailService
     {
         public void SendEmail(AppUser user,string randomcode);
+        Task SendEmailAsync(string email, string subject, string body, bool isHTML);
     }
 }

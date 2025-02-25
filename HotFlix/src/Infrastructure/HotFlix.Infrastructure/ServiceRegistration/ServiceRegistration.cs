@@ -3,6 +3,8 @@ using HotFlix.Infrastructure.Implementations.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,6 +29,9 @@ namespace HotFlix.Infrastructure.ServiceRegistration
 
             });
             services.AddScoped<IEmailService, EmailService>();
+            services.AddSingleton<ViewRenderer>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+          
             return services;    
         }
 

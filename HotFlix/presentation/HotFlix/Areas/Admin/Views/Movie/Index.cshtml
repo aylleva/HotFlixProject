@@ -14,16 +14,10 @@
 					<div class="main__title-wrap">
 						<a asp-controller="movie" asp-action="create" class="main__title-link main__title-link--wrap">Add Movie</a>
 
-						<select class="filter__select" name="sort" id="filter__sort">
-							<option value="0">Date created</option>
-							<option value="1">Rating</option>
-							<option value="2">Views</option>
-						</select>
-
 						<!-- search -->
-						<form action="#" class="main__title-form">
-							<input type="text" placeholder="Find movie / tv series..">
-							<button type="button">
+						<form asp-action="index" class="main__title-form">
+							<input type="text" name="search" value="@Model.Search" placeholder="Find movie / tv series..">
+							<button type="submit">
 								<i class="ti ti-search"></i>
 							</button>
 						</form>

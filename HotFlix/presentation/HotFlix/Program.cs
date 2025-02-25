@@ -87,8 +87,8 @@ namespace HotFlix
 
             app.UseSession();
             app.UseStaticFiles();
-            app.UseMiddleware<GlobalExceptionHandler>();
-            app.UseMiddleware<AdminGlobalExceptionHandler>();
+            //app.UseMiddleware<GlobalExceptionHandler>();
+            //app.UseMiddleware<AdminGlobalExceptionHandler>();
 
             StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
